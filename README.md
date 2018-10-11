@@ -1,12 +1,21 @@
 <p align="center">
-<img src ="http://andreslargo.com/sgc/img/sgc2.png" />
+<img src ="http://andreslargo.com/wave.png" />
 </p>
-
+<p align="center">
+  <a title="Iniciando" href="#Iniciando"><strong>Iniciando</strong></a>
+  &#x2022;
+  <a title="Documentación" href="https://github.com/TalentoBogotaFedesoft/ULIBRE-061-grupo-2/wiki"><strong>Documentation</strong></a>
+  &#x2022;
+  <a title="Desarrollo" href="https://github.com/TalentoBogotaFedesoft/ULIBRE-061-grupo-2/tree/backend"><strong>Desarrollo</strong></a>
+  &#x2022;
+  <a title="Contribución" href="https://github.com/TalentoBogotaFedesoft/ULIBRE-061-grupo-2/pulls"><strong>Contributing</strong></a>
+</p>
 # Reto
 ¿Cómo podemos mejorar la seguridad ciudadana de los habitantes
 de la localidad de Kennedy?
 # Tematica
 Seguridad Ciudadana
+
 # Iniciando 
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento para tu máquina local con el 
 propósito de desarollo y pruebas.
@@ -45,11 +54,15 @@ Para la parte visual se usarán las tecnologías más recientes, HTML para maque
 ## Lado del servidor (BACK-END)
 Para la parte del servidor se usará la versión más reciente de PHP que es la 7, MySQL - MariaDB para el guardado de datos y finalmenete 
 <div style="display: flex">
-  <img width = "200px" src ="https://ugc.kn3.net/i/origin/http://www.foxinfosoft.com/images/php-mysql-development.png" />
+  <img width = "200px" src ="https://miro.medium.com/max/440/1*-oIlwIWlt0BDN4b5a9rRCQ.jpeg" />
 </div>
 
 # Autores
-**Andrés Largo, Erika Infante, Miguel Orjuela, Yulian Cardenas** 
+**Andrés Largo - Estudiante de Ingeniería en Sistemas enfocado en el desarrollo de frontend y backend **
+** Erika Infante - Estudiante de Ingeniería de Sistemas enfocada en desarrollo backend **
+** Miguel Orjuela - Estudiante de Ingeniería de Sistemas **
+** Yulian Cardenas - Estudiante de Ingeniería telemática ** 
+
 # Licencia
 MIT
 
