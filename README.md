@@ -39,7 +39,7 @@ Para la parte visual se usarán las tecnologías más recientes, HTML para maque
   <img width = "100px" src ="https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png" />
   <img width = "100px" src ="https://vignette.wikia.nocookie.net/howtoprogram/images/a/a9/CSS3.png/revision/latest?cb=20130422012035" />
   <img width = "100px" src ="http://2.bp.blogspot.com/-ybjEsh1Icu0/VqRBzF2lEGI/AAAAAAAAD7k/b0HnKNNbaNc/s640/javascript-logo.png" />
-  <img width = "100px" src ="https://angular.io/assets/images/logos/angular/angular.png" />
+  <img width = "100px" src ="https://www.keencode.io/wp-content/uploads/2017/04/angular.png" />
 </div>
 
 ## Lado del servidor (BACK-END)
