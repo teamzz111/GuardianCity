@@ -37,9 +37,9 @@ Para la parte visual se usarán las tecnologías más recientes, HTML para maque
 
 <div style="display: flex">
   <img width = "100px" src ="https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png" />
-  <img width = "100px" src ="http://andreslargo.com/sgc/img/css3_logo.png" />
-  <img width = "100px" src ="http://andreslargo.com/sgc/img/Javascript-shield.png" />
-  <img width = "100px" src ="http://andreslargo.com/sgc/img/angular.png" />
+  <img width = "100px" src ="https://vignette.wikia.nocookie.net/howtoprogram/images/a/a9/CSS3.png/revision/latest?cb=20130422012035" />
+  <img width = "100px" src ="https://banner2.kisspng.com/20180417/fsw/kisspng-javascript-node-js-angularjs-jquery-github-5ad5a9c7373410.5023404615239520712261.jpg" />
+  <img width = "100px" src ="https://angular.io/assets/images/logos/angular/angular.png" />
 </div>
 
 ## Lado del servidor (BACK-END)
