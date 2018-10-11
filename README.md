@@ -1,6 +1,8 @@
 <p align="center">
-<img width = "100px"  src="http://www.andreslargo.com/wave.png" />
+  <img width="200" height="100" src="https://i.imgur.com/tqlJ7Mg.png">
 </p>
+
+
 <p align="center">
   <a title="Iniciando" href="#Iniciando"><strong>Iniciando</strong></a>
   &#x2022;
@@ -8,10 +10,10 @@
   &#x2022;
   <a title="Desarrollo" href="https://github.com/TalentoBogotaFedesoft/ULIBRE-061-grupo-2/tree/backend"><strong>Desarrollo</strong></a>
   &#x2022;
-  <a title="Contribución" href="https://github.com/TalentoBogotaFedesoft/ULIBRE-061-grupo-2/pulls"><strong>Contributing</strong></a>
+  <a title="Contribución" href="https://github.com/TalentoBogotaFedesoft/ULIBRE-061-grupo-2/pulls"><strong>Contribuir</strong></a>
 </p>
-# Reto
 
+# Reto
 ¿Cómo podemos mejorar la seguridad ciudadana de los habitantes
 de la localidad de Kennedy?
 
