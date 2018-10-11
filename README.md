@@ -1,11 +1,12 @@
 <p align="center">
 <img src ="http://andreslargo.com/sgc/img/sgc2.png" />
 </p>
-Aquí va el slogan del proyecto
-#Temática
 
-#Reto
-
+# Reto
+¿Cómo podemos mejorar la seguridad ciudadana de los habitantes
+de la localidad de Kennedy?
+# Tematica
+Seguridad Ciudadana
 # Iniciando 
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento para tu máquina local con el 
 propósito de desarollo y pruebas.
@@ -35,7 +36,7 @@ Una vez realizado podremos visualizar el framework compilado así:
 Para la parte visual se usarán las tecnologías más recientes, HTML para maquetar el sitio, CSS para darle estilos, Javascript para hacerlo dinámico y finalmente AngularJS para el aplicativo WEB.
 
 <div style="display: flex">
-  <img width = "100px" src ="http://andreslargo.com/sgc/img/HTML_Logo.png" />
+  <img width = "100px" src ="https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png" />
   <img width = "100px" src ="http://andreslargo.com/sgc/img/css3_logo.png" />
   <img width = "100px" src ="http://andreslargo.com/sgc/img/Javascript-shield.png" />
   <img width = "100px" src ="http://andreslargo.com/sgc/img/angular.png" />
