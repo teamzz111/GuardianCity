@@ -49,21 +49,21 @@ Una vez realizado podremos visualizar el framework compilado así:
 Para la parte visual se usarán las tecnologías más recientes, HTML para maquetar el sitio, CSS para darle estilos, Javascript para hacerlo dinámico y finalmente AngularJS para el aplicativo WEB.
 
 <div style="display: flex">
-  <img width = "100px" src ="https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png" />
-  <img width = "100px" src ="https://vignette.wikia.nocookie.net/howtoprogram/images/a/a9/CSS3.png/revision/latest?cb=20130422012035" />
-  <img width = "100px" src ="http://2.bp.blogspot.com/-ybjEsh1Icu0/VqRBzF2lEGI/AAAAAAAAD7k/b0HnKNNbaNc/s640/javascript-logo.png" />
-  <img width = "100px" src ="https://www.keencode.io/wp-content/uploads/2017/04/angular.png" />
+  <img width = "100px" src ="https://i.imgur.com/PRBFI6e.png" />
+  <img width = "100px" src ="https://i.imgur.com/ejQ5EaH.png" />
+  <img width = "100px" src ="https://i.imgur.com/t4vOUkA.png" />
+
 </div>
 
 ## Lado del servidor (BACK-END)
 Para la parte del servidor se usará la versión más reciente de PHP que es la 7, MySQL - MariaDB para el guardado de datos y finalmenete 
 <div>
-  <img width = "200px" src ="https://miro.medium.com/max/440/1*-oIlwIWlt0BDN4b5a9rRCQ.jpeg" />
+  <img width = "100px" src ="https://miro.medium.com/max/440/1*-oIlwIWlt0BDN4b5a9rRCQ.jpeg" />
 </div>
 
 # Autores
 
-**Andrés Largo - Estudiante de Ingeniería en Sistemas enfocado en el desarrollo de frontend y backend**
+**Andrés Largo - Estudiante de Ingeniería en Sistemas - Desarrollador Full Stack**
 
 **Erika Infante - Estudiante de Ingeniería de Sistemas enfocada en desarrollo backend**
 
