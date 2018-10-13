@@ -1,4 +1,5 @@
 # Código de conducta
+
 ### Nuestros estándares
 
 * Uso de un lenguaje acogedor e inclusivo
@@ -42,7 +43,7 @@ más definido y aclarado por los que sostienen el proyecto.
 ### Aplicación
 
 Los casos de comportamiento abusivo, acosador o inaceptable pueden ser
-informado poniéndose en contacto con el equipo del proyecto en andresf.largor@gmail.com. Todas
+informado poniéndose en contacto con el equipo del proyecto en andresf.largo@gmail.com. Todas
 las quejas serán revisadas e investigadas y darán lugar a una respuesta que
 se considera necesario y apropiado a las circunstancias. El equipo del proyecto es
 obligado a mantener la confidencialidad con respecto al reportero de un incidente.
