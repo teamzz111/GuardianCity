@@ -21,6 +21,7 @@ de la localidad de Kennedy?
 Seguridad Ciudadana
 
 # Iniciando 
+**FrontEnd y BackEnd están separados por ramas.** 
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento para tu máquina local con el 
 propósito de desarollo y pruebas.
 
