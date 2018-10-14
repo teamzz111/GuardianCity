@@ -1,0 +1,107 @@
+.encabezado{
+    display: inline-flex;
+    background-color: chartreuse;
+    width: 100%;
+}
+.logo{
+    display: flex;
+    width: 20%;
+    justify-content: flex-start;
+    background-color: red;
+}
+.texto{
+    width: 75%;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+.texto p{
+    padding: 1.5em;
+}
+.imagen_grande{
+    display: inline-flex;
+    width: 100%;
+    height: 70%;
+    background-color: blueviolet;
+}
+.informacion{
+    display: flex;
+    width: 50%;
+    background-color: coral;
+}
+.botones{
+    display: flex;
+}
+.basta{
+    display: inline-flex;
+    width: 100%;
+    height: 50%;
+    background-color: cyan;
+}
+.imagen_ladron{
+    display: flex;
+    width: 50%;
+    background-color: yellow;
+}
+.texto_basta{
+    width: 50%;
+}
+.como_funciona{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    background-color: crimson;
+}
+.blockchain{
+    padding: 1em;
+    width: 40%;
+    align-self: flex-start;
+    background-color: chocolate;
+}
+.nuestro{
+    padding: 1em;
+    width: 40%;
+    align-self: flex-end;
+    background-color: chocolate;
+}
+.mundo{
+    padding: 1em;
+    width: 40%;
+    align-self: flex-start;
+    background-color: chocolate;
+}
+.el_centro{
+    padding: 1em;
+    width: 40%;
+    align-self: flex-end;
+    background-color: chocolate;
+}
+.tecnologia{
+    padding: 1em;
+    width: 40%;
+    align-self: flex-start;
+    background-color: chocolate;
+}
+.denuncia{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 50%;
+    background-color: blueviolet;
+}
+.titulo{
+    width: 100%;
+    height: 30%;
+    background-color: yellow;
+}
+.texto_denuncia{
+    width: 50%;
+    height: 50%;
+    align-self: flex-start;
+    background-color: beige;
+}.imagen_ladron2{
+    width: 50%;
+    height: 50%;
+    align-self: flex-end;
+    background-color: aqua;
+}
