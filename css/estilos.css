@@ -1,107 +1,185 @@
-.encabezado{
-    display: inline-flex;
-    background-color: chartreuse;
-    width: 100%;
+* {
+  /*Estas configuraciones son por defecto para todos los elementos*/
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.logo{
-    display: flex;
-    width: 20%;
-    justify-content: flex-start;
-    background-color: red;
+
+.contenedor {
+  max-width: 1200px;
+  margin: auto;
 }
-.texto{
-    width: 75%;
-    display: inline-flex;
-    justify-content: flex-end;
+
+/*HEADER ZONE*/
+header {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: chartreuse;
+  width: 100%;
 }
-.texto p{
-    padding: 1.5em;
+
+header .logo {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: red;
 }
-.imagen_grande{
-    display: inline-flex;
-    width: 100%;
-    height: 70%;
-    background-color: blueviolet;
+
+header .texto {
+  width: 80%;
 }
-.informacion{
-    display: flex;
-    width: 50%;
-    background-color: coral;
+
+header .texto ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
-.botones{
-    display: flex;
+
+header .texto ul li {
+  margin: 1%;
+  list-style-type: none;
 }
-.basta{
-    display: inline-flex;
-    width: 100%;
-    height: 50%;
-    background-color: cyan;
+
+section.imagen_grande {
+  background-color: blueviolet;
+  padding-top: 8em;
 }
-.imagen_ladron{
-    display: flex;
-    width: 50%;
-    background-color: yellow;
+
+section.imagen_grande .contenedor {
+  width: 100%;
 }
-.texto_basta{
-    width: 50%;
+
+section.imagen_grande .contenedor .informacion {
+  width: 50%;
+  background-color: coral;
 }
-.como_funciona{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 90%;
-    background-color: crimson;
+
+section.basta {
+  background-color: cyan;
 }
-.blockchain{
-    padding: 1em;
-    width: 40%;
-    align-self: flex-start;
-    background-color: chocolate;
+
+section.basta .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.nuestro{
-    padding: 1em;
-    width: 40%;
-    align-self: flex-end;
-    background-color: chocolate;
+
+section.basta .contenedor .imagen_ladron {
+  width: 50%;
+  background-color: yellow;
 }
-.mundo{
-    padding: 1em;
-    width: 40%;
-    align-self: flex-start;
-    background-color: chocolate;
+
+section.basta .contenedor .texto_basta {
+  width: 50%;
 }
-.el_centro{
-    padding: 1em;
-    width: 40%;
-    align-self: flex-end;
-    background-color: chocolate;
+
+section.como_funciona {
+  background-color: crimson;
 }
-.tecnologia{
-    padding: 1em;
-    width: 40%;
-    align-self: flex-start;
-    background-color: chocolate;
+
+section.como_funciona .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  width: 100%;
 }
-.denuncia{
-    display: flex;
-    flex-flow: column;
-    width: 100%;
-    height: 50%;
-    background-color: blueviolet;
+
+section.como_funciona .contenedor .blockchain {
+  padding: 1em;
+  width: 48%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-color: chocolate;
 }
-.titulo{
-    width: 100%;
-    height: 30%;
-    background-color: yellow;
+
+section.como_funciona .contenedor .nuestro {
+  padding: 1em;
+  width: 48%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: chocolate;
 }
-.texto_denuncia{
-    width: 50%;
-    height: 50%;
-    align-self: flex-start;
-    background-color: beige;
-}.imagen_ladron2{
-    width: 50%;
-    height: 50%;
-    align-self: flex-end;
-    background-color: aqua;
+
+section.como_funciona .contenedor .mundo {
+  padding: 1em;
+  width: 48%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-color: chocolate;
 }
+
+section.como_funciona .contenedor .el_centro {
+  padding: 1em;
+  width: 48%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: chocolate;
+}
+
+section.como_funciona .tecnologia {
+  padding: 1em;
+  width: 48%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-color: chocolate;
+}
+
+section.denuncia {
+  background-color: blueviolet;
+}
+
+section.denuncia .contenedor {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 100%;
+}
+
+section.denuncia .contenedor .titulo {
+  width: 100%;
+  text-align: center;
+  background-color: yellow;
+}
+
+section.denuncia .contenedor .padre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.denuncia .contenedor .padre .texto_denuncia {
+  width: 50%;
+  height: 50%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-color: beige;
+}
+
+section.denuncia .contenedor .padre .imagen_ladron2 {
+  width: 50%;
+  height: 50%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: aqua;
+}
+/*# sourceMappingURL=estilos.css.map */
