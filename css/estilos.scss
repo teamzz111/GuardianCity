@@ -91,7 +91,7 @@ header.encabezado {
     display: flex;
     background-color: white;
     width: 100%;
-    max-height: 9vh;
+    max-height: 8vh;
 
     .logo {
         padding-top: 1.5em;
@@ -103,7 +103,7 @@ header.encabezado {
 
         img {
             width: 100%;
-            max-width: 110px;
+            max-width: 100px;
         }
     }
 
@@ -141,7 +141,7 @@ section.imagen_grande {
     padding-bottom: 7em;
 
     .contenedor {
-        margin-top: 18em;
+        margin-top: 5em;
         width: 100%;
         padding: 1%;
         display: flex;
