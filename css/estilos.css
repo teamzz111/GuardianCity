@@ -3,6 +3,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Open Sans";
 }
 
 .contenedor {
@@ -11,32 +12,116 @@
 }
 
 /*HEADER ZONE*/
-header {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  background-color: chartreuse;
+header.responsive .barra {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.4em;
+  color: white;
+  margin-top: -0.5em;
   width: 100%;
+  font-size: 1.73em;
+  font-family: 'Roboto';
+  background: transparent;
+  display: none;
 }
 
-header .logo {
+header.responsive .barra .derecho {
+  width: 50%;
+  text-align: right;
+  font-family: 'Awesome';
+}
+
+header.responsive .barra .izquierdo {
+  width: 50%;
+  text-align: left;
+}
+
+header.responsive .barraFixed {
+  top: 0;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  width: 100%;
+  color: black;
+  position: fixed;
+  padding: 0.6em;
+  font-size: 1.2em;
+  font-family: 'Roboto';
+}
+
+header.responsive .barraFixed .derecho {
+  width: 50%;
+  text-align: right;
+  font-family: 'Awesome';
+}
+
+header.responsive .barraFixed .izquierdo {
+  width: 50%;
+  text-align: left;
+}
+
+header.responsive nav {
+  width: 100%;
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header.responsive nav li {
+  padding: 1%;
+  font-family: "Roboto";
+  list-style-type: none;
+}
+
+header.responsive nav li a {
+  font-family: 'Sans';
+  font-size: 1.6em;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+header.encabezado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 100%;
+  max-height: 9vh;
+}
+
+header.encabezado .logo {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 20%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  background-color: red;
+  width: 11%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
 }
 
-header .texto {
-  width: 80%;
+header.encabezado .logo img {
+  width: 100%;
+  max-width: 110px;
 }
 
-header .texto ul {
+header.encabezado .texto {
+  width: 89%;
+}
+
+header.encabezado .texto ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,46 +134,143 @@ header .texto ul {
   height: 100%;
 }
 
-header .texto ul li {
+header.encabezado .texto ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 1%;
   list-style-type: none;
+  height: 60%;
+  padding: 0.5em;
 }
 
 section.imagen_grande {
-  background-color: blueviolet;
-  padding-top: 8em;
+  background: url(../assets/imgs/ladron.png);
+  padding-top: 1em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 7em;
 }
 
 section.imagen_grande .contenedor {
+  margin-top: 18em;
   width: 100%;
+  padding: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 section.imagen_grande .contenedor .informacion {
   width: 50%;
-  background-color: coral;
+}
+
+section.imagen_grande .contenedor .informacion p {
+  font-size: 1.5em;
+  color: white;
+}
+
+section.imagen_grande .contenedor .informacion p span.a1 {
+  background: white;
+  color: black;
+  padding: 0.5%;
+}
+
+section.imagen_grande .contenedor .informacion p span.a2 {
+  font-size: 0.7em;
+}
+
+section.imagen_grande .contenedor .botones {
+  width: 50%;
+  text-align: right;
+}
+
+section.imagen_grande .contenedor .botones button {
+  margin: 1%;
+  background: transparent;
+  color: white;
+  padding: 1.8%;
+  font-size: 1.1em;
+  margin-top: 5em;
+  border-radius: 10px;
+  border: 1.3px solid white;
+  -webkit-transition: .4s linear;
+  transition: .4s linear;
+}
+
+section.imagen_grande .contenedor .botones button:hover {
+  cursor: pointer;
+  background: white;
+  color: black;
 }
 
 section.basta {
-  background-color: cyan;
+  background: #00BFFF;
 }
 
 section.basta .contenedor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 section.basta .contenedor .imagen_ladron {
+  text-align: center;
   width: 50%;
-  background-color: yellow;
+  margin: auto;
+  min-width: 20em;
+}
+
+section.basta .contenedor .imagen_ladron img {
+  width: 100%;
+  max-width: 500px;
 }
 
 section.basta .contenedor .texto_basta {
+  padding: 1%;
+  min-width: 20em;
+  margin: auto;
+  padding-bottom: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
   width: 50%;
 }
 
+section.basta .contenedor .texto_basta h2 {
+  text-align: center;
+}
+
+section.basta .contenedor .texto_basta p {
+  text-align: center;
+}
+
+.curva img {
+  width: 100%;
+}
+
 section.como_funciona {
-  background-color: crimson;
+  background-color: white;
 }
 
 section.como_funciona .contenedor {
@@ -181,5 +363,30 @@ section.denuncia .contenedor .padre .imagen_ladron2 {
   -ms-flex-item-align: end;
       align-self: flex-end;
   background-color: aqua;
+}
+
+@media screen and (max-width: 987px) {
+  header.encabezado {
+    display: none;
+  }
+  header {
+    max-height: 100%;
+  }
+  section.imagen_grande .contenedor {
+    margin-top: 2.5em;
+  }
+  section.imagen_grande header.responsive .barra {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  section.imagen_grande .contenedor .informacion,
+  section.imagen_grande .contenedor .botones {
+    width: 100%;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */

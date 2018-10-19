@@ -6,43 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>APP</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css\estilos.css">
 </head>
 
 <body>
+
+
     <header class="encabezado">
         <div class="logo">
-            <h1>*LOGO*</h1>
+            <img src="assets/imgs/logotemp.png" alt="">
         </div>
         <div class="texto">
             <ul>
                 <li>INICIO</li>
                 <li>¿COMO FUNCIONA?</li>
                 <li>CONTÁCTANOS</li>
-                <li>REPORTE</li>
+                <li style="padding-left: 1em; padding-right: 1em; border: 1px solid rgb(0, 102, 255);">REPORTE</li>
             </ul>
         </div>
     </header>
 
     <section class="imagen_grande">
+        <header class="responsive">
+            <div class="barraFixed">
+                <div class="izquierdo">LOGOTIPO</div>
+                <div class="derecho"><i class="fas fa-bars"></i></div>
+            </div>
+            <div class="contenedor">
+                <nav>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </nav>
+            </div>
+        </header>
         <div class="contenedor">
             <div class="informacion">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam saepe similique culpa maiores asperiores quidem deserunt, corrupti cum molestias magnam totam autem quibusdam! Dicta voluptate error architecto quia quibusdam debitis?
+                <p>LO QUE BOGOTÁ ESTABA <strong>ESPERANDO</strong>, <br> <strong>SISTEMA</strong> PARA LA GESTIÓN DE
+                    <br> <span class="a1">DENUNCIAS DE ROBO</span>
+                    <br> <span class="a2">#LibresDeLaManipulación</span></p>
             </div>
             <div class="botones">
+                <button>
+                    INICIAR SESIÓN
+                </button>
+                <button>
+                    REGISTRARSE
+                </button>
             </div>
         </div>
     </section>
     <section class="basta">
         <div class="contenedor">
             <div class="imagen_ladron">
-                <h1>ladron.gif</h1>
+                <img src="assets/imgs/ladron.gif" alt="">
             </div>
             <div class="texto_basta">
-                <p>el texto</p>
+                <h2>¡BASTA!</h2>
+                <br>
+                <p>lLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet aliquet neque. Maecenas
+                    eget finibus nunc. Donec arcu quam, euismod ac tempor ut, tempus vel nis Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Phasellus sit amet aliquet neque. Maecenas eget finibus nunc.
+                    Donec arcu quam, euismod ac tempor ut, tempus vel nis </p>
             </div>
         </div>
     </section>
+    <div class="curva">
+        <img src="assets/imgs/pattern.png" alt="">
+    </div>
     <section class="como_funciona">
         <div class="contenedor">
             <div class="blockchain">
@@ -78,6 +112,8 @@
             </div>
         </div>
     </section>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
