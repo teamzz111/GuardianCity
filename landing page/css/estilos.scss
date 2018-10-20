@@ -1,0 +1,162 @@
+* {
+    /*Estas configuraciones son por defecto para todos los elementos*/
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    // Contenedor padre de todo que siempre mantendrá máximo 1200 px 
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*HEADER ZONE*/
+
+header {
+
+    display: inline-flex;
+    background-color: chartreuse;
+    width: 100%;
+
+    .logo {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        display: flex;
+        width: 20%;
+        justify-content: flex-start;
+        background-color: red;
+    }
+
+    .texto {
+        width: 80%;
+
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+
+            li {
+                margin: 1%;
+                list-style-type: none;
+
+            }
+        }
+
+    }
+}
+
+
+
+section.imagen_grande {
+    background-color: blueviolet;
+    padding-top: 8em;
+
+    .contenedor {
+
+        width: 100%;
+
+        .informacion {
+            width: 50%;
+            background-color: coral;
+        }
+
+        .botones {}
+    }
+}
+
+section.basta {
+    background-color: cyan;
+    .contenedor {
+        display: flex;
+
+        .imagen_ladron {
+            width: 50%;
+            background-color: yellow;
+        }
+
+        .texto_basta {
+            width: 50%;
+        }
+    }
+}
+
+section.como_funciona {
+    background-color: crimson;
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+
+        .blockchain {
+            padding: 1em;
+            width: 48%;
+            align-self: flex-start;
+            background-color: chocolate;
+        }
+
+        .nuestro {
+            padding: 1em;
+            width: 48%;
+            align-self: flex-end;
+            background-color: chocolate;
+        }
+
+        .mundo {
+            padding: 1em;
+            width: 48%;
+            align-self: flex-start;
+            background-color: chocolate;
+        }
+
+        .el_centro {
+            padding: 1em;
+            width: 48%;
+            align-self: flex-end;
+            background-color: chocolate;
+        }
+    }
+
+    .tecnologia {
+        padding: 1em;
+        width: 48%;
+        align-self: flex-start;
+        background-color: chocolate;
+    }
+}
+
+section.denuncia {
+    background-color: blueviolet;
+
+    .contenedor {
+        flex-flow: column;
+        width: 100%;
+
+        .titulo {
+            width: 100%;
+            text-align: center;
+            background-color: yellow;
+        }
+
+        .padre {
+
+            display: flex;
+
+            .texto_denuncia {
+
+                width: 50%;
+                height: 50%;
+                align-self: flex-start;
+                background-color: beige;
+            }
+
+            .imagen_ladron2 {
+                width: 50%;
+                height: 50%;
+                align-self: flex-end;
+                background-color: aqua;
+            }
+        }
+    }
+}
