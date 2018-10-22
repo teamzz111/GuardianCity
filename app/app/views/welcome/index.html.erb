@@ -1,2 +1,121 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<header class="encabezado">
+    <div class="logo">
+        <img src="assets/imgs/logotemp.png" alt="">
+        <%= image_tag("logotemp.png", :alt => "rss feed") %>
+    </div>
+    <div class="texto">
+        <ul>
+            <li>INICIO</li>
+            <li>¿COMO FUNCIONA?</li>
+            <li>CONTÁCTANOS</li>
+            <li style="padding-left: 1em; padding-right: 1em; border: 1px solid rgb(0, 102, 255);">REPORTE</li>
+        </ul>
+    </div>
+</header>
+
+<section class="imagen_grande">
+    <header class="responsive">
+        <div class="barraFixed">
+            <div class="izquierdo">LOGOTIPO</div>
+            <div class="derecho"><i class="fas fa-bars"></i></div>
+        </div>
+        <div class="contenedor">
+            <nav>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca</a></li>
+                <li><a href="#">Contacto</a></li>
+            </nav>
+        </div>
+    </header>
+    <div class="contenedor">
+        <div class="informacion">
+            <p>LO QUE BOGOTÁ ESTABA <strong>ESPERANDO</strong>, <br> <strong>SISTEMA</strong> PARA LA GESTIÓN DE
+                <br> <span class="a1">DENUNCIAS DE ROBO</span>
+                <br> <span class="a2">#LibresDeLaManipulación</span></p>
+        </div>
+        <div class="botones">
+            <button>
+                INICIAR SESIÓN
+            </button>
+            <button>
+                REGISTRARSE
+            </button>
+        </div>
+    </div>
+</section>
+<section class="basta">
+    <div class="contenedor">
+        <div class="imagen_ladron">
+   
+            <%= image_tag("ladron.gif", :alt => "rss feed") %>
+        </div>
+        <div class="texto_basta">
+            <h2>¡BASTA!</h2>
+            <br>
+            <p>lLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet aliquet neque. Maecenas
+                eget finibus nunc. Donec arcu quam, euismod ac tempor ut, tempus vel nis Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Phasellus sit amet aliquet neque. Maecenas eget finibus nunc.
+                Donec arcu quam, euismod ac tempor ut, tempus vel nis </p>
+        </div>
+    </div>
+</section>
+<div class="curva">
+    <%= image_tag("pattern.png", :alt => "rss feed") %>
+</div>
+<section class="como_funciona">
+    <div class="contenedor">
+        <div class="blockchain">
+            <p>texto de blockchain</p>
+        </div>
+        <div class="nuestro">
+            <p>texto de nuestro sistema piensa</p>
+        </div>
+        <div class="mundo">
+            <p>texto de un mundo mas rapido</p>
+        </div>
+        <div class="el_centro">
+            <p>texto de tu, el centro</p>
+        </div>
+        <div class="tecnologia">
+            <p>texto de tecnologia</p>
+        </div>
+    </div>
+</section>
+<section class="denuncia">
+    <div class="contenedor">
+        <div class="titulo">
+            <h1>titulo</h1>
+        </div>
+        <div class="padre">
+
+            <div class="texto_denuncia">
+                <h1>sin esperas</h1>
+            </div>
+            <div class="imagen_ladron2">
+                <h1>imagen.gif</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contacto">
+    <div class="imagen">
+
+    </div>
+    <form action="">
+        <label for="">INGRESE SU NOMBRE</label>
+        <input type="text" name="" id="">
+        <label for="">INGRESE SU CORREO</label>
+        <input type="text" name="" id="">
+        <label for="">INGGRESE SU MENSAJE</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </form>
+</section>
+<footer>
+    <!-- Si hacen algo se añaden-->
+    <p>
+        TODOS LOS DERECHOS RESERVADOS <br>
+        DISEÑADO POR ANDRÉS LARGO  <br>
+        MAQUETADO POR ANDRÉS LARGO Y MIGUEL ORJUELA
+    </p>
+</footer>

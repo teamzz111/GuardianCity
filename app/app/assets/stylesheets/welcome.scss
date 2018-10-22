@@ -1,3 +1,364 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+    /*Estas configuraciones son por defecto para todos los elementos*/
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+.contenedor {
+    // Contenedor padre de todo que siempre mantendrá máximo 1200 px 
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*HEADER ZONE*/
+
+header.responsive {
+  
+    .barra {
+        align-items: center;
+        transition: all 0.5s ease;
+        padding: 0.4em;
+        color: white;
+        margin-top: -0.5em;
+        width: 100%;
+        font-size: 1.73em;
+        font-family: 'Roboto';
+        background: transparent;
+        display: none;
+
+        .derecho {
+            width: 50%;
+            text-align: right;
+            font-family: 'Awesome';
+        }
+
+        .izquierdo {
+            width: 50%;
+            text-align: left;
+        }
+    }
+
+    .barraFixed {
+        top: 0;
+        transition-duration: 1s;
+        display: flex;
+        background: white;
+        width: 100%;
+        color: black;
+        position: fixed;
+        padding: 0.6em;
+        font-size: 1.2em;
+        font-family: 'Roboto';
+
+        .derecho {
+            width: 50%;
+            text-align: right;
+            font-family: 'Awesome';
+        }
+
+        .izquierdo {
+            width: 50%;
+            text-align: left;
+        }
+    }
+
+
+    nav {
+        width: 100%;
+
+        display: none;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        li {
+            padding: 1%;
+            font-family: "Roboto";
+            list-style-type: none;
+
+            a {
+                font-family: 'Sans';
+                font-size: 1.6em;
+                color: white;
+                font-weight: 400;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+header.encabezado {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    max-height: 9vh;
+
+    .logo {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        display: flex;
+        width: 11%;
+        justify-content: center;
+        background-color: white;
+
+        img {
+            width: 100%;
+            max-width: 110px;
+        }
+    }
+
+    .texto {
+        width: 89%;
+
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+
+            li {
+                display: flex;
+                align-items: center;
+                margin: 1%;
+                list-style-type: none;
+                height: 60%;
+                padding: 0.5em;
+            }
+        }
+
+    }
+}
+
+
+
+section.imagen_grande {
+   
+    background-image: image_url('ladron.png');
+    padding-top: 1em;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding-bottom: 7em;
+
+    .contenedor {
+        margin-top: 4em;
+        width: 100%;
+        padding: 1%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .informacion {
+            width: 50%;
+
+            p {
+                font-size: 1.5em;
+                color: white;
+                line-height: 1.5em;
+                span.a1 {
+                    background: white;
+                    color: black;
+                    padding: 0.5%;
+
+
+                }
+
+                span.a2 {
+                    font-size: 0.7em;
+                }
+            }
+        }
+
+        .botones {
+            width: 50%;
+            text-align: right;
+
+            button {
+                margin: 1%;
+                background: transparent;
+                color: white;
+                padding: 1.8%;
+                font-size: 1.1em;
+                margin-top: 5em;
+                border-radius: 10px;
+                border: 1.3px solid white;
+                transition: .4s linear;
+
+                &:hover {
+                    cursor: pointer;
+                    background: white;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+section.basta {
+    background: #00BFFF;
+
+    .contenedor {
+
+        display: flex;
+        flex-wrap: wrap;
+
+        .imagen_ladron {
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            min-width: 20em;
+
+            img {
+                width: 100%;
+                max-width: 500px;
+            }
+        }
+
+        .texto_basta {
+            padding: 1%;
+            min-width: 20em;
+            margin: auto;
+            padding-bottom: 4em;
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            width: 50%;
+
+            h2 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.curva {
+    img {
+        width: 100%;
+    }
+}
+
+section.como_funciona {
+    background-color: white;
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+
+        .blockchain {
+            padding: 1em;
+            width: 48%;
+            align-self: flex-start;
+            background-color: chocolate;
+        }
+
+        .nuestro {
+            padding: 1em;
+            width: 48%;
+            align-self: flex-end;
+            background-color: chocolate;
+        }
+
+        .mundo {
+            padding: 1em;
+            width: 48%;
+            align-self: flex-start;
+            background-color: chocolate;
+        }
+
+        .el_centro {
+            padding: 1em;
+            width: 48%;
+            align-self: flex-end;
+            background-color: chocolate;
+        }
+    }
+
+    .tecnologia {
+        padding: 1em;
+        width: 48%;
+        align-self: flex-start;
+        background-color: chocolate;
+    }
+}
+
+section.denuncia {
+    background-color: blueviolet;
+
+    .contenedor {
+        flex-flow: column;
+        width: 100%;
+
+        .titulo {
+            width: 100%;
+            text-align: center;
+            background-color: yellow;
+        }
+
+        .padre {
+
+            display: flex;
+
+            .texto_denuncia {
+
+                width: 50%;
+                height: 50%;
+                align-self: flex-start;
+                background-color: beige;
+            }
+
+            .imagen_ladron2 {
+                width: 50%;
+                height: 50%;
+                align-self: flex-end;
+                background-color: aqua;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 987px) {
+    header.encabezado {
+        display: none;
+    }
+
+    header {
+        max-height: 100%;
+    }
+
+    section.imagen_grande .contenedor {
+        margin-top: 2.5em;
+
+    }
+    
+    section.imagen_grande {
+        header.responsive {
+            .barra {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 718px) {
+    section.imagen_grande {
+        .contenedor {
+
+            .informacion,
+            .botones {
+                width: 100%;
+                text-align: center;
+            }
+
+        }
+    }
+}
+
