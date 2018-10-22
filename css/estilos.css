@@ -272,9 +272,53 @@ section.basta .contenedor .texto_basta p {
 
 section.como_funciona {
   background-color: white;
+  background-color: rgba(255, 255, 255, 0.589);
 }
 
 section.como_funciona .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 4em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  width: 100%;
+  padding-bottom: 4em;
+}
+
+section.como_funciona .contenedor .comida {
+  padding: 1em;
+  width: 48%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+}
+
+section.como_funciona .contenedor .comida .izq {
+  width: 30%;
+  margin-left: 10%;
+}
+
+section.como_funciona .contenedor .comida .izq img {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 81px;
+}
+
+section.como_funciona .contenedor .comida .der {
+  text-align: center;
+  margin-right: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,48 +326,53 @@ section.como_funciona .contenedor {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: auto;
-  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section.como_funciona .contenedor .comida p {
+  margin: 3%;
+  margin-left: 2em;
+  font-size: 100%;
 }
 
 section.como_funciona .contenedor .blockchain {
-  padding: 1em;
-  width: 48%;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  background-color: chocolate;
+  margin-left: 1em;
 }
 
 section.como_funciona .contenedor .nuestro {
   padding: 1em;
   width: 48%;
+  margin-right: 1em;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  background-color: chocolate;
 }
 
 section.como_funciona .contenedor .mundo {
+  margin-left: 1em;
   padding: 1em;
   width: 48%;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  background-color: chocolate;
 }
 
 section.como_funciona .contenedor .el_centro {
   padding: 1em;
+  margin-right: 1em;
   width: 48%;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  background-color: chocolate;
 }
 
 section.como_funciona .tecnologia {
+  margin-left: 1em;
   padding: 1em;
   width: 48%;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  background-color: chocolate;
 }
 
 section.denuncia {
@@ -388,6 +437,35 @@ section.denuncia .contenedor .padre .imagen_ladron2 {
   section.imagen_grande .contenedor .botones {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 955px) {
+  section.como_funciona .contenedor .comida {
+    width: 90%;
+    margin: 10px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media screen and (max-width: 472px) {
+  section.como_funciona .contenedor .comida {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.como_funciona .contenedor .comida .izq {
+    width: 40%;
+  }
+  section.como_funciona .contenedor .comida .izq, section.como_funciona .contenedor .comida .der {
+    text-align: center;
+  }
+  section.como_funciona .contenedor .comida .izq img, section.como_funciona .contenedor .comida .der img {
+    width: 100%;
+    -webkit-transform: initial;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
