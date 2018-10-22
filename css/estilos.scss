@@ -91,7 +91,7 @@ header.encabezado {
     display: flex;
     background-color: white;
     width: 100%;
-    max-height: 8vh;
+    max-height: 9vh;
 
     .logo {
         padding-top: 1.5em;
@@ -103,7 +103,7 @@ header.encabezado {
 
         img {
             width: 100%;
-            max-width: 100px;
+            max-width: 110px;
         }
     }
 
@@ -141,7 +141,7 @@ section.imagen_grande {
     padding-bottom: 7em;
 
     .contenedor {
-        margin-top: 5em;
+        margin-top: 18em;
         width: 100%;
         padding: 1%;
         display: flex;
@@ -326,18 +326,35 @@ section.como_funciona {
         align-self: flex-start;
     }
 }
+.curva2 {
+    background-color: #4C919F;
+    img {
+        width: 100%;
+        -webkit-transform: rotate(180deg);
+	    -moz-transform: rotate(180deg);
+	    rotation: 180deg;
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+        margin-top: -0.1em;
+    }
+}
 
 section.denuncia {
     background-color: blueviolet;
+    color: white;
+    margin-top: -0.3em;
+    background-color: #4C919F;
 
     .contenedor {
         flex-flow: column;
         width: 100%;
+        color: white;
 
         .titulo {
             width: 100%;
             text-align: center;
-            background-color: yellow;
+            background-color: #4C919F;
+            padding: 2em;
+            font-size: 2.4em;
         }
 
         .padre {
@@ -349,17 +366,87 @@ section.denuncia {
                 width: 50%;
                 height: 50%;
                 align-self: flex-start;
-                background-color: beige;
+                background-color:#4C919F;
+                text-align: center;
+                h1{
+                    font-size: 2.5em;
+                }
+                p{
+                    padding: 2em;
+                }
             }
 
             .imagen_ladron2 {
                 width: 50%;
                 height: 50%;
-                align-self: flex-end;
-                background-color: aqua;
+                margin-top: -4em;
+                
+                img{
+                    width: 100%;
+                }
             }
         }
     }
+}
+
+section.contacto{
+    width: 100%;
+    text-align: center;
+    background-color: #FFFFF4;
+
+    .titulo{
+        padding: 2em 0em 0em;
+        font-size: 1.7em;
+    }
+
+    .imagen {
+        margin: auto;
+        margin-top: -9em;
+    }
+    
+    .imagen img{
+        transform: scale(.5);
+    }
+
+    form{
+        margin-top: -9em;
+        display: flex;
+        flex-direction: column;
+        input{
+            align-self: center;
+            width: 25%;
+            margin: 1.5em;
+            padding: 0.5em;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.562);
+        }
+        textarea{
+            align-self: center;
+            width: 25%;
+            margin: 1.5em;
+            height: 3em;
+            padding: 0.5em;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.562);
+        }
+    }
+
+    button{
+        width: 10%;
+        font-size: 1em;
+        padding: .5em;
+        background-color:white;
+        border: 1px solid rgba(0, 0, 0, 0.699);
+        margin-bottom: 10em;
+        margin-top: 1em;    
+    }
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2em;
 }
 
 @media screen and (max-width: 987px) {
