@@ -2,7 +2,8 @@
     /*Estas configuraciones son por defecto para todos los elementos*/
     margin: 0;
     box-sizing: border-box;
-    font-family: "Open Sans";
+    font-family: "Oswald";
+    font-weight: 300;
 }
 
 .contenedor {
@@ -25,7 +26,9 @@ header.responsive {
         font-size: 1.73em;
         font-family: 'Roboto';
         background: transparent;
+    
         display: none;
+
 
         .derecho {
             width: 50%;
@@ -47,6 +50,7 @@ header.responsive {
         width: 100%;
         color: black;
         position: fixed;
+        z-index: 100;
         padding: 0.6em;
         font-size: 1.2em;
         font-family: 'Roboto';
@@ -94,16 +98,16 @@ header.encabezado {
     max-height: 9vh;
 
     .logo {
-        padding-top: 1.5em;
-        padding-bottom: 1.5em;
+
         display: flex;
-        width: 11%;
+        max-width: 100px;
+        max-height: 60px;
         justify-content: center;
         background-color: white;
 
         img {
             width: 100%;
-            max-width: 110px;
+
         }
     }
 
@@ -123,6 +127,7 @@ header.encabezado {
                 list-style-type: none;
                 height: 60%;
                 padding: 0.5em;
+                font-weight: 300;
             }
         }
 
@@ -215,8 +220,8 @@ section.basta {
         }
 
         .texto_basta {
-            padding: 1%;
-            min-width: 20em;
+            padding: 2.5%;
+    
             margin: auto;
             padding-bottom: 4em;
             display: flex;
@@ -225,7 +230,8 @@ section.basta {
             align-items: center;
             justify-content: center;
             color: white;
-            width: 50%;
+            width: 100%;
+            max-width: 600px;
 
             h2 {
                 text-align: center;
@@ -341,7 +347,6 @@ section.como_funciona {
 }
 
 section.denuncia {
-    background-color: blueviolet;
     color: white;
     margin-top: -0.3em;
     background-color: #4C919F;
@@ -349,7 +354,7 @@ section.denuncia {
     .contenedor {
         width: 100%;
         color: white;
-
+        padding: 1em;
         .titulo {
             width: 100%;
             text-align: center;
@@ -360,7 +365,8 @@ section.denuncia {
 
         .padre {
             display: flex;
-            flex-wrap: wrap;
+    
+
             .texto_denuncia {
                 width: 100%;
                 max-width: 600px;
@@ -370,17 +376,21 @@ section.denuncia {
                 background-color: #4C919F;
                 text-align: center;
                 margin-top: -1.5em;
+
                 h1 {
                     font-size: 1.7em;
                 }
-                p{
+
+                p {
                     margin-top: 1em;
+                    text-align: justify;
                 }
             }
 
             .imagen_ladron2 {
                 width: 100%;
                 max-width: 600px;
+
                 img {
                     width: 100%;
                 }
@@ -396,45 +406,44 @@ section.contacto {
 
     .titulo {
         padding: 2em 0em 0em;
-        font-size: 1.7em;
+        font-size: 1.25em;
+        width: 100%;
     }
 
     .imagen {
+        z-index: 8;
         margin: auto;
-        margin-top: -9em;
+        width: 100%;
+        max-width: 300px;
+        margin-top: 1em;
+        img{
+            width: 100%;
+        }
     }
 
-    .imagen img {
-        transform: scale(.5);
-    }
+
 
     form {
-        margin-top: -9em;
+        margin-top: 2em;
         display: flex;
         flex-direction: column;
 
-        input {
+        input,
+        textarea {
             align-self: center;
-            width: 25%;
+            width: 90%;
+            max-width: 350px;
             margin: 1.5em;
             padding: 0.5em;
             border-radius: 5px;
             border: 1px solid rgba(0, 0, 0, 0.562);
         }
 
-        textarea {
-            align-self: center;
-            width: 25%;
-            margin: 1.5em;
-            height: 3em;
-            padding: 0.5em;
-            border-radius: 5px;
-            border: 1px solid rgba(0, 0, 0, 0.562);
-        }
     }
 
     button {
-        width: 10%;
+        width: 80%;
+        max-width: 200px;
         font-size: 1em;
         padding: .5em;
         background-color: white;
@@ -531,5 +540,21 @@ footer {
             }
         }
 
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    section.denuncia {
+        .contenedor {
+
+            .padre {
+                justify-content: center;
+                        flex-wrap: wrap;
+                .texto_denuncia {
+                    margin-top: 2.5em;
+                }
+
+            }
+        }
     }
 }

@@ -3,7 +3,8 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Open Sans";
+  font-family: "Oswald";
+  font-weight: 300;
 }
 
 .contenedor {
@@ -50,6 +51,7 @@ header.responsive .barraFixed {
   width: 100%;
   color: black;
   position: fixed;
+  z-index: 100;
   padding: 0.6em;
   font-size: 1.2em;
   font-family: 'Roboto';
@@ -100,12 +102,11 @@ header.encabezado {
 }
 
 header.encabezado .logo {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 11%;
+  max-width: 100px;
+  max-height: 60px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -114,7 +115,6 @@ header.encabezado .logo {
 
 header.encabezado .logo img {
   width: 100%;
-  max-width: 110px;
 }
 
 header.encabezado .texto {
@@ -145,6 +145,7 @@ header.encabezado .texto ul li {
   list-style-type: none;
   height: 60%;
   padding: 0.5em;
+  font-weight: 300;
 }
 
 section.imagen_grande {
@@ -235,8 +236,7 @@ section.basta .contenedor .imagen_ladron img {
 }
 
 section.basta .contenedor .texto_basta {
-  padding: 1%;
-  min-width: 20em;
+  padding: 2.5%;
   margin: auto;
   padding-bottom: 4em;
   display: -webkit-box;
@@ -255,7 +255,8 @@ section.basta .contenedor .texto_basta {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  width: 50%;
+  width: 100%;
+  max-width: 600px;
 }
 
 section.basta .contenedor .texto_basta h2 {
@@ -387,7 +388,6 @@ section.como_funciona .tecnologia {
 }
 
 section.denuncia {
-  background-color: blueviolet;
   color: white;
   margin-top: -0.3em;
   background-color: #4C919F;
@@ -396,6 +396,7 @@ section.denuncia {
 section.denuncia .contenedor {
   width: 100%;
   color: white;
+  padding: 1em;
 }
 
 section.denuncia .contenedor .titulo {
@@ -410,8 +411,6 @@ section.denuncia .contenedor .padre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 section.denuncia .contenedor .padre .texto_denuncia {
@@ -437,6 +436,7 @@ section.denuncia .contenedor .padre .texto_denuncia h1 {
 
 section.denuncia .contenedor .padre .texto_denuncia p {
   margin-top: 1em;
+  text-align: justify;
 }
 
 section.denuncia .contenedor .padre .imagen_ladron2 {
@@ -456,21 +456,24 @@ section.contacto {
 
 section.contacto .titulo {
   padding: 2em 0em 0em;
-  font-size: 1.7em;
+  font-size: 1.25em;
+  width: 100%;
 }
 
 section.contacto .imagen {
+  z-index: 8;
   margin: auto;
-  margin-top: -9em;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 1em;
 }
 
 section.contacto .imagen img {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  width: 100%;
 }
 
 section.contacto form {
-  margin-top: -9em;
+  margin-top: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -480,31 +483,22 @@ section.contacto form {
           flex-direction: column;
 }
 
-section.contacto form input {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 25%;
-  margin: 1.5em;
-  padding: 0.5em;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.562);
-}
-
+section.contacto form input,
 section.contacto form textarea {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 25%;
+  width: 90%;
+  max-width: 350px;
   margin: 1.5em;
-  height: 3em;
   padding: 0.5em;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.562);
 }
 
 section.contacto button {
-  width: 10%;
+  width: 80%;
+  max-width: 200px;
   font-size: 1em;
   padding: .5em;
   background-color: white;
@@ -574,6 +568,19 @@ footer {
   section.como_funciona .contenedor .comida .der img {
     width: 100%;
     -webkit-transform: initial;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  section.denuncia .contenedor .padre {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.denuncia .contenedor .padre .texto_denuncia {
+    margin-top: 2.5em;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
