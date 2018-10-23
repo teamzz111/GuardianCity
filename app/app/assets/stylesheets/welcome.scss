@@ -2,7 +2,8 @@
     /*Estas configuraciones son por defecto para todos los elementos*/
     margin: 0;
     box-sizing: border-box;
-    font-family: "Open Sans";
+    font-family: "Oswald";
+    font-weight: 300;
 }
 
 .contenedor {
@@ -14,7 +15,7 @@
 /*HEADER ZONE*/
 
 header.responsive {
-  
+
     .barra {
         align-items: center;
         transition: all 0.5s ease;
@@ -25,7 +26,9 @@ header.responsive {
         font-size: 1.73em;
         font-family: 'Roboto';
         background: transparent;
+
         display: none;
+
 
         .derecho {
             width: 50%;
@@ -47,6 +50,7 @@ header.responsive {
         width: 100%;
         color: black;
         position: fixed;
+        z-index: 100;
         padding: 0.6em;
         font-size: 1.2em;
         font-family: 'Roboto';
@@ -94,16 +98,16 @@ header.encabezado {
     max-height: 9vh;
 
     .logo {
-        padding-top: 1.5em;
-        padding-bottom: 1.5em;
+
         display: flex;
-        width: 11%;
+        max-width: 100px;
+        max-height: 60px;
         justify-content: center;
         background-color: white;
 
         img {
             width: 100%;
-            max-width: 110px;
+
         }
     }
 
@@ -123,6 +127,7 @@ header.encabezado {
                 list-style-type: none;
                 height: 60%;
                 padding: 0.5em;
+                font-weight: 300;
             }
         }
 
@@ -132,7 +137,6 @@ header.encabezado {
 
 
 section.imagen_grande {
-   
     background-image: image_url('ladron.png');
     padding-top: 1em;
 
@@ -142,7 +146,7 @@ section.imagen_grande {
     padding-bottom: 7em;
 
     .contenedor {
-        margin-top: 4em;
+        margin-top: 8em;
         width: 100%;
         padding: 1%;
         display: flex;
@@ -155,6 +159,7 @@ section.imagen_grande {
                 font-size: 1.5em;
                 color: white;
                 line-height: 1.5em;
+
                 span.a1 {
                     background: white;
                     color: black;
@@ -215,8 +220,8 @@ section.basta {
         }
 
         .texto_basta {
-            padding: 1%;
-            min-width: 20em;
+            padding: 2.5%;
+
             margin: auto;
             padding-bottom: 4em;
             display: flex;
@@ -225,7 +230,8 @@ section.basta {
             align-items: center;
             justify-content: center;
             color: white;
-            width: 50%;
+            width: 100%;
+            max-width: 600px;
 
             h2 {
                 text-align: center;
@@ -245,84 +251,216 @@ section.basta {
 }
 
 section.como_funciona {
-    background-color: white;
+    background-color: #FAFAFA;
 
     .contenedor {
         display: flex;
+        padding-top: 4em;
         flex-direction: column;
         margin: auto;
         width: 100%;
+        padding-bottom: 4em;
 
-        .blockchain {
+
+        .comida {
             padding: 1em;
             width: 48%;
             align-self: flex-start;
-            background-color: chocolate;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            border-radius: 20px;
+
+            .izq {
+                width: 30%;
+                margin-left: 10%;
+
+                img {
+                    width: 100%;
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    max-width: 81px;
+                }
+            }
+
+            .der {
+
+                text-align: center;
+                margin-right: 10%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+            }
+
+            p {
+                margin: 3%;
+                margin-left: 2em;
+                font-size: 100%;
+            }
+        }
+
+        .blockchain {
+            margin-left: 1em;
         }
 
         .nuestro {
             padding: 1em;
             width: 48%;
+            margin-right: 1em;
             align-self: flex-end;
-            background-color: chocolate;
         }
 
         .mundo {
+            margin-left: 1em;
             padding: 1em;
             width: 48%;
             align-self: flex-start;
-            background-color: chocolate;
         }
 
         .el_centro {
             padding: 1em;
+            margin-right: 1em;
             width: 48%;
             align-self: flex-end;
-            background-color: chocolate;
         }
     }
 
     .tecnologia {
+        margin-left: 1em;
         padding: 1em;
         width: 48%;
         align-self: flex-start;
-        background-color: chocolate;
+    }
+}
+
+.curva2 {
+    background-color: #4C919F;
+
+    img {
+        width: 100%;
+        transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        margin-top: -0.1em;
     }
 }
 
 section.denuncia {
-    background-color: blueviolet;
+    color: white;
+    margin-top: -0.3em;
+    background-color: #4C919F;
 
     .contenedor {
-        flex-flow: column;
         width: 100%;
+        color: white;
+        padding: 1em;
 
         .titulo {
             width: 100%;
             text-align: center;
-            background-color: yellow;
+            background-color: #4C919F;
+            font-size: 1.2em;
+            padding-top: 4em;
         }
 
         .padre {
-
             display: flex;
 
-            .texto_denuncia {
 
-                width: 50%;
-                height: 50%;
-                align-self: flex-start;
-                background-color: beige;
+            .texto_denuncia {
+                width: 100%;
+                max-width: 600px;
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                background-color: #4C919F;
+                text-align: center;
+                margin-top: -1.5em;
+
+                h1 {
+                    font-size: 1.7em;
+                }
+
+                p {
+                    margin-top: 1em;
+                    text-align: justify;
+                }
             }
 
             .imagen_ladron2 {
-                width: 50%;
-                height: 50%;
-                align-self: flex-end;
-                background-color: aqua;
+                width: 100%;
+                max-width: 600px;
+
+                img {
+                    width: 100%;
+                }
             }
         }
     }
+}
+
+section.contacto {
+    width: 100%;
+    text-align: center;
+    background-color: #FFFFF4;
+
+    .titulo {
+        padding: 2em 0em 0em;
+        font-size: 1.25em;
+        width: 100%;
+    }
+
+    .imagen {
+        z-index: 8;
+        margin: auto;
+        width: 100%;
+        max-width: 300px;
+        margin-top: 1em;
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+
+    form {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+
+        input,
+        textarea {
+            align-self: center;
+            width: 90%;
+            max-width: 350px;
+            margin: 1.5em;
+            padding: 0.5em;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.562);
+        }
+
+    }
+
+    button {
+        width: 80%;
+        max-width: 200px;
+        font-size: 1em;
+        padding: .5em;
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.699);
+        margin-bottom: 10em;
+        margin-top: 1em;
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2em;
+    font-size: 0.5em;
 }
 
 @media screen and (max-width: 987px) {
@@ -338,7 +476,7 @@ section.denuncia {
         margin-top: 2.5em;
 
     }
-    
+
     section.imagen_grande {
         header.responsive {
             .barra {
@@ -362,3 +500,66 @@ section.denuncia {
     }
 }
 
+
+@media screen and (max-width: 955px) {
+    section.como_funciona {
+        .contenedor {
+            .comida {
+                width: 90%;
+                margin: 10px;
+                align-self: center;
+
+                .izq,
+                .der {
+                    img {}
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 472px) {
+    section.como_funciona {
+        .contenedor {
+
+            .comida {
+                flex-direction: column;
+
+                .izq {
+                    width: 40%;
+                }
+
+                .izq,
+                .der {
+                    text-align: center;
+
+                    img {
+                        width: 100%;
+                        -webkit-transform: initial;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    section.denuncia {
+        .contenedor {
+
+            .padre {
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .texto_denuncia {
+                    margin-top: 2.5em;
+                }
+
+            }
+        }
+    }
+}
+    
+    //background-image: image_url('ladron.png');

@@ -1,6 +1,5 @@
 <header class="encabezado">
     <div class="logo">
-        <img src="assets/imgs/logotemp.png" alt="">
         <%= image_tag("logotemp.png", :alt => "rss feed") %>
     </div>
     <div class="texto">
@@ -12,6 +11,7 @@
         </ul>
     </div>
 </header>
+
 
 <section class="imagen_grande">
     <header class="responsive">
@@ -46,16 +46,16 @@
 <section class="basta">
     <div class="contenedor">
         <div class="imagen_ladron">
-   
             <%= image_tag("ladron.gif", :alt => "rss feed") %>
         </div>
         <div class="texto_basta">
             <h2>¡BASTA!</h2>
             <br>
-            <p>lLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet aliquet neque. Maecenas
-                eget finibus nunc. Donec arcu quam, euismod ac tempor ut, tempus vel nis Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit. Phasellus sit amet aliquet neque. Maecenas eget finibus nunc.
-                Donec arcu quam, euismod ac tempor ut, tempus vel nis </p>
+                <p>lLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet aliquet neque. Maecenas
+                    eget finibus nunc. Donec arcu quam, euismod ac tempor ut, tempus vel nis Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Phasellus sit amet aliquet neque. Maecenas eget finibus nunc.
+                    Donec arcu quam, euismod ac tempor ut, tempus vel nis </p>
+        
         </div>
     </div>
 </section>
@@ -64,58 +64,100 @@
 </div>
 <section class="como_funciona">
     <div class="contenedor">
-        <div class="blockchain">
-            <p>texto de blockchain</p>
+        <div class="blockchain comida">
+            <div class="izq">
+                <%= image_tag("block.png", :alt => "rss feed") %>
+            </div>
+            <div class="der">
+                <p class="titulo">BLOCKCHAIN</p>
+                <p>No permitiremos abusos, mediante la red de blockchain tendremos un soporte de seguridad para evitar
+                    fraude.</p>
+            </div>
         </div>
-        <div class="nuestro">
-            <p>texto de nuestro sistema piensa</p>
+        <div class="nuestro comida">
+            <div class="izq">
+                <%= image_tag("watson.png", :alt => "rss feed") %>
+            </div>
+            <div class="der">
+                <p class="titulo">NUESTRO SISTEMA PIENSA</p>
+                <p>Mediante IBM Watson podremos analizar imágenes, texto, tonos de voz e incluso tener un asistente</p>
+            </div>
         </div>
-        <div class="mundo">
-            <p>texto de un mundo mas rapido</p>
+        <div class="mundo comida">
+            <div class="izq">
+                <%= image_tag("blockchain.png", :alt => "rss feed") %>
+            </div>
+            <div class="der">
+                <p class="titulo">UN MUNDO MÁS RÁPIDO</p>
+                <p>Al realizar todo online las autoridades podrán evaluar las denuncias sin tener que ir a una estación</p>
+            </div>
         </div>
-        <div class="el_centro">
-            <p>texto de tu, el centro</p>
+        <div class="el_centro comida">
+            <div class="izq">
+                <%= image_tag("users.png", :alt => "rss feed") %>
+            </div>
+            <div class="der">
+                <p class="titulo">TÚ ERES EL CENTRO</p>
+                <p>Queremos hacerte sentir seguro. Reporta y podremos luchar juntos contra la inseguridad.</p>
+            </div>
         </div>
-        <div class="tecnologia">
-            <p>texto de tecnologia</p>
+        <div class=" comida">
+            <div class="izq">
+                <%= image_tag("idea.png", :alt => "rss feed") %>
+            </div>
+            <div class="der">
+                <p class="titulo">TECNOLOGÍA</p>
+                <p>Trayendo a tus manos todas las tecnologías már recientes, estamos a la vanguardia para protegerte.
+                </p>
+            </div>
         </div>
     </div>
 </section>
+<div class="curva2">
+    <%= image_tag("curva.svg", :alt => "rss feed") %>
+</div>
 <section class="denuncia">
     <div class="contenedor">
         <div class="titulo">
-            <h1>titulo</h1>
+            <h1>DENUNCIA SIN MIEDO <br>LIBRES DE CORRUPCIÓN</h1>
         </div>
         <div class="padre">
 
             <div class="texto_denuncia">
-                <h1>sin esperas</h1>
+                <h1>SIN ESPERAS</h1>
+                <p>lLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet aliquet neque. Maecenas
+                    eget finibus nunc. Donec arcu quam, euismod ac tempor ut, tempus vel nis Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Phasellus sit amet aliquet neque. Maecenas eget finibus nunc.
+                    Donec arcu quam, euismod ac tempor ut, tempus vel nis </p>
             </div>
             <div class="imagen_ladron2">
-                <h1>imagen.gif</h1>
+                <%= image_tag("gangster.gif", :alt => "rss feed") %>
             </div>
         </div>
     </div>
 </section>
-
 <section class="contacto">
+    <div class="titulo">
+        <h1>CONTÁCTANOS</h1>
+    </div>
     <div class="imagen">
-
+        <%= image_tag("cop.gif", :alt => "rss feed") %>
     </div>
     <form action="">
         <label for="">INGRESE SU NOMBRE</label>
-        <input type="text" name="" id="">
+        <input type="text" name="" id="" placeholder="Nombre">
         <label for="">INGRESE SU CORREO</label>
-        <input type="text" name="" id="">
-        <label for="">INGGRESE SU MENSAJE</label>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="text" name="" id="" placeholder="Correo">
+        <label for="">INGRESE SU MENSAJE</label>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
     </form>
+    <button>ENVIAR</button>
 </section>
 <footer>
     <!-- Si hacen algo se añaden-->
     <p>
         TODOS LOS DERECHOS RESERVADOS <br>
-        DISEÑADO POR ANDRÉS LARGO  <br>
-        MAQUETADO POR ANDRÉS LARGO Y MIGUEL ORJUELA
+        DISEÑADO POR ANDRÉS LARGO <br>
+        MAQUETADO POR ANDRÉS LARGO, ERIKA INFANTE & MIGUEL ORJUELA
     </p>
 </footer>
