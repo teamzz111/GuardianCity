@@ -252,7 +252,7 @@ section.basta {
 
 section.como_funciona {
     background-color: #FAFAFA;
-
+    margin-top: -0.3em;
     .contenedor {
         display: flex;
         padding-top: 4em;
@@ -260,7 +260,12 @@ section.como_funciona {
         margin: auto;
         width: 100%;
         padding-bottom: 4em;
-
+        h1{
+            font-size: 2em;
+            text-align: center;
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
 
         .comida {
             padding: 1em;

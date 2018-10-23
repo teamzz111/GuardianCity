@@ -273,6 +273,7 @@ section.basta .contenedor .texto_basta p {
 
 section.como_funciona {
   background-color: #FAFAFA;
+  margin-top: -0.3em;
 }
 
 section.como_funciona .contenedor {
@@ -287,6 +288,13 @@ section.como_funciona .contenedor {
   margin: auto;
   width: 100%;
   padding-bottom: 4em;
+}
+
+section.como_funciona .contenedor h1 {
+  font-size: 2em;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 section.como_funciona .contenedor .comida {
