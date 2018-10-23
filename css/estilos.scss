@@ -141,7 +141,7 @@ section.imagen_grande {
     padding-bottom: 7em;
 
     .contenedor {
-        margin-top: 18em;
+        margin-top: 8em;
         width: 100%;
         padding: 1%;
         display: flex;
@@ -245,8 +245,8 @@ section.basta {
 }
 
 section.como_funciona {
-    background-color: white;
-    background-color: rgba(255, 255, 255, 0.589);
+    background-color: #FAFAFA;
+
     .contenedor {
         display: flex;
         padding-top: 4em;
@@ -254,7 +254,7 @@ section.como_funciona {
         margin: auto;
         width: 100%;
         padding-bottom: 4em;
-        
+
 
         .comida {
             padding: 1em;
@@ -263,23 +263,25 @@ section.como_funciona {
             background-color: rgb(255, 255, 255);
             display: flex;
             border-radius: 20px;
+
             .izq {
                 width: 30%;
                 margin-left: 10%;
+
                 img {
                     width: 100%;
                     position: relative;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    max-width:81px;
+                    max-width: 81px;
                 }
             }
-            .der
-            {
+
+            .der {
 
                 text-align: center;
-                margin-right:10%;
+                margin-right: 10%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -292,8 +294,8 @@ section.como_funciona {
                 font-size: 100%;
             }
         }
-        .blockchain
-        {
+
+        .blockchain {
             margin-left: 1em;
         }
 
@@ -326,14 +328,14 @@ section.como_funciona {
         align-self: flex-start;
     }
 }
+
 .curva2 {
     background-color: #4C919F;
+
     img {
         width: 100%;
-        -webkit-transform: rotate(180deg);
-	    -moz-transform: rotate(180deg);
-	    rotation: 180deg;
-        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+        transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
         margin-top: -0.1em;
     }
 }
@@ -345,7 +347,6 @@ section.denuncia {
     background-color: #4C919F;
 
     .contenedor {
-        flex-flow: column;
         width: 100%;
         color: white;
 
@@ -353,35 +354,34 @@ section.denuncia {
             width: 100%;
             text-align: center;
             background-color: #4C919F;
-            padding: 2em;
-            font-size: 2.4em;
+            font-size: 1.2em;
+            padding-top: 4em;
         }
 
         .padre {
-
             display: flex;
-
+            flex-wrap: wrap;
             .texto_denuncia {
-
-                width: 50%;
-                height: 50%;
-                align-self: flex-start;
-                background-color:#4C919F;
+                width: 100%;
+                max-width: 600px;
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                background-color: #4C919F;
                 text-align: center;
-                h1{
-                    font-size: 2.5em;
+                margin-top: -1.5em;
+                h1 {
+                    font-size: 1.7em;
                 }
                 p{
-                    padding: 2em;
+                    margin-top: 1em;
                 }
             }
 
             .imagen_ladron2 {
-                width: 50%;
-                height: 50%;
-                margin-top: -4em;
-                
-                img{
+                width: 100%;
+                max-width: 600px;
+                img {
                     width: 100%;
                 }
             }
@@ -389,12 +389,12 @@ section.denuncia {
     }
 }
 
-section.contacto{
+section.contacto {
     width: 100%;
     text-align: center;
     background-color: #FFFFF4;
 
-    .titulo{
+    .titulo {
         padding: 2em 0em 0em;
         font-size: 1.7em;
     }
@@ -403,16 +403,17 @@ section.contacto{
         margin: auto;
         margin-top: -9em;
     }
-    
-    .imagen img{
+
+    .imagen img {
         transform: scale(.5);
     }
 
-    form{
+    form {
         margin-top: -9em;
         display: flex;
         flex-direction: column;
-        input{
+
+        input {
             align-self: center;
             width: 25%;
             margin: 1.5em;
@@ -420,7 +421,8 @@ section.contacto{
             border-radius: 5px;
             border: 1px solid rgba(0, 0, 0, 0.562);
         }
-        textarea{
+
+        textarea {
             align-self: center;
             width: 25%;
             margin: 1.5em;
@@ -431,22 +433,23 @@ section.contacto{
         }
     }
 
-    button{
+    button {
         width: 10%;
         font-size: 1em;
         padding: .5em;
-        background-color:white;
+        background-color: white;
         border: 1px solid rgba(0, 0, 0, 0.699);
         margin-bottom: 10em;
-        margin-top: 1em;    
+        margin-top: 1em;
     }
 }
 
-footer{
+footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 2em;
+    font-size: 0.5em;
 }
 
 @media screen and (max-width: 987px) {
@@ -494,28 +497,32 @@ footer{
                 width: 90%;
                 margin: 10px;
                 align-self: center;
-                .izq, .der {
-                    img {
-                    }
+
+                .izq,
+                .der {
+                    img {}
                 }
             }
         }
-    
+
     }
 }
+
 @media screen and (max-width: 472px) {
     section.como_funciona {
         .contenedor {
-            
+
             .comida {
                 flex-direction: column;
-                .izq
-                {
+
+                .izq {
                     width: 40%;
                 }
-                .izq, .der {
+
+                .izq,
+                .der {
                     text-align: center;
-                    
+
                     img {
                         width: 100%;
                         -webkit-transform: initial;
@@ -523,6 +530,6 @@ footer{
                 }
             }
         }
-    
+
     }
 }

@@ -156,7 +156,7 @@ section.imagen_grande {
 }
 
 section.imagen_grande .contenedor {
-  margin-top: 18em;
+  margin-top: 8em;
   width: 100%;
   padding: 1%;
   display: -webkit-box;
@@ -271,8 +271,7 @@ section.basta .contenedor .texto_basta p {
 }
 
 section.como_funciona {
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.589);
+  background-color: #FAFAFA;
 }
 
 section.como_funciona .contenedor {
@@ -382,9 +381,8 @@ section.como_funciona .tecnologia {
 .curva2 img {
   width: 100%;
   -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   -moz-transform: rotate(180deg);
-  rotation: 180deg;
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
   margin-top: -0.1em;
 }
 
@@ -396,10 +394,6 @@ section.denuncia {
 }
 
 section.denuncia .contenedor {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
   width: 100%;
   color: white;
 }
@@ -408,37 +402,46 @@ section.denuncia .contenedor .titulo {
   width: 100%;
   text-align: center;
   background-color: #4C919F;
-  padding: 2em;
-  font-size: 2.4em;
+  font-size: 1.2em;
+  padding-top: 4em;
 }
 
 section.denuncia .contenedor .padre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 section.denuncia .contenedor .padre .texto_denuncia {
-  width: 50%;
-  height: 50%;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  width: 100%;
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
   background-color: #4C919F;
   text-align: center;
+  margin-top: -1.5em;
 }
 
 section.denuncia .contenedor .padre .texto_denuncia h1 {
-  font-size: 2.5em;
+  font-size: 1.7em;
 }
 
 section.denuncia .contenedor .padre .texto_denuncia p {
-  padding: 2em;
+  margin-top: 1em;
 }
 
 section.denuncia .contenedor .padre .imagen_ladron2 {
-  width: 50%;
-  height: 50%;
-  margin-top: -4em;
+  width: 100%;
+  max-width: 600px;
 }
 
 section.denuncia .contenedor .padre .imagen_ladron2 img {
@@ -515,6 +518,7 @@ footer {
   color: white;
   text-align: center;
   padding: 2em;
+  font-size: 0.5em;
 }
 
 @media screen and (max-width: 987px) {
@@ -562,10 +566,12 @@ footer {
   section.como_funciona .contenedor .comida .izq {
     width: 40%;
   }
-  section.como_funciona .contenedor .comida .izq, section.como_funciona .contenedor .comida .der {
+  section.como_funciona .contenedor .comida .izq,
+  section.como_funciona .contenedor .comida .der {
     text-align: center;
   }
-  section.como_funciona .contenedor .comida .izq img, section.como_funciona .contenedor .comida .der img {
+  section.como_funciona .contenedor .comida .izq img,
+  section.como_funciona .contenedor .comida .der img {
     width: 100%;
     -webkit-transform: initial;
   }
