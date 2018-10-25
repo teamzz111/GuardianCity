@@ -1,13 +1,13 @@
-<header class="encabezado">
+<header class="encabezado hdmenu">
     <div class="logo">
         <%= image_tag("logotemp.png", :alt => "rss feed") %>
     </div>
     <div class="texto">
         <ul>
-            <li>INICIO</li>
-            <li>¿COMO FUNCIONA?</li>
-            <li>CONTÁCTANOS</li>
-            <li style="padding-left: 1em; padding-right: 1em; border: 1px solid rgb(0, 102, 255);">REPORTE</li>
+            <li><a class="nav-link js-scroll-trigger clbm" href="#inicio">INICIO</a></li>
+            <li><a class="nav-link js-scroll-trigger clbm" href="#funcionamiento">¿COMO FUNCIONA?</a></li>
+            <li><a class="nav-link js-scroll-trigger clbm" href="#contacto">CONT&Aacute;CTANOS</a></li>
+            <li class="boton_rep"><a class="nav-link js-scroll-trigger clbm" href="#">REPORTE</a></li>
         </ul>
     </div>
 </header>
@@ -51,11 +51,11 @@
         <div class="texto_basta">
             <h2>¡BASTA!</h2>
             <br>
-                <p>lLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet aliquet neque. Maecenas
-                    eget finibus nunc. Donec arcu quam, euismod ac tempor ut, tempus vel nis Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit. Phasellus sit amet aliquet neque. Maecenas eget finibus nunc.
-                    Donec arcu quam, euismod ac tempor ut, tempus vel nis </p>
-        
+            <p>lLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet aliquet neque. Maecenas
+                eget finibus nunc. Donec arcu quam, euismod ac tempor ut, tempus vel nis Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Phasellus sit amet aliquet neque. Maecenas eget finibus nunc.
+                Donec arcu quam, euismod ac tempor ut, tempus vel nis </p>
+
         </div>
     </div>
 </section>
@@ -136,9 +136,9 @@
         </div>
     </div>
 </section>
-<section class="contacto">
+<section class="contacto" id="contacto">
     <div class="titulo">
-        <h1>CONTÁCTANOS</h1>
+        <h1 id="funcionamiento">CONTÁCTANOS</h1>
     </div>
     <div class="imagen">
         <%= image_tag("cop.gif", :alt => "rss feed") %>
@@ -158,6 +158,8 @@
     <p>
         TODOS LOS DERECHOS RESERVADOS <br>
         DISEÑADO POR ANDRÉS LARGO <br>
-        MAQUETADO POR ANDRÉS LARGO, ERIKA INFANTE & MIGUEL ORJUELA
+        MAQUETADO POR ANDRÉS LARGO, ERIKA INFANTE, YULIAN
+        CARDENAS & MIGUEL ORJUELA
     </p>
+
 </footer>

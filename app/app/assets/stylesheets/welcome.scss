@@ -454,11 +454,27 @@ section.contacto {
         margin-top: 1em;
     }
 }
+.boton_rep {
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 1px solid rgb(0, 102, 255);
+}
 
+.clbm {
+    text-decoration: none;
+    color: black;
+}
+
+.hdmenu {
+    position: fixed;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
 footer {
     background-color: black;
     color: white;
-    text-align: center;
+    text-align: center;     
     padding: 2em;
     font-size: 0.5em;
 }
