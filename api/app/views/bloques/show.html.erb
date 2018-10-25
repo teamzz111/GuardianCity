@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @bloque.id %>
+</p>
+
+<p>
+  <strong>Bloque:</strong>
+  <%= @bloque.bloque %>
+</p>
+
+<p>
+  <strong>Hora:</strong>
+  <%= @bloque.hora %>
+</p>
+
+<p>
+  <strong>Guid:</strong>
+  <%= @bloque.guid %>
+</p>
+
+<%= link_to 'Edit', edit_bloque_path(@bloque) %> |
+<%= link_to 'Back', bloques_path %>
