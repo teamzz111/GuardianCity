@@ -1,5 +1,6 @@
 <p align="center">
-  <img width="200" height="100" src="https://i.imgur.com/tqlJ7Mg.png">
+  <img width="200" height="200" src="https://andreslargo.com/resources/logotemp.png">
+  <p align = "center"><strong>#LibresDeCorrupción</strong></p>
 </p>
 
 
@@ -24,24 +25,27 @@ Seguridad Ciudadana
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento para tu máquina local con el 
 propósito de desarollo y pruebas.
 
-## Pre-requisitos
-Para iniciar con el desarollo del proyecto inicialmente se necesita 
-```
-1. Servidor de Ruby
-2. Servidor local postgresql
-3. Editor de texto
-```
-## Instalación 
-```
-1. cd al_directorio_del_proyecto
-2. En consola npm install
-3. Instalamos angular mediante npm install -g @angular/cli
-4. cd directorio_gui
-5. En consola ng build --watch para ver desde el servidor local.
-```
-Una vez realizado podremos visualizar el framework compilado así:
+# Descripción del prototipo
 
-![](http://andreslargo.com/sgc/img/asd.png)
+En el prototipo se incluye la página de inicio en donde se le da al usuario una breve descripción de lo que le ofrecerá el sistema, también cuenta con el diseño de la app en donde podrá hacer uso de dichos servicios, en ella se muestra la pantalla por donde podrá realizar denuncias, ver las denuncias recientes, su estado, registrarse e iniciar sesión.
+
+## Servicios del prototipo
+El aplicativo contará con los siguientes módulos:
+```
+1. Denuncias
+2. Zonas
+3. Encuestas
+```
+## Módulo denuncias
+En este módulo los usuarios podrán registrar denuncias, las cuales estarán disponibles para ser visualizadas por la policía, éstas denuncias serán almacenadas por medio de blockchain, ya que de este modo no podrán ser modificadas, a excepción de su estado, así se asegura la transparencia del sistema.
+Los usuarios podrán adjuntar imágenes de lo sucedido si cuentan con ellas, de este modo podrán contribuir al sistema a mejorar su precisión para generar informes sobre las zonas inseguras.
+
+# Módulo de zonas
+El propósito de este módulo es generar informes en los que se muestren las zonas más inseguras de la localidad, lo cual resultará útil para realizar planes de acción sobre ellas y para tomar precauciones en cuanto a usuarios. Será alimentado manualmente o automáticamente por medio de reconocimiento de las imágenes que los usuarios proporcionen en sus denuncias.
+
+# Módulo de encuestas
+Permitirá a los administradores crear encuestas que serán respondidas por las víctimas de las zonas identificadas y posteriormente generar informes sobre sus resultados.
+
 
 
 # Construido con 
@@ -49,23 +53,25 @@ Una vez realizado podremos visualizar el framework compilado así:
 Para la parte visual se usarán las tecnologías más recientes, HTML para maquetar el sitio, CSS para darle estilos, Javascript para hacerlo dinámico y finalmente AngularJS para el aplicativo WEB.
 
 <div style="display: flex">
-  <img width = "100px" src ="https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png" />
-  <img width = "100px" src ="https://vignette.wikia.nocookie.net/howtoprogram/images/a/a9/CSS3.png/revision/latest?cb=20130422012035" />
-  <img width = "100px" src ="http://2.bp.blogspot.com/-ybjEsh1Icu0/VqRBzF2lEGI/AAAAAAAAD7k/b0HnKNNbaNc/s640/javascript-logo.png" />
+  <img width = "100px" src ="https://andreslargo.com/resources/Imagen3.png" />
+  <img width = "100px" src ="https://andreslargo.com/resources/Imagen2.png" />
+  <img width = "100px" src ="https://andreslargo.com/resources/Imagen1.png" />
   <img width = "100px" src ="https://www.keencode.io/wp-content/uploads/2017/04/angular.png" />
 </div>
 
 ## Lado del servidor (BACK-END)
-Para la parte del servidor se usará la versión más reciente de PHP que es la 7, MySQL - MariaDB para el guardado de datos y finalmenete 
-<div>
-  <img width = "200px" src ="https://miro.medium.com/max/440/1*-oIlwIWlt0BDN4b5a9rRCQ.jpeg" />
+Mediante la creación de una API en Ruby On Rails permitiremos el acceso desde cualquier front-end a el consumo de datos.
+<div style = "display: flex; align-self: center">
+    <img width = "100px" src ="https://andreslargo.com/resources/ruby.png" />
+  <img width = "100px" src ="https://andreslargo.com/resources/rails.png" />
+  <img width = "100px" src ="https://andreslargo.com/resources/Imagen4.png" />
 </div>
 
 # Autores
 
-**Andrés Largo - Estudiante de Ingeniería en Sistemas enfocado en el desarrollo de frontend y backend**
+**<a title="Andrés Largo" href="https://andreslargo.com"><strong>Andrés Largo</strong></a> - Estudiante de Ingeniería en Sistemas, desarrollador junior fullstack**
 
-**Erika Infante - Estudiante de Ingeniería de Sistemas enfocada en desarrollo backend**
+**<a title="Andrés Largo" href="https://github.com/MonoAncestral"><strong>Erika Infante</strong></a> - Estudiante de Ingeniería de Sistemas enfocada en desarrollo backend**
 
 **Miguel Orjuela - Estudiante de Ingeniería de Sistemas**
 
