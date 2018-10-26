@@ -56,7 +56,7 @@ Para la parte visual se usarán las tecnologías más recientes, HTML para maque
   <img width = "100px" src ="https://andreslargo.com/resources/Imagen3.png" />
   <img width = "100px" src ="https://andreslargo.com/resources/Imagen2.png" />
   <img width = "100px" src ="https://andreslargo.com/resources/Imagen1.png" />
-  <img width = "100px" src ="https://www.keencode.io/wp-content/uploads/2017/04/angular.png" />
+  <img width = "100px" src ="https://andreslargo.com/resources/ionic.png" />
 </div>
 
 ## Lado del servidor (BACK-END)
