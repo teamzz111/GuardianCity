@@ -139,18 +139,24 @@ header.encabezado {
 }
 
 header.encabezado .logo {
+  width: 11%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 100px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   background-color: white;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 1em;
 }
 
 header.encabezado .logo img {
   width: 100%;
+  max-width: 50px;
+  max-height: 50px;
 }
 
 header.encabezado .texto {
@@ -208,7 +214,7 @@ section.imagen_grande .contenedor .informacion {
 }
 
 section.imagen_grande .contenedor .informacion p {
-  font-size: 1.5em;
+  font-size: 2em;
   color: white;
   line-height: 1.5em;
 }
@@ -629,6 +635,7 @@ footer {
   section.como_funciona .contenedor .comida .der img {
     width: 100%;
     -webkit-transform: initial;
+            transform: initial;
   }
 }
 
