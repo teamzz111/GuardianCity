@@ -29,14 +29,14 @@ propósito de desarollo y pruebas.
 
 En el prototipo se incluye la página de inicio en donde se le da al usuario una breve descripción de lo que le ofrecerá el sistema, también cuenta con el diseño de la app en donde podrá hacer uso de dichos servicios, en ella se muestra la pantalla por donde podrá realizar denuncias, ver las denuncias recientes, su estado, registrarse e iniciar sesión.
 
-## Servicios del prototipo
+# Servicios del prototipo
 El aplicativo contará con los siguientes módulos:
 ```
 1. Denuncias
 2. Zonas
 3. Encuestas
 ```
-## Módulo denuncias
+# Módulo denuncias
 En este módulo los usuarios podrán registrar denuncias, las cuales estarán disponibles para ser visualizadas por la policía, éstas denuncias serán almacenadas por medio de blockchain, ya que de este modo no podrán ser modificadas, a excepción de su estado, así se asegura la transparencia del sistema.
 Los usuarios podrán adjuntar imágenes de lo sucedido si cuentan con ellas, de este modo podrán contribuir al sistema a mejorar su precisión para generar informes sobre las zonas inseguras.
 
