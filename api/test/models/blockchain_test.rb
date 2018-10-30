@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class BloqueTest < ActiveSupport::TestCase
+class BlockchainTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

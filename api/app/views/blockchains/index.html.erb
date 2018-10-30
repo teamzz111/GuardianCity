@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Blockchains</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @blockchains.each do |blockchain| %>
+      <tr>
+        <td><%= blockchain.name %></td>
+        <td><%= blockchain.email %></td>
+        <td><%= link_to 'Show', blockchain %></td>
+        <td><%= link_to 'Edit', edit_blockchain_path(blockchain) %></td>
+        <td><%= link_to 'Destroy', blockchain, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Blockchain', new_blockchain_path %>

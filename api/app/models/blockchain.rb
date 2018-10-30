@@ -1,0 +1,2 @@
+class Blockchain < ApplicationRecord
+end
