@@ -1,15 +1,20 @@
 {
+  "APP_TITLE": "GuardianCity",
+  "APP_REGISTERED": "¿Estás registrado?",
   "NAME": "Nombre",
   "PASSWORD": "Contraseña",
   "EMAIL": "Email",
   "LOGIN": "Iniciar sesión",
-  "SIGNUP": "Registrarse",
+  "SIGNUP": "Registrarme",
 
   "TAB1_TITLE": "Items",
   "TAB2_TITLE": "Buscar",
   "TAB3_TITLE": "Ajustes",
 
   "MAP_TITLE": "Mapa",
+
+  "TUTORIAL_SLIDE0_TITLE": "Te damos la bienvenida",
+  "TUTORIAL_SLIDE0_DESCRIPTION": "#LibresDeCorrupción",
 
   "TUTORIAL_SLIDE1_TITLE": "Bienvenido/a al Ionic Super Starter",
   "TUTORIAL_SLIDE1_DESCRIPTION": "El <b>Ionic Super Starter</b> es un starter de Ionic completo con muchas páginas preconstruidas y mejores prácticas.",
@@ -19,6 +24,8 @@
 
   "TUTORIAL_SLIDE3_TITLE": "Empezando",
   "TUTORIAL_SLIDE3_DESCRIPTION": "¿Necesitas ayuda? Échale un vistazo al README del Super Starter para ver el tutorial completo.",
+  "TUTORIAL_SLIDE4_TITLE": "Empezando",
+  "TUTORIAL_SLIDE4_DESCRIPTION": "¿Necesitas ayuda? Échale un vistazo al README del Super Starter para ver el tutorial completo.",
 
   "SETTINGS_TITLE": "Ajustes",
   "SETTINGS_OPTION1": "Opción 1",
