@@ -475,9 +475,18 @@ section.denuncia {
 }
 
 section.contacto {
-    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 50%;
     text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 5em;
     background-color: #FFFFF4;
+    border-radius: 2em;
 
     .titulo {
         padding: 2em 0em 0em;
@@ -507,7 +516,7 @@ section.contacto {
         input,
         textarea {
             align-self: center;
-            width: 90%;
+            width: 100%;
             max-width: 350px;
             margin: 1.5em;
             padding: 0.5em;
@@ -524,8 +533,9 @@ section.contacto {
         padding: .5em;
         background-color: white;
         border: 1px solid rgba(0, 0, 0, 0.699);
-        margin-bottom: 10em;
+        margin-bottom: 5em;
         margin-top: 1em;
+        align-self: center;
     }
 }
 
