@@ -1,2 +1,69 @@
 page-login {
+  .grid {
+    color: white;
+  }
+
+  .fontawesome {
+    font-family: 'Fontawesome';
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  span {
+    font-size: 1rem;
+  }
+
+  form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+
+    .list-md {
+      margin-top: 4rem;
+    }
+
+    .input-cover {
+      font-size: 1rem;
+    }
+
+    .button-inner {
+      font-size: 1.5rem;
+
+    }
+
+    .button {
+      background: transparent;
+      box-shadow: none;
+      color: white;
+      border: 1px solid white;
+      border-color: white;
+      max-width: 200px;
+      margin: auto;
+      border-radius: 10px;
+    }
+  }
+
+  .toolbar-background {
+    background: transparent !important;
+  }
+
+  .scroll-content {
+    background-image: url('../assets/img/gradiente/gradiente.svg');
+    background-size: cover;
+    margin-top: 0 !important;
+  }
+
+
+  .header::after {
+    background-image: none;
+  }
+  .item{
+      background: none;
+      color: white;
+  }
 }

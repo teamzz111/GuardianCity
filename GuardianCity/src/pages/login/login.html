@@ -1,18 +1,35 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{ 'LOGIN_TITLE' | translate }}</ion-title>
-  </ion-navbar>
+      <ion-grid>
+          <ion-row>
+            <ion-col class = "fontawesome">
+                <i class="fas fa-bars"></i>
+            </ion-col>
+            <ion-col style = "text-align: center">
+              {{ 'APP_TITLE' | translate}} <br>
+              <span>   {{ 'TUTORIAL_SLIDE0_DESCRIPTION' | translate}}
+                
+              </span>
+            </ion-col>
+            <ion-col>
+            </ion-col>
+          </ion-row>
+
+          
+        </ion-grid>
+</ion-navbar>
 
 </ion-header>
 
 
-<ion-content>
+<ion-content class = "login">
   <form (submit)="doLogin()">
+    <h2>INICIA SESIÓN</h2>
     <ion-list>
 
       <ion-item>
-        <ion-label fixed>{{ 'EMAIL' | translate }}</ion-label>
+        <ion-labe l><i class="fas fa-user"></i></ion-label>
         <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
       </ion-item>
 

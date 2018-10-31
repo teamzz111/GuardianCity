@@ -56,7 +56,12 @@ export class TutorialPage {
       direction: 'forward'
     });
   }
-
+  loginApp(){
+    this.navCtrl.setRoot('LoginPage', {}, {
+      animate: true,
+      direction: 'forward'
+    });
+  }
   onSlideChangeStart(slider) {
     this.showSkip = !slider.isEnd();
   }

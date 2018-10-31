@@ -17,7 +17,7 @@
       <p style = "margin-top: -0.5rem; font-size: 1.8rem;">{{ 'TUTORIAL_SLIDE0_DESCRIPTION' | translate }}</p>
       <p class = "registrado"> {{ 'APP_REGISTERED' | translate }}</p>
       <img src="assets/img/iconos/information.png" class="slide-image" />
-      <button class = "button" ion-button>{{'LOGIN' | translate}}</button>
+      <button class = "button" ion-button (click)="loginApp()">{{'LOGIN' | translate}}</button>
       <button class = "button" ion-button> {{'SIGNUP' | translate}}</button>
     </ion-slide>
     <ion-slide>
