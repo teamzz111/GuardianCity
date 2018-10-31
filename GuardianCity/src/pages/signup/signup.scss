@@ -1,3 +1,18 @@
 page-signup {
-
+    .label {
+        color:white !important
+    }
+    .item {
+        background: transparent
+    }
+    .header {
+        background: transparent !important;
+        }
+    .content {
+        background-image: url(../assets/img/gradiente/gradiente.svg) !important;
+        background-size: cover
+    }
+    .toolbar-background {
+        background: transparent
+    }
 }

@@ -51,5 +51,12 @@
 
   "CARDS_TITLE": "Social",
 
-  "SEARCH_TITLE": "Buscar"
+  "SEARCH_TITLE": "Buscar",
+
+  "ID_CC": "Cedula",
+  "PASSWORD1": "Contraseña",
+  "PASSWORD2": "Repita la contraseña",
+  "F_NAME": "Nombres",
+  "L_NAME": "Apellidos",
+  "SIGNUP_GO": "A DENUNCIAR"
 }
