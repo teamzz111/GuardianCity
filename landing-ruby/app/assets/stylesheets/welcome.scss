@@ -5,7 +5,9 @@
     font-family: "Oswald";
     font-weight: 300;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .contenedor {
     // Contenedor padre de todo que siempre mantendrá máximo 1200 px 
     max-width: 1200px;
@@ -140,8 +142,8 @@ header.encabezado {
         justify-content: center;
         background-color: white;
         align-content: center;
-
-        padding: 1em;
+        margin-top: 0.3em;
+   
 
         img {
             width: 100%;
@@ -168,6 +170,13 @@ header.encabezado {
                 height: 60%;
                 padding: 0.5em;
                 font-weight: 300;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
             }
         }
 

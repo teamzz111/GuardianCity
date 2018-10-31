@@ -11,5 +11,4 @@ window.onload = function () {
             barra.setAttribute('class', 'barra')
         }
     };
-
 }
