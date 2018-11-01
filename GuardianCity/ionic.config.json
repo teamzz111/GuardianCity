@@ -1,7 +1,0 @@
-{
-  "name": "GuardianCity",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
-}
