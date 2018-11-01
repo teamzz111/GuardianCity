@@ -1,0 +1,105 @@
+page-login {
+  ion-item {
+    border-color: transparent;
+  }
+  .fas{
+    color: white;
+  }
+  .lock{
+    width: 10%;
+  }
+  ion-label {
+    max-width: 20px;
+    min-width: 20px;
+  }
+  .grid {
+    color: white;
+  }
+  .item-input{
+    color: white;
+  }
+  .fontawesome {
+    font-family: 'Fontawesome';
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  span {
+    font-size: 1rem;
+  }
+
+  form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+
+    .list-md {
+      margin-top: 4rem;
+    }
+
+    .input-cover {
+      font-size: 1rem;
+    }
+
+    .button-inner {
+      font-size: 1.5rem;
+
+    }
+
+    .button {
+      background: transparent;
+      box-shadow: none;
+      color: white;
+      border: 1px solid white;
+      border-color: white;
+      max-width: 200px;
+      margin: auto;
+      border-radius: 10px;
+      &:hover{
+        color: black;
+      }
+    }
+  }
+
+  .toolbar-background {
+    background: transparent !important;
+  }
+
+  .scroll-content {
+    background-image: url('../assets/img/gradiente/gradiente.svg');
+    background-size: cover;
+    margin-top: 0 !important;
+  }
+
+  .email {
+    border: 1px solid rgba(255, 255, 255, 0.685);
+    border-radius: 10px;
+    margin-top: 1rem;
+    .item-inner {
+      border-color: white;
+    }
+  }
+
+  .header::after {
+    background-image: none;
+  }
+
+  .item {
+    background: none;
+    color: white;
+
+  }
+
+  .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner,
+  .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+    border: none;
+    box-shadow: none;
+  }
+
+}
