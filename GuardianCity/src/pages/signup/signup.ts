@@ -18,7 +18,7 @@ export class SignupPage {
     name: 'Test Human',
     email: 'test@example.com',
     password: 'test'
-  };
+  };      
 
   // Our translated text strings
   private signupErrorString: string;
