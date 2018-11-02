@@ -2,7 +2,7 @@
     /*Estas configuraciones son por defecto para todos los elementos*/
     margin: 0;
     box-sizing: border-box;
-    font-family: "Oswald";
+
     font-weight: 300;
 }
 
@@ -10,6 +10,7 @@
     // Contenedor padre de todo que siempre mantendrá máximo 1200 px 
     max-width: 1200px;
     margin: auto;
+    font-family: "Oswald";
 }
 
 /*HEADER ZONE*/
@@ -26,7 +27,7 @@ header.responsive {
         font-size: 1.73em;
         font-family: 'Roboto';
         background: transparent;
-    
+
         display: none;
 
 
@@ -40,16 +41,20 @@ header.responsive {
         .izquierdo {
             width: 50%;
             text-align: left;
-            .oscuro{
+
+            .oscuro {
                 display: none;
             }
-            .claro{
+
+            .claro {
                 display: block;
             }
-            .oscuro, .claro{
-                img{
 
-                    max-width: 50px; 
+            .oscuro,
+            .claro {
+                img {
+
+                    max-width: 50px;
                 }
             }
         }
@@ -72,24 +77,28 @@ header.responsive {
             width: 50%;
             text-align: right;
             font-family: 'Awesome';
-            i{
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: center;
-                    height: 100%;
+
+            i {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                height: 100%;
             }
         }
 
         .izquierdo {
             width: 50%;
             text-align: left;
-            img{
+
+            img {
                 max-width: 50px;
             }
-            .claro{
+
+            .claro {
                 display: none;
             }
-            .oscuro{
+
+            .oscuro {
                 display: block;
             }
         }
@@ -119,27 +128,32 @@ header.responsive {
     }
 }
 
+header {
+    font-family: "Oswald";
+}
+
 header.encabezado {
     display: flex;
     background-color: white;
     width: 100%;
-    max-height: 9vh;
+    z-index: 10;
 
     .logo {
         width: 11%;
         height: 100%;
-            display: flex;
-            justify-content: center;
-            background-color: white;
-            align-content: center;
-            
-            padding: 1em;
-            img {
-                width: 100%;
-                max-width: 50px;
-                max-height: 50px;
-                
-            }
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        align-content: center;
+
+        padding: 1em;
+
+        img {
+            width: 100%;
+            max-width: 50px;
+            max-height: 50px;
+
+        }
     }
 
     .texto {
@@ -175,7 +189,7 @@ section.imagen_grande {
     background-repeat: no-repeat;
 
     padding-bottom: 7em;
-
+ 
     .contenedor {
         margin-top: 8em;
         width: 100%;
@@ -208,6 +222,7 @@ section.imagen_grande {
         .botones {
             width: 50%;
             text-align: right;
+          
 
             button {
                 margin: 1%;
@@ -219,7 +234,7 @@ section.imagen_grande {
                 border-radius: 10px;
                 border: 1.3px solid white;
                 transition: .4s linear;
-
+                font-family: "Oswald";
                 &:hover {
                     cursor: pointer;
                     background: white;
@@ -252,7 +267,7 @@ section.basta {
 
         .texto_basta {
             padding: 2.5%;
-    
+
             margin: auto;
             padding-bottom: 4em;
             display: flex;
@@ -284,6 +299,7 @@ section.basta {
 section.como_funciona {
     background-color: #FAFAFA;
     margin-top: -0.3em;
+
     .contenedor {
         display: flex;
         padding-top: 4em;
@@ -291,7 +307,8 @@ section.como_funciona {
         margin: auto;
         width: 100%;
         padding-bottom: 4em;
-        h1{
+
+        h1 {
             font-size: 2em;
             text-align: center;
             padding-top: 2em;
@@ -370,6 +387,7 @@ section.como_funciona {
         align-self: flex-start;
     }
 }
+
 .boton_rep {
     padding-left: 1em;
     padding-right: 1em;
@@ -383,10 +401,9 @@ section.como_funciona {
 
 .hdmenu {
     position: fixed;
-    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.2);
 }
+
 .curva2 {
     background-color: #4C919F;
 
@@ -395,6 +412,19 @@ section.como_funciona {
         transform: rotate(180deg);
         -moz-transform: rotate(180deg);
         margin-top: -0.1em;
+    }
+}
+
+.footer {
+
+    margin: 0;
+
+    img {
+        width: 100%;
+        margin-bottom: -0.5em;
+        height: 100%;
+        height: 200px;
+
     }
 }
 
@@ -407,6 +437,7 @@ section.denuncia {
         width: 100%;
         color: white;
         padding: 1em;
+
         .titulo {
             width: 100%;
             text-align: center;
@@ -417,7 +448,7 @@ section.denuncia {
 
         .padre {
             display: flex;
-    
+
 
             .texto_denuncia {
                 width: 100%;
@@ -455,6 +486,7 @@ section.contacto {
     width: 100%;
     text-align: center;
     background-color: #FFFFF4;
+    font-family: "Oswald";
 
     .titulo {
         padding: 2em 0em 0em;
@@ -468,7 +500,8 @@ section.contacto {
         width: 100%;
         max-width: 300px;
         margin-top: 1em;
-        img{
+
+        img {
             width: 100%;
         }
     }
@@ -506,11 +539,66 @@ section.contacto {
 }
 
 footer {
-    background-color: black;
+
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    padding: 1%;
+    margin-top: 1eM;
     color: white;
-    text-align: center;
-    padding: 2em;
-    font-size: 0.5em;
+    padding: 1em;
+    hr{
+        opacity: 0.5;
+        margin-top: 1em;
+    }
+    p{
+        margin-top: 1em;
+    }
+
+    .primera{
+        display: flex;
+    }
+    .contenedor {
+
+        font-family: "Open Sans" !important;
+        font-weight: 300;
+
+        .img {
+            text-align: center;
+
+            img {
+                width: 100%;
+                max-width: 80px;
+            }
+
+            p {
+                margin-top: 0.2em;
+                padding-bottom: 1.3em;
+
+            }
+        }
+
+        .menu {
+            margin-left: 1em;
+
+            ul {
+                li:not(:first-child) {
+
+      
+
+                }
+
+                li {
+                    margin-bottom: 0.5em;
+                    strong {
+                        font-weight: 700;
+                    }
+
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+
+
 }
 
 @media screen and (max-width: 987px) {
@@ -596,7 +684,8 @@ footer {
 
             .padre {
                 justify-content: center;
-                        flex-wrap: wrap;
+                flex-wrap: wrap;
+
                 .texto_denuncia {
                     margin-top: 2.5em;
                 }
