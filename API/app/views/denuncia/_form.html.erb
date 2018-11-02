@@ -1,0 +1,52 @@
+<%= form_with(model: denuncium, local: true) do |form| %>
+  <% if denuncium.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(denuncium.errors.count, "error") %> prohibited this denuncium from being saved:</h2>
+
+      <ul>
+      <% denuncium.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id %>
+    <%= form.number_field :id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :usuario_cedula %>
+    <%= form.number_field :usuario_cedula %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipo_denuncia %>
+    <%= form.number_field :tipo_denuncia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fecha %>
+    <%= form.date_select :fecha %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descripcion_asalto %>
+    <%= form.text_area :descripcion_asalto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :zona %>
+    <%= form.number_field :zona %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descripcion_asaltante %>
+    <%= form.text_area :descripcion_asaltante %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

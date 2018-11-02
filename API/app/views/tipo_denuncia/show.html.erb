@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @tipo_denuncium.id %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @tipo_denuncium.nombre %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @tipo_denuncium.descripcion %>
+</p>
+
+<%= link_to 'Edit', edit_tipo_denuncium_path(@tipo_denuncium) %> |
+<%= link_to 'Back', tipo_denuncia_path %>
