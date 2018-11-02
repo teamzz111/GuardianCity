@@ -1,38 +1,53 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{ 'SIGNUP_TITLE' | translate }}</ion-title>
-  </ion-navbar>
+      <ion-grid>
+          <ion-row>
+            <ion-col class = "fontawesome">
+                <i class="fas fa-bars"></i>
+            </ion-col>
+            <ion-col style = "text-align: center">
+              {{ 'APP_TITLE' | translate}} <br>
+              <span>   {{ 'TUTORIAL_SLIDE0_DESCRIPTION' | translate}}
+                
+              </span>
+            </ion-col>
+            <ion-col>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+</ion-navbar>
 
 </ion-header>
 
 
 <ion-content>
   <form (submit)="doSignup()">
+    <h2>INICIA SESIÓN</h2>
     <ion-list>
 
-      <ion-item>
-        <ion-label fixed>{{ 'ID_CC' | translate }}</ion-label>
+      <ion-item class = "list_item">
+        <ion-label><i class="fas fa-id-card"></i></ion-label>
         <ion-input type="text" [(ngModel)]="account.id_cc" name="id_cc"></ion-input>
       </ion-item>
 
-      <ion-item>
-        <ion-label fixed>{{ 'PASSWORD1' | translate }}</ion-label>
-        <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
+      <ion-item class = "list_item">
+        <ion-label><i class="fas fa-key"></i></ion-label>
+        <ion-input type="password" [(ngModel)]="account.password1" name="password1"></ion-input>
       </ion-item>
 
-      <ion-item>
-        <ion-label fixed>{{ 'PASSWORD2' | translate }}</ion-label>
+      <ion-item class = "list_item">
+        <ion-label><i class="fas fa-key"></i></ion-label>
         <ion-input type="password" [(ngModel)]="account.password2" name="password2"></ion-input>
       </ion-item>
 
-      <ion-item>
-        <ion-label fixed>{{ 'F_NAME' | translate }}</ion-label>
+      <ion-item class = "list_item">
+        <ion-label><i class="fas fa-user"></i></ion-label>
         <ion-input type="text" [(ngModel)]="account.f_name" name="f_name" aria-placeholder="test"></ion-input>
       </ion-item>
 
-      <ion-item>
-        <ion-label fixed>{{ 'L_NAME' | translate }}</ion-label>
+      <ion-item class = "list_item">
+        <ion-label><i class="fas fa-user"></i></ion-label>
         <ion-input type="text" [(ngModel)]="account.l_name" name="l_name"></ion-input>
       </ion-item>
 
@@ -43,3 +58,4 @@
     </ion-list>
   </form>
 </ion-content>
+

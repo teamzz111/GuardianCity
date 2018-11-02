@@ -1,0 +1,33 @@
+page-home {
+    color: white;
+    .fontawesome {
+        font-family: 'Fontawesome';
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        color: white;
+      }
+    .toolbar-background{
+        background: transparent;
+        border: none;
+    }
+    .header::after{
+        background: none;
+    }
+    .scroll-content{
+        margin-top: 0px;
+        text-align: center;
+
+    }
+    .content{
+        background: url(../assets/img/gradiente/gradiente.svg);
+        background-size: cover;
+    }
+    h2{
+        text-align: center;
+        color: white;
+    }
+    button{
+        padding: 1em 1.5em;
+   }
+}   

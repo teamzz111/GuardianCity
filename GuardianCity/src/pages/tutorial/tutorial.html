@@ -17,16 +17,9 @@
       <p style = "margin-top: -0.5rem; font-size: 1.8rem;">{{ 'TUTORIAL_SLIDE0_DESCRIPTION' | translate }}</p>
       <p class = "registrado"> {{ 'APP_REGISTERED' | translate }}</p>
       <img src="assets/img/iconos/information.png" class="slide-image" />
-      <button class = "button" ion-button>{{'LOGIN' | translate}}</button>
+      <button class = "button" ion-button (click)="loginApp()">{{'LOGIN' | translate}}</button>
       <button class = "button" ion-button> {{'SIGNUP' | translate}}</button>
     </ion-slide>
-    <ion-slide>
-      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image" />
-      <h2 class="slide-title">{{ 'TUTORIAL_SLIDE4_TITLE' | translate }}</h2>
-      <button ion-button icon-end large clear (click)="startApp()">
-        {{ 'TUTORIAL_CONTINUE_BUTTON' | translate }}
-        <ion-icon name="arrow-forward"></ion-icon>
-      </button>
-    </ion-slide>
+
   </ion-slides>
 </ion-content>
