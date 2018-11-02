@@ -10,11 +10,48 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_30_054114) do
+ActiveRecord::Schema.define(version: 2018_11_02_055741) do
 
-  create_table "blockchains", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "denuncia", force: :cascade do |t|
+    t.integer "id_denuncia"
+    t.integer "usuario_cedula"
+    t.integer "tipo_denuncia"
+    t.date "fecha"
+    t.text "descripcion_asalto"
+    t.integer "zona"
+    t.text "descripcion_asaltante"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tipo_denuncia", force: :cascade do |t|
+    t.integer "id_tipo_denuncia"
+    t.string "nombre"
+    t.string "descripcion"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "usuarios", force: :cascade do |t|
+    t.integer "cedula"
+    t.string "nombre"
+    t.string "apellido"
+    t.integer "telefono"
+    t.string "correo"
+    t.integer "cargo"
+    t.date "fecha_nacimiento"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "zonas", force: :cascade do |t|
+    t.integer "id_zona"
+    t.string "nombre"
+    t.string "direccion"
+    t.string "localidad"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -1,0 +1,2 @@
+module DenunciaHelper
+end
