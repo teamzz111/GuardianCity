@@ -25,6 +25,10 @@ body {
   z-index: 200;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 main {
   width: 100%;
   position: fixed;

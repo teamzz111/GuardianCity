@@ -1,7 +1,9 @@
 $color: white;
 $size: 14px;
 $time: 1;
-
+body{
+    overflow-x: hidden;
+}
 main {
     width: 100%;
     position: fixed;
