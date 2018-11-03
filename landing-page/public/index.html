@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css\estilos.css">
@@ -70,7 +71,9 @@
         </div>
     </header>
 
-    <section id="inicio" class="imagen_grande">
+    <section id="inicio" class="imagen_grande" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="700">
         <header class="responsive">
             <div class="barraFixed">
                 <div class="izquierdo">
@@ -107,7 +110,7 @@
             </div>
         </div>
     </section>
-    <section class="basta">
+    <section class="basta" data-aos="fade-down">
         <div class="contenedor">
             <div class="imagen_ladron">
                 <img src="assets/imgs/ladron.gif" alt="">
@@ -127,8 +130,8 @@
     </div>
     <section class="como_funciona">
         <div class="contenedor">
-            <h1 id="funcionamiento">¿CÓMO FUNCIONA?</h1>
-            <div class="blockchain comida">
+            <h1 id="funcionamiento" >¿CÓMO FUNCIONA?</h1>
+            <div class="blockchain comida" data-aos="fade-right">
                 <div class="izq"><img src="assets/imgs/block.png"></div>
                 <div class="der">
                     <p class="titulo">BLOCKCHAIN</p>
@@ -136,14 +139,14 @@
                         evitar fraude.</p>
                 </div>
             </div>
-            <div class="nuestro comida">
+            <div class="nuestro comida" data-aos="fade-left">
                 <div class="izq"><img src="assets/imgs/watson.png"></div>
                 <div class="der">
                     <p class="titulo">NUESTRO SISTEMA PIENSA</p>
                     <p>Mediante IBM Watson podremos analizar imágenes, texto, tonos de voz e incluso tener un asistente</p>
                 </div>
             </div>
-            <div class="mundo comida">
+            <div class="mundo comida" data-aos="fade-right">
                 <div class="izq"><img src="assets/imgs/blockchain.png"></div>
                 <div class="der">
                     <p class="titulo">UN MUNDO MÁS RÁPIDO</p>
@@ -151,14 +154,14 @@
                         estación</p>
                 </div>
             </div>
-            <div class="el_centro comida">
+            <div class="el_centro comida" data-aos="fade-left">
                 <div class="izq"><img src="assets/imgs/users.png"></div>
                 <div class="der">
                     <p class="titulo">TÚ ERES EL CENTRO</p>
                     <p>Queremos hacerte sentir seguro. Reporta y podremos luchar juntos contra la inseguridad.</p>
                 </div>
             </div>
-            <div class=" comida">
+            <div class=" comida" data-aos="fade-right">
                 <div class="izq"><img src="assets/imgs/idea.png"></div>
                 <div class="der">
                     <p class="titulo">TECNOLOGÍA</p>
@@ -168,30 +171,33 @@
             </div>
         </div>
     </section>
-    <div class="curva2">
-        <img src="assets/imgs/curva.svg" alt="">
-    </div>
-    <section class="denuncia">
-        <div class="contenedor">
-            <div class="titulo">
-                <h1>DENUNCIA SIN MIEDO <br>LIBRES DE CORRUPCIÓN</h1>
-            </div>
-            <div class="padre">
-                <div class="texto_denuncia">
-                    <h1>SIN ESPERAS</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsum labore quos aut,
-                        fuga cupiditate! Minus, repudiandae vitae autem quaerat non id rerum culpa, saepe dolores,
-                        quisquam nihil pariatur distinctio? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Consequuntur ipsum labore quos aut, fuga cupiditate! Minus,
-                        repudiandae vitae autem quaerat non id rerum culpa, saepe dolores, quisquam nihil pariatur
-                        distinctio?</p>
-                </div>
-                <div class="imagen_ladron2">
-                    <img src="assets/imgs/gangster.gif">
-                </div>
-            </div>
+    <div class="jefe" data-aos="zoom-in">
+
+        <div class="curva2">
+            <img src="assets/imgs/curva.svg" alt="">
         </div>
-    </section>
+        <section class="denuncia" >
+            <div class="contenedor">
+                <div class="titulo">
+                    <h1>DENUNCIA SIN MIEDO <br>LIBRES DE CORRUPCIÓN</h1>
+                </div>
+                <div class="padre">
+                    <div class="texto_denuncia">
+                        <h1>SIN ESPERAS</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsum labore quos aut,
+                            fuga cupiditate! Minus, repudiandae vitae autem quaerat non id rerum culpa, saepe dolores,
+                            quisquam nihil pariatur distinctio? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Consequuntur ipsum labore quos aut, fuga cupiditate! Minus,
+                            repudiandae vitae autem quaerat non id rerum culpa, saepe dolores, quisquam nihil pariatur
+                            distinctio?</p>
+                        </div>
+                        <div class="imagen_ladron2" >
+                            <img src="assets/imgs/gangster.gif">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
     <section id="contacto" class="contacto">
         <div class="titulo">
@@ -240,6 +246,18 @@
     <script src="js/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom JavaScript for this theme -->
     <script src="js/scrolling-nav.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 900, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false
+        });
+
+    </script>
 </body>
 
 </html>

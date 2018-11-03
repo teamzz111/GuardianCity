@@ -6,6 +6,10 @@
   font-weight: 300;
 }
 
+body {
+  background-color: #fafafa;
+}
+
 .contenedor {
   max-width: 1200px;
   margin: auto;
