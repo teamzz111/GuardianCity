@@ -6,6 +6,10 @@
   font-weight: 300;
 }
 
+body {
+  background-color: #fdfffc;
+}
+
 .contenedor {
   max-width: 1200px;
   margin: auto;
@@ -312,6 +316,8 @@ section.basta .contenedor .texto_basta h2 {
 }
 
 section.basta .contenedor .texto_basta p {
+  margin-top: 1em;
+  font-size: 1.2em;
   text-align: center;
 }
 
@@ -474,6 +480,7 @@ section.como_funciona .tecnologia {
 section.denuncia {
   color: white;
   margin-top: -0.3em;
+  margin-bottom: 3em;
   background-color: #4C919F;
 }
 
@@ -519,6 +526,7 @@ section.denuncia .contenedor .padre .texto_denuncia h1 {
 }
 
 section.denuncia .contenedor .padre .texto_denuncia p {
+  font-size: 1.2em;
   margin-top: 1em;
   text-align: justify;
 }
@@ -533,10 +541,13 @@ section.denuncia .contenedor .padre .imagen_ladron2 img {
 }
 
 section.contacto {
-  width: 100%;
+  width: 45%;
   text-align: center;
-  background-color: #FFFFF4;
+  background-color: #fffff4;
+  border-radius: 2em;
+  border: 0.1em solid black;
   font-family: "Oswald";
+  margin: auto;
 }
 
 section.contacto .titulo {
@@ -588,7 +599,7 @@ section.contacto button {
   padding: .5em;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.699);
-  margin-bottom: 10em;
+  margin-bottom: 4em;
   margin-top: 1em;
 }
 
