@@ -3,13 +3,13 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Oswald";
   font-weight: 300;
 }
 
 .contenedor {
   max-width: 1200px;
   margin: auto;
+  font-family: "Oswald";
 }
 
 /*HEADER ZONE*/
@@ -48,7 +48,8 @@ header.responsive .barra .izquierdo .claro {
   display: block;
 }
 
-header.responsive .barra .izquierdo .oscuro img, header.responsive .barra .izquierdo .claro img {
+header.responsive .barra .izquierdo .oscuro img,
+header.responsive .barra .izquierdo .claro img {
   max-width: 50px;
 }
 
@@ -129,13 +130,17 @@ header.responsive nav li a {
   text-decoration: none;
 }
 
+header {
+  font-family: "Oswald";
+}
+
 header.encabezado {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: white;
   width: 100%;
-  max-height: 9vh;
+  z-index: 10;
 }
 
 header.encabezado .logo {
@@ -245,6 +250,7 @@ section.imagen_grande .contenedor .botones button {
   border: 1.3px solid white;
   -webkit-transition: .4s linear;
   transition: .4s linear;
+  font-family: "Oswald";
 }
 
 section.imagen_grande .contenedor .botones button:hover {
@@ -438,8 +444,8 @@ section.como_funciona .tecnologia {
 
 .hdmenu {
   position: fixed;
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .curva2 {
@@ -452,6 +458,17 @@ section.como_funciona .tecnologia {
           transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   margin-top: -0.1em;
+}
+
+.footer {
+  margin: 0;
+}
+
+.footer img {
+  width: 100%;
+  margin-bottom: -0.5em;
+  height: 100%;
+  height: 200px;
 }
 
 section.denuncia {
@@ -519,6 +536,7 @@ section.contacto {
   width: 100%;
   text-align: center;
   background-color: #FFFFF4;
+  font-family: "Oswald";
 }
 
 section.contacto .titulo {
@@ -575,11 +593,59 @@ section.contacto button {
 }
 
 footer {
-  background-color: black;
+  background: -webkit-gradient(linear, left top, right top, from(#24243e), color-stop(#302b63), to(#0f0c29));
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  padding: 1%;
+  margin-top: 1eM;
   color: white;
+  padding: 1em;
+}
+
+footer hr {
+  opacity: 0.5;
+  margin-top: 1em;
+}
+
+footer p {
+  margin-top: 1em;
+}
+
+footer .primera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .contenedor {
+  font-family: "Open Sans" !important;
+  font-weight: 300;
+}
+
+footer .contenedor .img {
   text-align: center;
-  padding: 2em;
-  font-size: 0.5em;
+}
+
+footer .contenedor .img img {
+  width: 100%;
+  max-width: 80px;
+}
+
+footer .contenedor .img p {
+  margin-top: 0.2em;
+  padding-bottom: 1.3em;
+}
+
+footer .contenedor .menu {
+  margin-left: 1em;
+}
+
+footer .contenedor .menu ul li {
+  margin-bottom: 0.5em;
+  list-style-type: none;
+}
+
+footer .contenedor .menu ul li strong {
+  font-weight: 700;
 }
 
 @media screen and (max-width: 987px) {
