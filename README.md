@@ -46,7 +46,8 @@ El propósito de este módulo es generar informes en los que se muestren las zon
 # Módulo de encuestas
 Permitirá a los administradores crear encuestas que serán respondidas por las víctimas de las zonas identificadas y posteriormente generar informes sobre sus resultados.
 
-
+# Módulo de ayuda
+Mediante servicios de IBM Watson permitiremos tener un asistente integrado dentro de la landing page para que el usuario pueda resolver todas sus dudas.
 
 # Construido con 
 ## Parte Visual (FRONT-END)
