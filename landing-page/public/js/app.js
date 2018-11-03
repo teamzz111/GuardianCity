@@ -2,6 +2,7 @@ $(document).ready(function () {
     $("header .barraFixed").attr('class', 'barra');
     $("header .barraFixed").fadeOut(1);
     $(window).scroll(function () {
+        console.log($(this).scrollTop())
         if ($(this).scrollTop() > 60 && $(window).width() < 987) {
             $("header .barra").attr('class', 'barraFixed');
         } else {
@@ -9,3 +10,7 @@ $(document).ready(function () {
         }
     });
 });
+
+window.onload = function(){
+    $('.loader, main').fadeOut();
+}

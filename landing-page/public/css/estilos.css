@@ -3,11 +3,16 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
   font-weight: 300;
 }
 
 body {
+<<<<<<< HEAD:css/estilos.css
   background-color: #fdfffc;
+=======
+  background-color: #fafafa;
+>>>>>>> e53b604c53618d8aebe11e346d8fa2fb8c714e4f:landing-page/public/css/estilos.css
 }
 
 .contenedor {
@@ -16,8 +21,229 @@ body {
   font-family: "Oswald";
 }
 
+.loader {
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  background-color: #00bfff;
+  overflow: hidden;
+  z-index: 200;
+  color: white;
+}
+
+.loader main {
+  width: 100%;
+  position: fixed;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -1em;
+  z-index: 1000;
+}
+
+.loader main h1, .loader main h2 {
+  color: white;
+  font-family: "Open Sans";
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+.loader .dank-ass-loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.loader .dank-ass-loader .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.loader .arrow {
+  width: 0;
+  height: 0;
+  margin: 0 -7px;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 25.2px solid white;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+  -webkit-filter: drop-shadow(0 0 21px white);
+          filter: drop-shadow(0 0 21px white);
+}
+
+.loader .arrow.down {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.loader .arrow.outer-1 {
+  -webkit-animation-delay: -0.05556s;
+          animation-delay: -0.05556s;
+}
+
+.loader .arrow.outer-2 {
+  -webkit-animation-delay: -0.11111s;
+          animation-delay: -0.11111s;
+}
+
+.loader .arrow.outer-3 {
+  -webkit-animation-delay: -0.16667s;
+          animation-delay: -0.16667s;
+}
+
+.loader .arrow.outer-4 {
+  -webkit-animation-delay: -0.22222s;
+          animation-delay: -0.22222s;
+}
+
+.loader .arrow.outer-5 {
+  -webkit-animation-delay: -0.27778s;
+          animation-delay: -0.27778s;
+}
+
+.loader .arrow.outer-6 {
+  -webkit-animation-delay: -0.33333s;
+          animation-delay: -0.33333s;
+}
+
+.loader .arrow.outer-7 {
+  -webkit-animation-delay: -0.38889s;
+          animation-delay: -0.38889s;
+}
+
+.loader .arrow.outer-8 {
+  -webkit-animation-delay: -0.44444s;
+          animation-delay: -0.44444s;
+}
+
+.loader .arrow.outer-9 {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+.loader .arrow.outer-10 {
+  -webkit-animation-delay: -0.55556s;
+          animation-delay: -0.55556s;
+}
+
+.loader .arrow.outer-11 {
+  -webkit-animation-delay: -0.61111s;
+          animation-delay: -0.61111s;
+}
+
+.loader .arrow.outer-12 {
+  -webkit-animation-delay: -0.66667s;
+          animation-delay: -0.66667s;
+}
+
+.loader .arrow.outer-13 {
+  -webkit-animation-delay: -0.72222s;
+          animation-delay: -0.72222s;
+}
+
+.loader .arrow.outer-14 {
+  -webkit-animation-delay: -0.77778s;
+          animation-delay: -0.77778s;
+}
+
+.loader .arrow.outer-15 {
+  -webkit-animation-delay: -0.83333s;
+          animation-delay: -0.83333s;
+}
+
+.loader .arrow.outer-16 {
+  -webkit-animation-delay: -0.88889s;
+          animation-delay: -0.88889s;
+}
+
+.loader .arrow.outer-17 {
+  -webkit-animation-delay: -0.94444s;
+          animation-delay: -0.94444s;
+}
+
+.loader .arrow.outer-18 {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+
+.loader .arrow.inner-1 {
+  -webkit-animation-delay: -0.16667s;
+          animation-delay: -0.16667s;
+}
+
+.loader .arrow.inner-2 {
+  -webkit-animation-delay: -0.33333s;
+          animation-delay: -0.33333s;
+}
+
+.loader .arrow.inner-3 {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+.loader .arrow.inner-4 {
+  -webkit-animation-delay: -0.66667s;
+          animation-delay: -0.66667s;
+}
+
+.loader .arrow.inner-5 {
+  -webkit-animation-delay: -0.83333s;
+          animation-delay: -0.83333s;
+}
+
+.loader .arrow.inner-6 {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0.1;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.1;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
 /*HEADER ZONE*/
-header.responsive .barra {
+header .barra {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -33,31 +259,31 @@ header.responsive .barra {
   display: none;
 }
 
-header.responsive .barra .derecho {
+header .barra .derecho {
   width: 50%;
   text-align: right;
   font-family: 'Awesome';
 }
 
-header.responsive .barra .izquierdo {
+header .barra .izquierdo {
   width: 50%;
   text-align: left;
 }
 
-header.responsive .barra .izquierdo .oscuro {
+header .barra .izquierdo .oscuro {
   display: none;
 }
 
-header.responsive .barra .izquierdo .claro {
+header .barra .izquierdo .claro {
   display: block;
 }
 
-header.responsive .barra .izquierdo .oscuro img,
-header.responsive .barra .izquierdo .claro img {
+header .barra .izquierdo .oscuro img,
+header .barra .izquierdo .claro img {
   max-width: 50px;
 }
 
-header.responsive .barraFixed {
+header .barraFixed {
   top: 0;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
@@ -72,15 +298,16 @@ header.responsive .barraFixed {
   padding: 0.6em;
   font-size: 1.2em;
   font-family: 'Roboto';
+  overflow-x: auto;
 }
 
-header.responsive .barraFixed .derecho {
+header .barraFixed .derecho {
   width: 50%;
   text-align: right;
   font-family: 'Awesome';
 }
 
-header.responsive .barraFixed .derecho i {
+header .barraFixed .derecho i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,24 +320,24 @@ header.responsive .barraFixed .derecho i {
   height: 100%;
 }
 
-header.responsive .barraFixed .izquierdo {
+header .barraFixed .izquierdo {
   width: 50%;
   text-align: left;
 }
 
-header.responsive .barraFixed .izquierdo img {
+header .barraFixed .izquierdo img {
   max-width: 50px;
 }
 
-header.responsive .barraFixed .izquierdo .claro {
+header .barraFixed .izquierdo .claro {
   display: none;
 }
 
-header.responsive .barraFixed .izquierdo .oscuro {
+header .barraFixed .izquierdo .oscuro {
   display: block;
 }
 
-header.responsive nav {
+header nav {
   width: 100%;
   display: none;
   -ms-flex-wrap: wrap;
@@ -120,13 +347,13 @@ header.responsive nav {
           justify-content: flex-end;
 }
 
-header.responsive nav li {
+header nav li {
   padding: 1%;
   font-family: "Roboto";
   list-style-type: none;
 }
 
-header.responsive nav li a {
+header nav li a {
   font-family: 'Sans';
   font-size: 1.6em;
   color: white;
@@ -702,11 +929,17 @@ footer .contenedor .menu ul li strong {
             flex-direction: column;
   }
   section.como_funciona .contenedor .comida .izq {
-    width: 40%;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+  section.como_funciona .contenedor .comida .izq img {
+    position: static;
   }
   section.como_funciona .contenedor .comida .izq,
   section.como_funciona .contenedor .comida .der {
     text-align: center;
+    margin-right: 0;
   }
   section.como_funciona .contenedor .comida .izq img,
   section.como_funciona .contenedor .comida .der img {
