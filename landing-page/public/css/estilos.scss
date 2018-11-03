@@ -13,6 +13,16 @@
     font-family: "Oswald";
 }
 
+.loader{
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    background-color: #00bfff;
+    overflow: hidden;
+    z-index: 200;
+}
+
+@import "loader";
 /*HEADER ZONE*/
 
 header.responsive {
