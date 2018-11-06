@@ -52,4 +52,11 @@ export class SignupPage {
       toast.present();
     });
   }
+
+  tutorialApp(){
+    this.navCtrl.setRoot('TutorialPage', {}, {
+      animate: true,
+      direction: 'forward'
+    });
+  }
 }

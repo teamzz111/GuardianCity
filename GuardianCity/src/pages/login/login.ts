@@ -54,4 +54,11 @@ export class LoginPage {
       toast.present();
     });
   }
+  
+  tutorialApp(){
+    this.navCtrl.setRoot('TutorialPage', {}, {
+      animate: true,
+      direction: 'forward'
+    });
+  }
 }

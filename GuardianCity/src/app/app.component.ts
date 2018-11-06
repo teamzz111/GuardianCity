@@ -49,7 +49,8 @@ export class MyApp {
   
   menubar: any[] = [
     { title: 'Inicio', component: 'HomePage' },
-    { title: 'Acerca de nosotros', component: 'AboutusPage'},
+    { title: 'Buscar', component: 'SearchPage'},
+    { title: 'Configuración', component: 'SettingsPage'},
     { title: 'Cierra sesión', component: 'LoginPage' }
   ]
 
