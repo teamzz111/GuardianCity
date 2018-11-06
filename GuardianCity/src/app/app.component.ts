@@ -9,15 +9,15 @@ import { Settings } from '../providers';
 
 @Component({
   template: `<ion-menu [content]="content">
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Pages</ion-title>
+    <ion-header> 
+      <ion-toolbar style = "background: #1067A5">
+        <ion-title>Guardian City</ion-title>
       </ion-toolbar>
     </ion-header>
 
     <ion-content>
       <ion-list>
-        <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <button menuClose ion-item *ngFor="let p of menubar" (click)="openPage(p)">
           {{p.title}}
         </button>
       </ion-list>
@@ -44,6 +44,13 @@ export class MyApp {
     { title: 'Settings', component: 'SettingsPage' },
     { title: 'Search', component: 'SearchPage' },
     {title: 'home', component: 'HomePage'}
+  ]
+
+  
+  menubar: any[] = [
+    { title: 'Inicio', component: 'HomePage' },
+    { title: 'Acerca de nosotros', component: 'AboutusPage'},
+    { title: 'Cierra sesión', component: 'LoginPage' }
   ]
 
   constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
@@ -74,7 +81,7 @@ export class MyApp {
         this.translate.use(this.translate.getBrowserLang());
       }
     } else {
-      this.translate.use('en'); // Set your language here
+      this.translate.use('es'); // Set your language here
     }
 
     this.translate.get(['BACK_BUTTON_TEXT']).subscribe(values => {

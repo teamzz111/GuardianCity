@@ -11,5 +11,8 @@ import { HomePage } from './home';
     IonicPageModule.forChild(HomePage),
     TranslateModule.forChild()
   ],
+  exports: [
+    HomePage
+  ]
 })
 export class HomePageModule {}
