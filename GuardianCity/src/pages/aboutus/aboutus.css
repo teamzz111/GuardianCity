@@ -1,0 +1,68 @@
+page-aboutus .fontawesome {
+  font-family: 'Fontawesome';
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+page-aboutus .col {
+  color: white;
+}
+
+page-aboutus .toolbar-background {
+  background: transparent;
+  border: none;
+}
+
+page-aboutus .header::after {
+  background: none;
+}
+
+page-aboutus .scroll-content {
+  margin-top: 0px;
+  text-align: center;
+}
+
+page-aboutus .content {
+  background: url(../assets/img/fondo/fondociudad.jpg);
+  background-size: cover;
+  color: white;
+}
+
+page-aboutus .content .padre {
+  display: inline-block;
+  width: 100%;
+  color: white;
+}
+
+page-aboutus .content .padre .largo, page-aboutus .content .padre .infante, page-aboutus .content .padre .orjuela, page-aboutus .content .padre .pp {
+  display: block;
+  float: left;
+  margin: 2em 2.8em;
+}
+
+page-aboutus .content .padre .largo img, page-aboutus .content .padre .infante img, page-aboutus .content .padre .orjuela img, page-aboutus .content .padre .pp img {
+  max-width: 90px;
+  max-height: 9   0px;
+  border-radius: 50em;
+}
+
+page-aboutus .content .informacion {
+  width: 100%;
+}
+
+page-aboutus .content .informacion img {
+  width: 50%;
+  margin: 1em;
+}
+
+page-aboutus .content .informacion p {
+  width: 100%;
+  text-align: center;
+}
+/*# sourceMappingURL=aboutus.css.map */

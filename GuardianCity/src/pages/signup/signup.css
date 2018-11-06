@@ -1,0 +1,125 @@
+page-signup ion-item {
+  border-color: transparent;
+}
+
+page-signup .fas {
+  color: white;
+}
+
+page-signup .lock {
+  width: 10%;
+}
+
+page-signup ion-label {
+  max-width: 20px;
+  min-width: 20px;
+}
+
+page-signup .grid {
+  color: white;
+}
+
+page-signup .item-input {
+  color: white;
+}
+
+page-signup .fontawesome {
+  font-family: 'Fontawesome';
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+page-signup span {
+  font-size: 1rem;
+}
+
+page-signup form {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+page-signup form .list-md {
+  margin-top: 4rem;
+}
+
+page-signup form .input-cover {
+  font-size: 1rem;
+}
+
+page-signup form .button-inner {
+  font-size: 1.5rem;
+}
+
+page-signup form .button {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: white;
+  border: 1px solid white;
+  border-color: white;
+  max-width: 200px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+page-signup form .button:hover {
+  color: black;
+}
+
+page-signup .toolbar-background {
+  background: transparent !important;
+}
+
+page-signup .scroll-content {
+  background-image: url("../assets/img/gradiente/gradiente.svg");
+  background-size: cover;
+  margin-top: 0 !important;
+}
+
+page-signup .list_item {
+  border: 1px solid rgba(255, 255, 255, 0.685);
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+page-signup .list_item .item-inner {
+  border-color: white;
+}
+
+page-signup .header::after {
+  background-image: none;
+}
+
+page-signup .item {
+  background: none;
+  color: white;
+}
+
+page-signup .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner,
+page-signup .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*# sourceMappingURL=signup.css.map */

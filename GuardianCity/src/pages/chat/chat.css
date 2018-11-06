@@ -1,0 +1,132 @@
+page-chat .fontawesome {
+  font-family: 'Fontawesome';
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+page-chat .col {
+  color: white;
+}
+
+page-chat .toolbar-background {
+  background: transparent;
+  border: none;
+}
+
+page-chat .header::after {
+  background: none;
+}
+
+page-chat .scroll-content {
+  margin-top: 0px;
+  text-align: center;
+}
+
+page-chat .content {
+  background: url(../assets/img/fondo/fondociudad.jpg);
+  background-size: cover;
+}
+
+page-chat .chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 90%;
+  border-radius: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  color: white;
+  background-color: rgba(0, 255, 255, 0);
+  padding: 1em;
+}
+
+page-chat .chat .cuadro {
+  display: block;
+  width: 100%;
+  height: 80%;
+  border-radius: 0.5em;
+  border: 0.1em solid rgba(0, 0, 0, 0.479);
+  background-color: white;
+}
+
+page-chat .chat .cuadro .text1, page-chat .chat .cuadro .text3, page-chat .chat .cuadro .text5 {
+  width: 56%;
+  color: white;
+  background-color: #2295f3;
+  border-radius: 0.2em;
+  float: left;
+  margin-top: 1em;
+  margin-left: 0.5em;
+  text-align: left;
+}
+
+page-chat .chat .cuadro .text1 p, page-chat .chat .cuadro .text3 p, page-chat .chat .cuadro .text5 p {
+  padding-left: 0.5em;
+}
+
+page-chat .chat .cuadro .text2, page-chat .chat .cuadro .text4 {
+  width: 56%;
+  color: black;
+  background-color: rgba(214, 214, 214, 0.795);
+  border-radius: 0.2em;
+  float: right;
+  margin-top: 1em;
+  margin-right: 0.5em;
+  text-align: left;
+}
+
+page-chat .chat .cuadro .text2 p, page-chat .chat .cuadro .text4 p {
+  padding-left: 0.5em;
+}
+
+page-chat .chat .mensages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1em;
+  width: 100%;
+  height: 8%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+page-chat .chat .mensages .usuario {
+  width: 60%;
+  height: 90%;
+  border-radius: 0.3em;
+  border: 0.1em solid rgba(0, 0, 0, 0.473);
+  margin-right: 1em;
+}
+
+page-chat .chat .mensages .submit {
+  width: 30%;
+  height: 90%;
+  border-radius: 0.5em;
+  border: 0.1em solid rgba(255, 255, 255, 0.61);
+  background-color: rgba(0, 255, 255, 0);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+page-chat .chat .mensages .submit:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=chat.css.map */

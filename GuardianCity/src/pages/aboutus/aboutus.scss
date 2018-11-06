@@ -1,3 +1,58 @@
 page-aboutus {
-
+    .fontawesome {
+        font-family: 'Fontawesome';
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        color: white;
+      }
+      .col{
+          color: white;
+      }
+    
+      .toolbar-background {
+        background: transparent;
+        border: none;
+      }
+    
+      .header::after {
+        background: none;
+      }
+    
+      .scroll-content {
+        margin-top: 0px;
+        text-align: center;
+    
+      }
+    .content{
+        background: url(../assets/img/fondo/fondociudad.jpg);
+        background-size: cover;
+        color: white;
+        .padre{
+            display: inline-block;
+            width: 100%;
+            color: white;
+            .largo, .infante, .orjuela, .pp{
+                display: block;
+                float: left;
+                margin: 2em 2.8em;
+                img{
+                    max-width: 90px;
+                    max-height: 9   0px;
+                    border-radius: 50em;
+                }
+            }
+        }
+        .informacion{
+            width: 100%;
+            img{
+                width: 50%;
+                margin:1em;
+            }
+            p{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
 }
