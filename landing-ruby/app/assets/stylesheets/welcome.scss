@@ -5,7 +5,9 @@
     font-family: "Oswald";
     font-weight: 300;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .contenedor {
     // Contenedor padre de todo que siempre mantendrá máximo 1200 px 
     max-width: 1200px;
@@ -34,18 +36,35 @@ header.responsive {
             width: 50%;
             text-align: right;
             font-family: 'Awesome';
+
         }
 
         .izquierdo {
             width: 50%;
             text-align: left;
+
+            .oscuro {
+                display: none;
+            }
+
+            .claro {
+                display: block;
+            }
+
+            .oscuro,
+            .claro {
+                img {
+
+                    max-width: 50px;
+                }
+            }
         }
     }
 
     .barraFixed {
         top: 0;
         transition-duration: 1s;
-        display: flex;
+        display: none;
         background: white;
         width: 100%;
         color: black;
@@ -59,11 +78,30 @@ header.responsive {
             width: 50%;
             text-align: right;
             font-family: 'Awesome';
+
+            i {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                height: 100%;
+            }
         }
 
         .izquierdo {
             width: 50%;
             text-align: left;
+
+            img {
+                max-width: 50px;
+            }
+
+            .claro {
+                display: none;
+            }
+
+            .oscuro {
+                display: block;
+            }
         }
     }
 
@@ -98,15 +136,19 @@ header.encabezado {
     max-height: 9vh;
 
     .logo {
-
+        width: 11%;
+        height: 100%;
         display: flex;
-        max-width: 100px;
-        max-height: 60px;
         justify-content: center;
         background-color: white;
+        align-content: center;
+        margin-top: 0.3em;
+   
 
         img {
             width: 100%;
+            max-width: 50px;
+            max-height: 50px;
 
         }
     }
@@ -128,6 +170,13 @@ header.encabezado {
                 height: 60%;
                 padding: 0.5em;
                 font-weight: 300;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
             }
         }
 
@@ -156,7 +205,7 @@ section.imagen_grande {
             width: 50%;
 
             p {
-                font-size: 1.5em;
+                font-size: 2em;
                 color: white;
                 line-height: 1.5em;
 
@@ -252,6 +301,7 @@ section.basta {
 
 section.como_funciona {
     background-color: #FAFAFA;
+    margin-top: -0.3em;
 
     .contenedor {
         display: flex;
@@ -261,6 +311,12 @@ section.como_funciona {
         width: 100%;
         padding-bottom: 4em;
 
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
 
         .comida {
             padding: 1em;
@@ -335,6 +391,24 @@ section.como_funciona {
     }
 }
 
+.boton_rep {
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 1px solid rgb(0, 102, 255);
+}
+
+.clbm {
+    text-decoration: none;
+    color: black;
+}
+
+.hdmenu {
+    position: fixed;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
 .curva2 {
     background-color: #4C919F;
 
@@ -401,9 +475,18 @@ section.denuncia {
 }
 
 section.contacto {
-    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 50%;
     text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 5em;
     background-color: #FFFFF4;
+    border-radius: 2em;
 
     .titulo {
         padding: 2em 0em 0em;
@@ -433,7 +516,7 @@ section.contacto {
         input,
         textarea {
             align-self: center;
-            width: 90%;
+            width: 100%;
             max-width: 350px;
             margin: 1.5em;
             padding: 0.5em;
@@ -450,31 +533,16 @@ section.contacto {
         padding: .5em;
         background-color: white;
         border: 1px solid rgba(0, 0, 0, 0.699);
-        margin-bottom: 10em;
+        margin-bottom: 5em;
         margin-top: 1em;
+        align-self: center;
     }
 }
-.boton_rep {
-    padding-left: 1em;
-    padding-right: 1em;
-    border: 1px solid rgb(0, 102, 255);
-}
 
-.clbm {
-    text-decoration: none;
-    color: black;
-}
-
-.hdmenu {
-    position: fixed;
-    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-}
 footer {
     background-color: black;
     color: white;
-    text-align: center;     
+    text-align: center;
     padding: 2em;
     font-size: 0.5em;
 }
@@ -500,6 +568,9 @@ footer {
             }
         }
     }
+    header .barraFixed{
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 718px) {
@@ -524,11 +595,6 @@ footer {
                 width: 90%;
                 margin: 10px;
                 align-self: center;
-
-                .izq,
-                .der {
-                    img {}
-                }
             }
         }
 
@@ -552,7 +618,7 @@ footer {
 
                     img {
                         width: 100%;
-                        -webkit-transform: initial;
+                        transform: initial;
                     }
                 }
             }

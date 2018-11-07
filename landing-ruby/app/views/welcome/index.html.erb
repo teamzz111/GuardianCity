@@ -4,19 +4,27 @@
     </div>
     <div class="texto">
         <ul>
-            <li><a class="nav-link js-scroll-trigger clbm" href="#inicio">INICIO</a></li>
-            <li><a class="nav-link js-scroll-trigger clbm" href="#funcionamiento">¿COMO FUNCIONA?</a></li>
-            <li><a class="nav-link js-scroll-trigger clbm" href="#contacto">CONT&Aacute;CTANOS</a></li>
+            <li><a class="bt1" href = "#imagen_grande">INICIO</a></li>
+            <li><a class="bt2" href="#block">¿COMO FUNCIONA?</a></li>
+            <li><a class="bt3" href="#contacto">CONT&Aacute;CTANOS</a></li>
             <li class="boton_rep"><a class="nav-link js-scroll-trigger clbm" href="#">REPORTE</a></li>
         </ul>
     </div>
 </header>
 
 
-<section class="imagen_grande">
+<section class="imagen_grande"  id = "imagen_grande">
     <header class="responsive">
         <div class="barraFixed">
-            <div class="izquierdo">LOGOTIPO</div>
+            <div class="izquierdo">
+                <div class="oscuro">
+                      <%= image_tag("logotemp.png", :alt => "Logo" )%>
+                </div>
+                <div class="claro">
+                     <%= image_tag("oscuro.png", :alt => "Logo" )%>
+                </div>
+               
+            </div>
             <div class="derecho"><i class="fas fa-bars"></i></div>
         </div>
         <div class="contenedor">
@@ -62,8 +70,9 @@
 <div class="curva">
     <%= image_tag("pattern.png", :alt => "rss feed") %>
 </div>
-<section class="como_funciona">
+<section class="como_funciona" id = "block">
     <div class="contenedor">
+        <h2 style="margin-top: 2em; font-size: 1.5em; text-align: center; padding-bottom: 2em;">¿CÓMO FUNCIONA?</h2>
         <div class="blockchain comida">
             <div class="izq">
                 <%= image_tag("block.png", :alt => "rss feed") %>
