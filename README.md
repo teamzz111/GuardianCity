@@ -7,7 +7,7 @@
 <p align="center">
   <a title="Iniciando" href="#Iniciando"><strong>Iniciando</strong></a>
   &#x2022;
-  <a title="Documentación" href="https://github.com/TalentoBogotaFedesoft/ULIBRE-061-grupo-2/wiki"><strong>Documentation</strong></a>
+  <a title="Documentación" href="https://github.com/TalentoBogotaFedesoft/ULIBRE-061-grupo-2/wiki"><strong>Documentación</strong></a>
   &#x2022;
   <a title="Desarrollo" href="https://github.com/TalentoBogotaFedesoft/ULIBRE-061-grupo-2/tree/backend"><strong>Desarrollo</strong></a>
   &#x2022;
@@ -21,9 +21,31 @@ de la localidad de Kennedy?
 # Tematica
 Seguridad Ciudadana
 
-# Iniciando 
-Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento para tu máquina local con el 
-propósito de desarollo y pruebas.
+# Desarrollo 
+
+Por una correcta práctica y orden se dividió cada sección de la aplicación en diferentes ramas. 
+```
+1. Master: con toda la documentación y versiones finales de cada rama unidas.
+2. App-ionic: Aplicación móvil.
+3. Landing-page: Página de presentación en NodeJS.
+4. Landing-ruby: Página de presentación en Ruby On Rails.
+5. Api: API REST 
+```
+# Enlaces 
+
+## Landing page 
+
+<a title="Desarrollo" href="http://guardiancity.herokuapp.com"><strong>Landing page</strong></a>
+
+## API REST
+
+<a title="API REST" href="https://guardianapi.herokuapp.com"><strong>API REST</strong></a>
+
+## Aplicación IONIC previsualización en vivo
+
+
+<a title="Desarrollo" href="https://guardiancity.herokuapp.com/previ.html"><strong>App Ionic 3</strong></a>
+
 
 # Descripción del prototipo
 
@@ -51,6 +73,7 @@ Permitirá a los administradores crear encuestas que serán respondidas por las 
 Mediante servicios de IBM Watson permitiremos tener un asistente integrado dentro de la landing page para que el usuario pueda resolver todas sus dudas.
 
 # Construido con 
+
 ## Parte Visual (FRONT-END)
 Para la parte visual se usarán las tecnologías más recientes, HTML para maquetar el sitio, CSS para darle estilos, Javascript para hacerlo dinámico y finalmente AngularJS para el aplicativo WEB.
 
@@ -67,6 +90,24 @@ Mediante la creación de una API en Ruby On Rails permitiremos el acceso desde c
     <img width = "100px" src ="https://andreslargo.com/resources/ruby.png" />
   <img width = "100px" src ="https://andreslargo.com/resources/rails.png" />
   <img width = "100px" src ="https://andreslargo.com/resources/Imagen4.png" />
+</div>
+
+## Asistente
+Con la ayuda de IBM Watson le daremos al usuario la capacidad de preguntar mediante un chat lo que desee acerca de la aplicación.
+<div style = "display: flex; align-self: center">
+  <img width = "100px" src ="https://andreslargo.com/resources/elwatson.png" />
+</div>
+
+## Reconocimiento de imágenes
+Vamos más allá. Sin necesidad de más detalles el servicio de reconocimiento de imágenes de IBM nos permitirá tener una descripción más clara de dónde pasó el robo.
+<div style = "display: flex; align-self: center">
+  <img width = "100px" src ="https://www.itopstimes.com/wp-content/uploads/2018/06/cloud.png" />
+</div>
+
+## Blockchain
+Un sistema de información fiable, mediante una red de blockchain almacenaremos los datos de forma segura.
+<div style = "display: flex; align-self: center">
+  <img width = "100px" src ="https://andreslargo.com/fedesoft/assets/imgs/block.png" />
 </div>
 
 # Autores
