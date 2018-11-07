@@ -23,7 +23,7 @@ Seguridad Ciudadana
 
 # Desarrollo 
 
-Por una correcta práctica y orden se dividió cada sección de la aplicación en diferentes ramas. 
+Básicamente, el proyecto está divido en diferentes ramas 
 ```
 1. Master: con toda la documentación y versiones finales de cada rama unidas.
 2. App-ionic: Aplicación móvil.
