@@ -41,37 +41,16 @@
           <td>ESTADO</td>
         </tr>
       </thead>
-      <tr>
-        
-        <td>O</td>
-        <td>Oneida</td>
-        <td>Kennedy</td>
-        <td>Robo</td>
-        <td>06/06/18</td>
+      <tr *ngFor = "let i of denuncias">
+
+        <td>{{i.id}}</td>
+        <td>{{i.usuario_cedula}}</td>
+        <td>{{i.tipo_denuncia}}</td>
+        <td>{{i.zona}}</td>
+        <td>{{i.fecha}}</td>
         <td>O</td>
         
       </tr>
-<tr>
-
-  <td>O</td>
-  <td>Oneida</td>
-  <td>Kennedy</td>
-  <td>Robo</td>
-  <td>06/06/18</td>
-  <td>O</td>
-
-</tr>
-<tr>
-
-  <td>O</td>
-  <td>Oneida</td>
-  <td>Kennedy</td>
-  <td>Robo</td>
-  <td>06/06/18</td>
-  <td>O</td>
-
-</tr>
-
     </table>
   </div>
 </ion-content>
