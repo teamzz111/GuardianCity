@@ -1,4 +1,5 @@
 class CreateZonas < ActiveRecord::Migration[5.2]
+  has_many :Denuncium
   def change
     create_table :zonas do |t|
       t.integer :id_zona

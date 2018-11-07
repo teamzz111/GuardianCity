@@ -1,4 +1,5 @@
 class CreateUsuarios < ActiveRecord::Migration[5.2]
+  has_many :Denuncium
   def change
     create_table :usuarios do |t|
       t.integer :cedula
