@@ -38,7 +38,7 @@
           <td>LOCALIDAD</td>
           <td>TIPO</td>
           <td>FECHA</td>
-          <td>ESTADO</td>
+          <td>DESCRIPCIÓN</td>
         </tr>
       </thead>
       <tr *ngFor = "let i of denuncias">
@@ -48,7 +48,7 @@
         <td>{{i.tipo_denuncia}}</td>
         <td>{{i.zona}}</td>
         <td>{{i.fecha}}</td>
-        <td>O</td>
+        <td>{{i.descripcion_asalto}}</td>
         
       </tr>
     </table>
