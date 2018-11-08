@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Live Preview</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        *,
+        *:after,
+        *:before {
+            box-sizing: border-box;
+        }
+
+        .phone {
+            margin: 15px auto;
+            width: 350px;
+            height: 720px;
+            padding-top: 55px;
+            padding-left: 11px;
+            position: relative;
+            border: 2px solid #bcbcbc;
+            border-radius: 35px;
+            background: #fff;
+            -webkit-transition: all .5s ease-in-out 0s;
+            -ms-transition: all .5s ease-in-out 0s;
+            transition: all .5s ease-in-out 0s;
+        }
+
+        .phone:before {
+            content: "";
+            border: 2px solid #bcbcbc;
+            position: absolute;
+            bottom: 15px;
+            left: 155px;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+        }
+
+        .phone:after {
+            content: "";
+            border: 3px solid #bcbcbc;
+            position: absolute;
+            top: 25px;
+            left: 140px;
+            width: 70px;
+            height: 6px;
+            border-radius: 5px;
+        }
+
+        .phone .iframe-wrapper {
+            border: 2px solid #bcbcbc;
+            width: 324px;
+            height: 600px;
+            border-radius: 3px;
+        }
+
+        .phone iframe {
+            width: 320px;
+            height: 600px;
+            border: none;
+        }
+        .scroll-content{
+            overflow-x: auto  !important;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="phone">
+        <div class="iframe-wrapper">
+            <iframe id="mobile-preview-content" class="preview-frame" src="preview"></iframe>
+        </div>
+    </div>
+</body>
+
+</html>
