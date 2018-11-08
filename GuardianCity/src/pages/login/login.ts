@@ -1,3 +1,4 @@
+import { HomePage } from './../home/home';
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { IonicPage, NavController, ToastController } from 'ionic-angular';
@@ -35,9 +36,15 @@ export class LoginPage {
   // Attempt to login in through our User service
   doLogin() {
     this.user.login(this.account).subscribe((resp) => {
-      this.navCtrl.push(MainPage);
+        this.navCtrl.setRoot('HomePage', {}, {
+          animate: true,
+          direction: 'forward'
+        });
     }, (err) => {
-      this.navCtrl.push(MainPage);
+      this.navCtrl.setRoot('HomePage', {}, {
+        animate: true,
+        direction: 'forward'
+      });
       // Unable to log in
       let toast = this.toastCtrl.create({
         message: this.loginErrorString,
@@ -45,6 +52,13 @@ export class LoginPage {
         position: 'top'
       });
       toast.present();
+    });
+  }
+  
+  tutorialApp(){
+    this.navCtrl.setRoot('TutorialPage', {}, {
+      animate: true,
+      direction: 'forward'
     });
   }
 }

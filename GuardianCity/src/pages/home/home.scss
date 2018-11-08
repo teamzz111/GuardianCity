@@ -1,0 +1,90 @@
+page-home {
+  color: white;
+
+  .fontawesome {
+    font-family: 'Fontawesome';
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .toolbar-background {
+    background: transparent;
+    border: none;
+  }
+
+  .header::after {
+    background: none;
+  }
+
+  .scroll-content {
+    margin-top: 0px;
+    text-align: center;
+
+  }
+
+  .content {
+    background: url(../assets/img/fondo/fondociudad.jpg);
+    background-size: cover;
+  }
+
+  h2 {
+    text-align: center;
+    color: white;
+
+  }
+
+  button {
+    padding: 1em 1.5em;
+  }
+
+  ion-content {
+    div.tabla {
+      background: #FFFFFF;
+      width: 93%;
+      padding-bottom: 1em;
+
+      margin-top: 1em;
+      margin: auto;
+      h2 {
+        padding: 10px;
+        color: black;
+        text-align: left;
+        font-size: 1em;
+      }
+
+      table {
+          thead{
+              tr{
+                  td{
+                      font-family: "Oswald";
+                      font-size: 0.73em;
+                      text-align: center;
+                  }
+              }
+          }
+          width: 93%;
+          margin: auto;
+          tr{
+              border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+          }
+          td{
+              font-size: 0.8em;
+              padding: 0.6em 0.3em 0.6em 0.3em;
+              font-family: "Oswald";
+          }
+      }
+
+    }
+
+    button.denuncia {
+      background-color: transparent;
+      color: white;
+      border-radius: 10px;
+      margin-top: 1.5em;
+      font-family: "Oswald";
+      border: 1px solid white;
+    }
+  }
+}

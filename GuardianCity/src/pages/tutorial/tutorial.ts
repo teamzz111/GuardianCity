@@ -62,6 +62,12 @@ export class TutorialPage {
       direction: 'forward'
     });
   }
+  sigupApp(){
+    this.navCtrl.setRoot('SignupPage', {}, {
+      animate: true,
+      direction: 'forward'
+    });
+  }
   onSlideChangeStart(slider) {
     this.showSkip = !slider.isEnd();
   }

@@ -1,0 +1,55 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="fontawesome">
+          <i class="fas fa-bars" menuToggle></i>
+        </ion-col>
+        <ion-col style="text-align: center">
+          {{ 'APP_TITLE' | translate}} <br>
+          <span> {{ 'TUTORIAL_SLIDE0_DESCRIPTION' | translate}}
+
+          </span>
+        </ion-col>
+        <ion-col>
+        </ion-col>
+      </ion-row>
+
+
+    </ion-grid>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <h2>A DENUNCIAR!</h2>
+  <button class = "denuncia">
+    CREAR NUEVA DENUNCIA    
+  </button>
+  <div class="tabla">
+    <h2>DENUNCIAS RECIENTES</h2>
+    <table>
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>BARRIO</td>
+          <td>LOCALIDAD</td>
+          <td>TIPO</td>
+          <td>FECHA</td>
+          <td>DESCRIPCIÓN</td>
+        </tr>
+      </thead>
+      <tr *ngFor = "let i of denuncias">
+        <td>{{i.id}}</td>
+        <td>{{i.usuario_cedula}}</td>
+        <td>{{i.tipo_denuncia}}</td>
+        <td>{{i.zona}}</td>
+        <td>{{i.fecha}}</td>
+        <td>{{i.descripcion_asalto}}</td>
+        
+      </tr>
+    </table>
+  </div>
+</ion-content>

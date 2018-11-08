@@ -1,0 +1,89 @@
+page-home {
+  color: white;
+}
+
+page-home .fontawesome {
+  font-family: 'Fontawesome';
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+page-home .toolbar-background {
+  background: transparent;
+  border: none;
+}
+
+page-home .header::after {
+  background: none;
+}
+
+page-home .scroll-content {
+  margin-top: 0px;
+  text-align: center;
+}
+
+page-home .content {
+  background: url(../assets/img/fondo/fondociudad.jpg);
+  background-size: cover;
+}
+
+page-home h2 {
+  text-align: center;
+  color: white;
+}
+
+page-home button {
+  padding: 1em 1.5em;
+}
+
+page-home ion-content div.tabla {
+  background: #FFFFFF;
+  width: 93%;
+  padding-bottom: 1em;
+  margin-top: 1em;
+  margin: auto;
+}
+
+page-home ion-content div.tabla h2 {
+  padding: 10px;
+  color: black;
+  text-align: left;
+  font-size: 1em;
+}
+
+page-home ion-content div.tabla table {
+  width: 93%;
+  margin: auto;
+}
+
+page-home ion-content div.tabla table thead tr td {
+  font-family: "Oswald";
+  font-size: 0.73em;
+  text-align: center;
+}
+
+page-home ion-content div.tabla table tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+page-home ion-content div.tabla table td {
+  font-size: 0.8em;
+  padding: 0.6em 0.3em 0.6em 0.3em;
+  font-family: "Oswald";
+}
+
+page-home ion-content button.denuncia {
+  background-color: transparent;
+  color: white;
+  border-radius: 10px;
+  margin-top: 1.5em;
+  font-family: "Oswald";
+  border: 1px solid white;
+}
+/*# sourceMappingURL=home.css.map */

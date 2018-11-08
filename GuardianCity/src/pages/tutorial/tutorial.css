@@ -1,0 +1,78 @@
+page-tutorial .toolbar-background {
+  background: transparent;
+  border-color: transparent;
+}
+
+page-tutorial .slide-zoom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-size: cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  background-image: url("../assets/img/gradiente/gradiente.svg");
+  background-size: cover;
+}
+
+page-tutorial .slide-title {
+  color: white;
+  margin-top: -0.9rem;
+  font-size: 3.8rem;
+}
+
+page-tutorial .slide-image {
+  max-height: 40%;
+  max-width: 60%;
+  margin: 36px 0;
+}
+
+page-tutorial b {
+  font-weight: 500;
+}
+
+page-tutorial p {
+  padding: 0 40px;
+  font-size: 2.2rem;
+  line-height: 1.5;
+  color: white;
+}
+
+page-tutorial p b {
+  color: #000000;
+}
+
+page-tutorial p.titulo {
+  font-size: 3.8rem;
+  margin-top: -2.1rem;
+}
+
+page-tutorial .button {
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid white;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  margin-top: 0.5em;
+  font-size: 2rem;
+  width: 35%;
+  color: white;
+}
+
+page-tutorial .button:hover {
+  background: white !important;
+  color: black;
+}
+
+page-tutorial .registrado {
+  font-size: 3.2rem;
+}
+/*# sourceMappingURL=tutorial.css.map */
