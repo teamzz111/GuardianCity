@@ -1,3 +1,4 @@
+import { HomePage } from './../home/home';
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { IonicPage, NavController, ToastController } from 'ionic-angular';
@@ -38,10 +39,10 @@ export class SignupPage {
   doSignup() {
     // Attempt to login in through our User service
     this.user.signup(this.account).subscribe((resp) => {
-      this.navCtrl.push(MainPage);
+      this.navCtrl.push(HomePage);
     }, (err) => {
 
-      this.navCtrl.push(MainPage);
+      this.navCtrl.push(HomePage);
 
       // Unable to sign up
       let toast = this.toastCtrl.create({
