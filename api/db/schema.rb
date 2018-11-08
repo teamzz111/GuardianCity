@@ -25,6 +25,15 @@ ActiveRecord::Schema.define(version: 2018_11_02_055741) do
     t.text "descripcion_asaltante"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["tipo_denuncia"], name: "id_tipo_denuncia"
+    t.index ["usuario_cedula"], name: "cedula"
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "tipo_denuncia", force: :cascade do |t|

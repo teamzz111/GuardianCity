@@ -1,5 +1,5 @@
 class CreateUsuarios < ActiveRecord::Migration[5.2]
-  has_many :Denuncium
+
   def change
     create_table :usuarios do |t|
       t.integer :cedula
@@ -9,7 +9,6 @@ class CreateUsuarios < ActiveRecord::Migration[5.2]
       t.string :correo
       t.integer :cargo
       t.date :fecha_nacimiento
-
       t.timestamps
     end
   end

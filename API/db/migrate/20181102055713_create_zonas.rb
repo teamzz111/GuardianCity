@@ -1,5 +1,5 @@
 class CreateZonas < ActiveRecord::Migration[5.2]
-  has_many :Denuncium
+
   def change
     create_table :zonas do |t|
       t.integer :id_zona
@@ -8,6 +8,7 @@ class CreateZonas < ActiveRecord::Migration[5.2]
       t.string :localidad
 
       t.timestamps
+      has_many :Denuncium
     end
   end
 end
