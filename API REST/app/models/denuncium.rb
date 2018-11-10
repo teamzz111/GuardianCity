@@ -1,2 +1,0 @@
-class Denuncium < ApplicationRecord
-end

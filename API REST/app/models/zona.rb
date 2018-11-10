@@ -1,2 +1,0 @@
-class Zona < ApplicationRecord
-end
