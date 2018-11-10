@@ -1,0 +1,17 @@
+<%= form_with(model: messagewatson, local: true) do |form| %>
+  <% if messagewatson.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(messagewatson.errors.count, "error") %> prohibited this messagewatson from being saved:</h2>
+
+      <ul>
+      <% messagewatson.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
