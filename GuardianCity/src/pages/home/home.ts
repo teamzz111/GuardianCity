@@ -21,9 +21,12 @@ export class HomePage {
     public api: Api) {
 
   }
+  answer(){
+    
+  }
   ionViewDidLoad() {
     this.api.get("denuncia.json").subscribe(
-      (data) => { // Success
+      (data) => { 
         this.denuncias = data;
         console.log(data);
       },

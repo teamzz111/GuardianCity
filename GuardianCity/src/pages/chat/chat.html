@@ -33,15 +33,16 @@
   <div class="chat">
     <h1>CHAT</h1>
     <div class="cuadro">
-      <div class="text1"><p>Hola soy Watson, en que te puedo ayudar</p></div>
-      <div class="text2"><p>Hola soy Alejandra Cortez, tengo un problema con una denuncia</p></div>
-      <div class="text3"><p>Claro cuentame el problema</p></div>
-      <div class="text4"><p>He subido el dia de hoy una denuncia pero no la veo en el apartado de denuncias recientes.</p></div>
-      <div class="text5"><p>De seguro no se ha realizado la peticion por sobrecarga de este.</p></div>
+
+      <div class="text1" *ngFor="let data of logchat; let i = index">
+        <p class = "receive" *ngIf = "i % 2 == 0">{{data.message}}</p>
+        <p class = "send" *ngIf="i % 2 == 1">{{data.message}}</p>
+      </div>
+
     </div>
-    <form action="" class="mensages">
-      <input type="text" name="Usuario" class="usuario">
-      <input type="submit" name="Submit" class="submit" value="ENVIAR">
-    </form>
+    <div action="" class="messages">      
+    <input type="text" name="Usuario" [(ngModel)]="message.message"  class="usuario">
+      <input type="submit" name="Submit" (click) = "send()" class="submit" value="ENVIAR">
+    </div>
   </div>
 </ion-content>
