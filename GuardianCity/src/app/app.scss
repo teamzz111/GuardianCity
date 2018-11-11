@@ -27,3 +27,33 @@ h4 {
 }
 $text-input-highlight-color-valid:transparent;
 $text-input-highlight-color-invalid:transparent;
+
+.fontawesome {
+  font-family: 'Fontawesome';
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.menu-inner{
+  background:  #0e63a4cf !important
+}
+
+.menu-inner .scroll-content {
+  background: transparent !important;
+  overflow: hidden !important;
+}
+
+.menu-inner .item  {
+  background: transparent !important;
+  color: white !important;
+}
+
+.menu-inner .toolbar-background {
+  background: transparent !important;
+}
+
+.menu-inner .toolbar-title-md {
+  color: white !important;
+}

@@ -37,14 +37,17 @@ export class SignupPage {
   }
 
   doSignup() {
-    // Attempt to login in through our User service
-    this.user.signup(this.account).subscribe((resp) => {
-      this.navCtrl.push(HomePage);
+    this.user.login(this.account).subscribe((resp) => {
+        this.navCtrl.setRoot('HomePage', {}, {
+          animate: true,
+          direction: 'forward'
+        });
     }, (err) => {
-
-      this.navCtrl.push(HomePage);
-
-      // Unable to sign up
+      this.navCtrl.setRoot('HomePage', {}, {
+        animate: true,
+        direction: 'forward'
+      });
+      // Unable to log in
       let toast = this.toastCtrl.create({
         message: this.signupErrorString,
         duration: 3000,

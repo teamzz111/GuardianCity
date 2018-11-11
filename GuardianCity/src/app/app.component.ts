@@ -7,16 +7,16 @@ import { Config, Nav, Platform } from 'ionic-angular';
 import { FirstRunPage } from '../pages';
 import { Settings } from '../providers';
 
-@Component({
-  template: `<ion-menu [content]="content">
-    <ion-header> 
-      <ion-toolbar style = "background: #1067A5">
-        <ion-title>Guardian City</ion-title>
+@Component({ 
+  template: `<ion-menu [content]="content" style="background: transparent">
+    <ion-header style="background: transparent"> 
+      <ion-toolbar style="background: transparent">
+        <ion-title>Guardian City <i class="fas fa-times-circle" style="float: right" menuToggle></i></ion-title>
       </ion-toolbar>
     </ion-header>
 
-    <ion-content>
-      <ion-list>
+    <ion-content style="background: transparent">
+      <ion-list style="background: transparent">
         <button menuClose ion-item *ngFor="let p of menubar" (click)="openPage(p)">
           {{p.title}}
         </button>
