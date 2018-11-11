@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fecha: 2018-11-10
+  descripcion_asalto: MyString
+  descripcion_asaltante: MyString
+  zona: one
+  usuario: one
+  tipo_denuncia: one
+
+two:
+  fecha: 2018-11-10
+  descripcion_asalto: MyString
+  descripcion_asaltante: MyString
+  zona: two
+  usuario: two
+  tipo_denuncia: two

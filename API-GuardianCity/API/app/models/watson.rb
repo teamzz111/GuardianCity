@@ -1,0 +1,2 @@
+class Watson < ApplicationRecord
+end

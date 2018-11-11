@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Denuncia</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Usuario cedula</th>
+      <th>Tipo denuncia</th>
+      <th>Fecha</th>
+      <th>Descripcion asalto</th>
+      <th>Zona</th>
+      <th>Descripcion asaltante</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @denuncia.each do |denuncium| %>
+      <tr>
+        <td><%= denuncium.id %></td>
+        <td><%= denuncium.usuario_cedula %></td>
+        <td><%= denuncium.tipo_denuncia %></td>
+        <td><%= denuncium.fecha %></td>
+        <td><%= denuncium.descripcion_asalto %></td>
+        <td><%= denuncium.zona %></td>
+        <td><%= denuncium.descripcion_asaltante %></td>
+        <td><%= link_to 'Show', denuncium %></td>
+        <td><%= link_to 'Edit', edit_denuncium_path(denuncium) %></td>
+        <td><%= link_to 'Destroy', denuncium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Denuncium', new_denuncium_path %>
