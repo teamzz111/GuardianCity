@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :watsons
   resources :tipo_denuncia
   resources :zonas
   resources :denuncia

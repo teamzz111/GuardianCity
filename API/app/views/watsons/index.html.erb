@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Watsons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @watsons.each do |watson| %>
+      <tr>
+        <td><%= link_to 'Show', watson %></td>
+        <td><%= link_to 'Edit', edit_watson_path(watson) %></td>
+        <td><%= link_to 'Destroy', watson, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Watson', new_watson_path %>
