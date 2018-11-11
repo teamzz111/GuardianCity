@@ -1008,7 +1008,8 @@ footer .contenedor .menu ul li strong {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 25%;
+  width: 100%;
+  max-width: 600px;
   height: 50%;
   border-radius: 1em;
   border: 0.1em solid rgba(0, 0, 0, 0.308);
@@ -1021,6 +1022,8 @@ footer .contenedor .menu ul li strong {
   padding: 1em;
   text-align: center;
   font-family: 'Oswald';
+  -webkit-transition: 1s linear !important;
+  transition: 1s linear !important;
 }
 
 .chat .cuadro {

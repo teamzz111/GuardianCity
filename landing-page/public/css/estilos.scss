@@ -737,7 +737,8 @@ footer {
     bottom: 7.5em;
     right: 2em;
     flex-direction: column;
-    width: 25%;
+    width: 100%;
+    max-width: 600px;
     height: 50%;
     border-radius: 1em;
     border: 0.1em solid rgba(0, 0, 0, 0.308);
@@ -748,6 +749,7 @@ footer {
     padding: 1em;
     text-align: center;
     font-family: 'Oswald';
+    transition: 1s linear !important;
     .cuadro{
         display: block;
         width: 100%;

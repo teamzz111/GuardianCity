@@ -21,6 +21,26 @@ $(document).ready(function () {
             estado=0;
         }
     })
+
+    $('#formessage').submit(function(e){
+        $.ajax({
+            type: 'GET',
+            url: 'https://guardianapi.herokuapp.com/watsons/?message='+$("#mensaje").val(),
+            success: function (data) {
+                $('.chat .cuadro').append("<div class='text2'><p> " + $("#mensaje").val() + "</p></div>");
+                $('.chat .cuadro').append("<div class='text1'><p> " + data.output.generic[0].text+"</p></div>");
+                $('.chat .cuadro').scrollTop(9999);
+            },
+            error: function (data) {
+                $(".exito").text("¡REGISTRO SIN ÉXITO, NO TENEMOS MÁS INFORMACIÓN");
+                $('.exito').fadeIn(2000, function () {
+                    window.location.reload(true);
+                });
+            }
+        });
+
+        e.preventDefault();
+    });
 });
 
 window.onload = function(){
