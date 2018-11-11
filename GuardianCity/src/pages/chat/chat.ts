@@ -1,3 +1,4 @@
+import { ContentPage } from './../content/content';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
@@ -16,11 +17,13 @@ import { Injectable } from '@angular/core';
   selector: 'page-chat',
   templateUrl: 'chat.html',
 })
+
 @Injectable()
 export class ChatPage {
   message: { message: string } = {
     message: '',
   };
+  
   response;  
   logchat: any[];
   constructor(public navCtrl: NavController, public navParams: NavParams,
@@ -47,6 +50,8 @@ export class ChatPage {
       (data) => {
         msj = { message: data['output'].generic[0].text};
         this.logchat.push(msj);
+        this.message.message = '';
+        
       },
       (error) => {
         console.log(error);

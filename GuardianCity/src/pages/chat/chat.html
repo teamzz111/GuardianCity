@@ -30,9 +30,9 @@
 
 
 <ion-content >
-  <div class="chat">
+  <div class="chat" >
     <h1>CHAT</h1>
-    <div class="cuadro">
+    <div class="cuadro" #scroll>
 
       <div class="text1" *ngFor="let data of logchat; let i = index">
         <p class = "receive" *ngIf = "i % 2 == 0">{{data.message}}</p>
