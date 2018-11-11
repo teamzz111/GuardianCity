@@ -3,7 +3,6 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-x: hidden;
   font-weight: 300;
 }
 
@@ -12,14 +11,13 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
   background-color: white;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #186ae575;
-  border-radius: 10px;
-  border-right: 2px solid #1869e5;
+  background: #00bfff;
+  border-radius: 1px;
 }
 
 .contenedor {
@@ -622,6 +620,7 @@ section#contri .contenedor .persona .img h4 {
 section.como_funciona {
   background-color: #FAFAFA;
   margin-top: -0.3em;
+  overflow: hidden;
 }
 
 section.como_funciona .contenedor {
@@ -1000,7 +999,6 @@ footer .contenedor .menu ul li strong {
 
 .chat {
   display: none;
-  overflow: unset;
   position: fixed;
   bottom: 7.5em;
   right: 2em;
@@ -1008,7 +1006,8 @@ footer .contenedor .menu ul li strong {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 25%;
+  width: 100%;
+  max-width: 600px;
   height: 50%;
   border-radius: 1em;
   border: 0.1em solid rgba(0, 0, 0, 0.308);
@@ -1024,6 +1023,8 @@ footer .contenedor .menu ul li strong {
 }
 
 .chat .cuadro {
+  -webkit-transition: 1s linear !important;
+  transition: 1s linear !important;
   display: block;
   width: 100%;
   height: 70%;
@@ -1033,6 +1034,7 @@ footer .contenedor .menu ul li strong {
   font-family: 'Oswald';
   padding: 0.2em;
   margin-top: 1em;
+  overflow-y: auto;
 }
 
 .chat .cuadro .text1, .chat .cuadro .text3, .chat .cuadro .text5 {
@@ -1111,8 +1113,8 @@ footer .contenedor .menu ul li strong {
 }
 
 .chat .mensages .submit:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .img_chat {
