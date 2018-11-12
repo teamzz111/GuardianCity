@@ -7,6 +7,7 @@ class CreateUsuarios < ActiveRecord::Migration[5.2]
       t.string :correo ,null: false
       t.integer :cargo ,null: false
       t.string :fecha_nacimiento
+      t.string :password_digest
 
       t.timestamps
     end

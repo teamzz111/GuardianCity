@@ -1,6 +1,6 @@
 class DenunciaController < ApplicationController
   before_action :set_denuncium, only: [:show, :update, :destroy]
-  before_action :authenticate_user
+  #before_action :authenticate_user
   # GET /denuncia
   def index
     @denuncia = Denuncium.all
@@ -46,6 +46,6 @@ class DenunciaController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def denuncium_params
-      params.require(:denuncium).permit(:fecha, :descripcion_asalto, :descripcion_asaltante, :zona_id, :usuario_id, :tipo_denuncia_id)
+      params.permit(:fecha, :descripcion_asalto, :descripcion_asaltante, :zona_id, :usuario_id, :tipo_denuncia_id)
     end
 end
