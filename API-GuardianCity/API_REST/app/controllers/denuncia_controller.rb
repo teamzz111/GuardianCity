@@ -1,6 +1,6 @@
 class DenunciaController < ApplicationController
   before_action :set_denuncium, only: [:show, :update, :destroy]
-
+  before_action :authenticate_user
   # GET /denuncia
   def index
     @denuncia = Denuncium.all

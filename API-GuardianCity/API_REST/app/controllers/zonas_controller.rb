@@ -1,6 +1,6 @@
 class ZonasController < ApplicationController
   before_action :set_zona, only: [:show, :update, :destroy]
-
+  before_action :authenticate_user
   # GET /zonas
   def index
     @zonas = Zona.all

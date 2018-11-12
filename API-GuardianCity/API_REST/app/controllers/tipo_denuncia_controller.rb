@@ -1,6 +1,6 @@
 class TipoDenunciaController < ApplicationController
   before_action :set_tipo_denuncium, only: [:show, :update, :destroy]
-
+  before_action :authenticate_user
   # GET /tipo_denuncia
   def index
     @tipo_denuncia = TipoDenuncium.all

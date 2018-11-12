@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  post 'usuario_token' => 'usuario_token#create'
   resources :denuncia
   resources :tipo_denuncia
   resources :zonas
