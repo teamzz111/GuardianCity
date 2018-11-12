@@ -1,6 +1,6 @@
 class ZonasController < ApplicationController
   before_action :set_zona, only: [:show, :update, :destroy]
-  before_action :authenticate_user
+  #before_action :authenticate_user
   # GET /zonas
   def index
     @zonas = Zona.all
@@ -46,6 +46,6 @@ class ZonasController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def zona_params
-      params.require(:zona).permit(:nombre, :direccion, :localidad)
+      params.permit(:nombre, :direccion, :localidad)
     end
 end
