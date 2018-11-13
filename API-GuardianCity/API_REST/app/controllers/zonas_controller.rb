@@ -45,7 +45,7 @@ class ZonasController < ApplicationController
     end
 
     # Only allow a trusted parameter "white list" through.
-    def zona_params 
+    def zona_params
       params.permit(:nombre, :direccion, :localidad)
     end
 end

@@ -1,7 +1,6 @@
 class UsuariosController < ApplicationController
   before_action :set_usuario, only: [:show, :update, :destroy]
   #before_action :authenticate_user, except: [:create]
-  
   # GET /usuarios
   def index
     @usuarios = Usuario.all
