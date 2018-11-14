@@ -1,6 +1,6 @@
 class TipoDenunciaController < ApplicationController
   before_action :set_tipo_denuncium, only: [:show, :update, :destroy]
-
+  #before_action :authenticate_user
   # GET /tipo_denuncia
   def index
     @tipo_denuncia = TipoDenuncium.all
@@ -46,6 +46,6 @@ class TipoDenunciaController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def tipo_denuncium_params
-      params.require(:tipo_denuncium).permit(:nombre, :descripcion)
+      params.permit(:nombre, :descripcion)
     end
 end
