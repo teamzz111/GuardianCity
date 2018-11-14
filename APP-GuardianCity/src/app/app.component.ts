@@ -33,6 +33,7 @@ export class MyApp {
   
   menubar: any[] = [
     { title: 'Inicio', component: 'HomePage' },
+    { title: 'Crear denuncia', component: 'DenunciaPage'},
     { title: '¿Necesitas ayuda?', component: 'ChatPage' },
     { title: 'Acerca de nosotros', component: 'AboutusPage'},
     { title: 'Cierra sesión', component: 'LoginPage' }
