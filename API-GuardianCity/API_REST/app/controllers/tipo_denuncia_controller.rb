@@ -3,7 +3,7 @@ class TipoDenunciaController < ApplicationController
   #before_action :authenticate_user
   # GET /tipo_denuncia
   def index
-    @tipo_denuncia = TipoDenuncium.all
+    @tipo_denuncia = TipoDenuncia.all
 
     render json: @tipo_denuncia
   end
@@ -15,7 +15,7 @@ class TipoDenunciaController < ApplicationController
 
   # POST /tipo_denuncia
   def create
-    @tipo_denuncium = TipoDenuncium.new(tipo_denuncium_params)
+    @tipo_denuncium = TipoDenuncia.new(tipo_denuncium_params)
 
     if @tipo_denuncium.save
       render json: @tipo_denuncium, status: :created, location: @tipo_denuncium
@@ -41,7 +41,7 @@ class TipoDenunciaController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_tipo_denuncium
-      @tipo_denuncium = TipoDenuncium.find(params[:id])
+      @tipo_denuncium = TipDenuncia.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
