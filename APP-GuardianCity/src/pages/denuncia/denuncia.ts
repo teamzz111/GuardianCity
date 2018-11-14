@@ -16,7 +16,14 @@ import { Api } from '../../providers';
   templateUrl: 'denuncia.html',
 })
 export class DenunciaPage {
-
+  account: { date: string, time: string, 
+  place: string, tipo: string, descripcion: string } = {
+    date: "",
+    time: '',
+    place: '',
+    tipo: 'Selecciona una opción',
+    descripcion: ''
+  };
   constructor(public navCtrl: NavController, public navParams: NavParams,public translateService: TranslateService,
   public api: Api) {
   }

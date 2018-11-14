@@ -36,7 +36,7 @@ Básicamente, el proyecto está divido en diferentes ramas
 
 ## Landing page 
 
-<a title="Desarrollo" href="http://guardiancity.herokuapp.com"><strong>Página de presentación</strong></a>
+<a title="Desarrollo" href="https://guardiancity.herokuapp.com"><strong>Página de presentación</strong></a>
 
 ## API REST
 

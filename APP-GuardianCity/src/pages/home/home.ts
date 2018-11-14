@@ -1,7 +1,10 @@
+
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
 import { Api } from '../../providers';
+import { DenunciaPage } from '../denuncia/denuncia';
+
 /**
  * Generated class for the HomePage page.
  *
@@ -15,14 +18,16 @@ import { Api } from '../../providers';
   templateUrl: 'home.html',
 })
 export class HomePage {
+
+  pushPage: any;
   private loginErrorString: string;
   denuncias;
   constructor(public navCtrl: NavController, public navParams: NavParams,public translateService: TranslateService,
     public api: Api) {
 
   }
-  answer(){
-    
+  mostrarDenuncia(){
+    this.navCtrl.push(DenunciaPage);
   }
   ionViewDidLoad() {
     this.api.get("denuncia.json").subscribe(
