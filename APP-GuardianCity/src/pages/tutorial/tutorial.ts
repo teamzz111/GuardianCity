@@ -1,3 +1,4 @@
+import { DenunciaPage } from './../denuncia/denuncia';
 import { Component } from '@angular/core';
 import { IonicPage, MenuController, NavController, Platform } from 'ionic-angular';
 
@@ -15,12 +16,14 @@ export interface Slide {
   templateUrl: 'tutorial.html'
 })
 export class TutorialPage {
+
   slides: Slide[];
   showSkip = true;
   dir: string = 'ltr';
 
   constructor(public navCtrl: NavController, public menu: MenuController, translate: TranslateService, public platform: Platform) {
     this.dir = platform.dir();
+
     translate.get(["TUTORIAL_SLIDE1_TITLE",
       "TUTORIAL_SLIDE1_DESCRIPTION",
       "TUTORIAL_SLIDE2_TITLE",
