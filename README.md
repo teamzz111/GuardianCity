@@ -30,12 +30,13 @@ Básicamente, el proyecto está divido en diferentes ramas
 3. Landing-page: Página de presentación en NodeJS.
 4. Landing-ruby: Página de presentación en Ruby On Rails.
 5. Api: API REST 
+6. Watson: Pruebas con él.
 ```
 # Enlaces 
 
 ## Landing page 
 
-<a title="Desarrollo" href="http://guardiancity.herokuapp.com"><strong>Landing page</strong></a>
+<a title="Desarrollo" href="http://guardiancity.herokuapp.com"><strong>Página de presentación</strong></a>
 
 ## API REST
 
@@ -58,6 +59,7 @@ El aplicativo contará con los siguientes módulos:
 2. Zonas
 3. Encuestas
 4. Sección ayuda
+5. Gestión administrativa
 ```
 # Módulo denuncias
 En este módulo los usuarios podrán registrar denuncias, las cuales estarán disponibles para ser visualizadas por la policía, éstas denuncias serán almacenadas por medio de blockchain, ya que de este modo no podrán ser modificadas, a excepción de su estado, así se asegura la transparencia del sistema.
@@ -72,6 +74,8 @@ Permitirá a los administradores crear encuestas que serán respondidas por las 
 # Módulo de ayuda
 Mediante servicios de IBM Watson permitiremos tener un asistente integrado dentro de la landing page para que el usuario pueda resolver todas sus dudas.
 
+# Módulo administrativo
+Este módulo permitirá a usuarios calificados ingresar a un dashboard donde podrán ver lugares, denuncias, creación de encuestas y estadísticas en general de todo.
 # Construido con 
 
 ## Parte Visual (FRONT-END)
@@ -112,7 +116,7 @@ Un sistema de información fiable, mediante una red de blockchain almacenaremos 
 
 # Autores
 
-**<a title="Andrés Largo" href="https://andreslargo.com"><strong>Andrés Largo</strong></a> - Estudiante de Ingeniería en Sistemas, desarrollador junior fullstack**
+**<a title="Andrés Largo" href="https://andreslargo.com"><strong>Andrés Largo</strong></a> - Estudiante de Ingeniería en Sistemas, desarrollador fullstack**
 
 **<a title="Andrés Largo" href="https://github.com/MonoAncestral"><strong>Erika Infante</strong></a> - Estudiante de Ingeniería de Sistemas enfocada en desarrollo backend**
 
