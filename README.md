@@ -35,7 +35,7 @@ Básicamente, el proyecto está divido en diferentes ramas
 
 ## Landing page 
 
-<a title="Desarrollo" href="http://guardiancity.herokuapp.com"><strong>Landing page</strong></a>
+<a title="Desarrollo" href="http://guardiancity.herokuapp.com"><strong>Página de presentación</strong></a>
 
 ## API REST
 
@@ -112,7 +112,7 @@ Un sistema de información fiable, mediante una red de blockchain almacenaremos 
 
 # Autores
 
-**<a title="Andrés Largo" href="https://andreslargo.com"><strong>Andrés Largo</strong></a> - Estudiante de Ingeniería en Sistemas, desarrollador junior fullstack**
+**<a title="Andrés Largo" href="https://andreslargo.com"><strong>Andrés Largo</strong></a> - Estudiante de Ingeniería en Sistemas, desarrollador fullstack**
 
 **<a title="Andrés Largo" href="https://github.com/MonoAncestral"><strong>Erika Infante</strong></a> - Estudiante de Ingeniería de Sistemas enfocada en desarrollo backend**
 
