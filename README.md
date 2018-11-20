@@ -124,7 +124,7 @@ Un sistema de información fiable, mediante una red de blockchain almacenaremos 
 
 **Yulian Cardenas - Estudiante de Ingeniería telemática** 
 
-**Carlos Moreno - Desarrollador fullstack**
+**Carlos Moreno - Tutor - Desarrollador fullstack**
 
 # Licencia
 MIT
