@@ -16,7 +16,7 @@
 
 # Reto
 ¿Cómo podemos mejorar la seguridad ciudadana de los habitantes
-de la localidad de Kennedy?
+de la localidad de Ciudad Bolívar? 
 
 # Tematica
 Seguridad Ciudadana
