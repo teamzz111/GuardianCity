@@ -1,9 +1,7 @@
-
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
 import { Api } from '../../providers';
-import { DenunciaPage } from '../denuncia/denuncia';
 
 /**
  * Generated class for the HomePage page.
@@ -27,7 +25,10 @@ export class HomePage {
 
   }
   mostrarDenuncia(){
-    this.navCtrl.push(DenunciaPage);
+    this.navCtrl.setRoot('DenunciaPage', {}, {
+      animate: true,
+      direction: 'forward'
+    });
   }
   ionViewDidLoad() {
     this.api.get("denuncia.json").subscribe(
