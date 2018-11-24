@@ -32,10 +32,12 @@ page-aboutus {
             display: inline-block;
             width: 100%;
             color: white;
+        
             .largo, .infante, .orjuela, .pp{
-                display: block;
-                float: left;
-                margin: 2em 2.8em;
+                
+                
+                margin: auto;
+                margin-top: 2em;
                 img{
                     max-width: 90px;
                     max-height: 9   0px;
