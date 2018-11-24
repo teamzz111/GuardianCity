@@ -42,10 +42,12 @@ Básicamente, el proyecto está divido en diferentes ramas
 
 <a title="API REST" href="https://guardianapi.herokuapp.com"><strong>API REST</strong></a>
 
-## Aplicación IONIC previsualización en vivo (Pre-compilado)
+## Aplicación IONIC previsualización en vivo (compilado)
 
 
 <a title="Desarrollo" href="https://guardiancity.herokuapp.com/previ.html"><strong>App Ionic 3</strong></a>
+
+
 
 
 # Descripción del prototipo
