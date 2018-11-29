@@ -170,7 +170,11 @@ header.encabezado {
         justify-content: center;
         background-color: white;
         align-content: center;
-
+        p{
+            margin-top: .7em;
+            font-weight: 700;
+            margin-left: 1em;   
+        }
         padding: 1em;
 
         img {
@@ -207,16 +211,17 @@ header.encabezado {
 
 
 section.imagen_grande {
-    background: url(../assets/imgs/ladron.jpg);
+    background: url(../assets/imgs/ladron3.jpg);
     padding-top: 1em;
-
+    background-position-y: -6em;
     background-size: cover;
     background-repeat: no-repeat;
-
+    min-height: 100vh;
     padding-bottom: 7em;
+    background-attachment: fixed;
 
     .contenedor {
-        margin-top: 8em;
+        margin-top: 12em;
         width: 100%;
         padding: 1%;
         display: flex;
@@ -226,7 +231,7 @@ section.imagen_grande {
             width: 50%;
 
             p {
-                font-size: 2em;
+                font-size: 2.3em;
                 color: white;
                 line-height: 1.5em;
 
@@ -318,52 +323,6 @@ section.basta {
                 margin-top: 1em;
                 font-size: 1.2em;
                 text-align: center;
-            }
-        }
-    }
-}
-
-section#contri {
-    background: white;
-
-    .contenedor {
-        width: 100%;
-        max-width: 1200px;
-        margin: auto;
-
-        h2 {
-            font-size: 2.8em;
-            font-weight: 300;
-            margin: 1.5em;
-        }
-
-        .personas {
-            display: flex;
-            width: 100%;
-            flex-wrap: wrap;
-            text-align: center;
-            justify-content: center;
-            margin-bottom: 3em;
-        }
-
-        .persona {
-            width: 25%;
-            margin-top: 1em;
-            margin-bottom: 1em;
-
-            .img {
-                width: 100%;
-
-                img {
-                    border-radius: 50em;
-                    width: 100%;
-                    max-width: 183.95px;
-                    max-height: 181.92px;
-                }
-
-                h4 {
-                    margin: 1em;
-                }
             }
         }
     }
@@ -582,7 +541,7 @@ section.contacto {
     width: 100%;
     background: #fafafa;
     position: relative;
-    top: -1em;
+
     padding-bottom: 2em;
     overflow: visible !important;
 
@@ -671,10 +630,10 @@ footer {
 
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
     padding: 1%;
-    margin-top: 1eM;
+
     color: white;
     padding: 1em;
-    margin-top: 3em;
+
 
     hr {
         opacity: 0.5;
