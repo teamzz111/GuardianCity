@@ -47,6 +47,6 @@ class DenunciaController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def denuncium_params
-      params.permit(:fecha, :descripcion_asalto, :descripcion_asaltante, :zona_id, :usuario_id, :tipo_denuncia_id)
+      params.permit(:fecha, :direccion, :descripcion_asalto, :descripcion_asaltante, :zona_id, :usuario_id, :tipo_denuncia_id)
     end
 end
