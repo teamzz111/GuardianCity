@@ -1,22 +1,22 @@
 <ion-header>
 
   <ion-navbar>
-      <ion-grid>
-          <ion-row>
-            <ion-col class = "fontawesome">
-                <i class="fas fa-arrow-left" (click)="tutorialApp()"></i>
-            </ion-col>
-            <ion-col style = "text-align: center">
-              {{ 'APP_TITLE' | translate}} <br>
-              <span>   {{ 'TUTORIAL_SLIDE0_DESCRIPTION' | translate}}
-                
-              </span>
-            </ion-col>
-            <ion-col>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-</ion-navbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="fontawesome">
+          <i class="fas fa-arrow-left" (click)="tutorialApp()"></i>
+        </ion-col>
+        <ion-col style="text-align: center">
+          GuardianCity <br>
+          <span> #LibresDeManipulacion
+
+          </span>
+        </ion-col>
+        <ion-col>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
 
 </ion-header>
 
@@ -26,36 +26,35 @@
     <h2>INICIA SESIÓN</h2>
     <ion-list>
 
-      <ion-item class = "list_item">
+      <ion-item class="list_item">
         <ion-label><i class="fas fa-id-card"></i></ion-label>
-        <ion-input type="text" [(ngModel)]="account.id_cc" name="id_cc"></ion-input>
+        <ion-input placeholder = "Cédula de cuidadanía" type="text" [(ngModel)]="account.id_cc" name="id_cc"></ion-input>
       </ion-item>
 
-      <ion-item class = "list_item">
+      <ion-item class="list_item">
         <ion-label><i class="fas fa-key"></i></ion-label>
-        <ion-input type="password" [(ngModel)]="account.password1" name="password1"></ion-input>
+        <ion-input type="password" [(ngModel)]="account.password1" placeholder = "Ingresa tu contraseña" name="password1"></ion-input>
       </ion-item>
 
-      <ion-item class = "list_item">
+      <ion-item class="list_item">
         <ion-label><i class="fas fa-key"></i></ion-label>
-        <ion-input type="password" [(ngModel)]="account.password2" name="password2"></ion-input>
+        <ion-input type="password" [(ngModel)]="account.password2" placeholder = "Ingresa de nuevo tu contraseña" name="password2"></ion-input>
       </ion-item>
 
-      <ion-item class = "list_item">
+      <ion-item class="list_item">
         <ion-label><i class="fas fa-user"></i></ion-label>
-        <ion-input type="text" [(ngModel)]="account.f_name" name="f_name" aria-placeholder="test"></ion-input>
+        <ion-input type="text" [(ngModel)]="account.f_name" placeholder = "Nombres" name="f_name" aria-placeholder="test"></ion-input>
       </ion-item>
 
-      <ion-item class = "list_item">
+      <ion-item class="list_item">
         <ion-label><i class="fas fa-user"></i></ion-label>
-        <ion-input type="text" [(ngModel)]="account.l_name" name="l_name"></ion-input>
+        <ion-input type="text" [(ngModel)]="account.l_name" placeholder = "Apellidos" name="l_name"></ion-input>
       </ion-item>
 
       <div padding>
-        <button ion-button color="primary" block>{{ 'SIGNUP_GO' | translate }}</button>
+        <button ion-button color="primary" block> ¡Vamos!</button>
       </div>
 
     </ion-list>
   </form>
 </ion-content>
-
