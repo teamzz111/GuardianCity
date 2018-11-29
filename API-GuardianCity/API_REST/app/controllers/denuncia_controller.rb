@@ -3,7 +3,7 @@ class DenunciaController < ApplicationController
   #before_action :authenticate_user
   # GET /denuncia
   def index
-    sql = "SELECT d.fecha as Fecha, d.descripcion_asalto as Decripcion, d.descripcion_asaltante as Asaltante, z.nombre as Zona, t.nombre as TipoDenuncia FROM Denuncia as d, tipo_denuncia as t, zonas as z, usuarios as u WHERE d.zona_id=z.id AND d.tipo_denuncia_id=t.id and d.usuario_id=u.id"
+    sql = "SELECT d.fecha as Fecha, d.direccion as Direccion, d.descripcion_asalto as Decripcion, d.descripcion_asaltante as Asaltante, z.nombre as Zona, t.nombre as TipoDenuncia FROM Denuncia as d, tipo_denuncia as t, zonas as z, usuarios as u WHERE d.zona_id=z.id AND d.tipo_denuncia_id=t.id and d.usuario_id=u.id"
     records_array = ActiveRecord::Base.connection.execute(sql)  
     @result = records_array.to_a;
     render json: @result[0] 
