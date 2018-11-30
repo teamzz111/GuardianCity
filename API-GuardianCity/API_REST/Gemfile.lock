@@ -108,7 +108,6 @@ GEM
     public_suffix (3.0.3)
     puma (3.12.0)
     rack (2.0.6)
-    rack-cors (1.0.2)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.2.1)
@@ -169,12 +168,11 @@ DEPENDENCIES
   knock
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
-  rack-cors
   rails (~> 5.2.1)
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.4.5p335
+   ruby 2.3.3p222
 
 BUNDLED WITH
    1.17.1
