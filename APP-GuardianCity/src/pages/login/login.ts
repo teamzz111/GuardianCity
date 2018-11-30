@@ -35,11 +35,12 @@ export class LoginPage {
 
   // Attempt to login in through our User service
   doLogin() {
+    this.navCtrl.setRoot('HomePage', {}, {
+      animate: true,
+      direction: 'forward'
+    });/*
     this.user.login(this.account).subscribe((resp) => {
-        this.navCtrl.setRoot('HomePage', {}, {
-          animate: true,
-          direction: 'forward'
-        });
+
     }, (err) => {
       this.navCtrl.setRoot('HomePage', {}, {
         animate: true,
@@ -52,7 +53,7 @@ export class LoginPage {
         position: 'top'
       });
       toast.present();
-    });
+    });*/
   }
   
   tutorialApp(){

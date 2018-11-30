@@ -1,7 +1,7 @@
 import { DenunciaPage } from './../denuncia/denuncia';
 import { Component } from '@angular/core';
 import { IonicPage, MenuController, NavController, Platform } from 'ionic-angular';
-
+import { StatusBar } from '@ionic-native/status-bar';
 import { TranslateService } from '@ngx-translate/core';
 
 export interface Slide {
@@ -21,7 +21,7 @@ export class TutorialPage {
   showSkip = true;
   dir: string = 'ltr';
 
-  constructor(public navCtrl: NavController, public menu: MenuController, translate: TranslateService, public platform: Platform) {
+  constructor(private statusBar: StatusBar, public navCtrl: NavController, public menu: MenuController, translate: TranslateService, public platform: Platform) {
     this.dir = platform.dir();
 
     translate.get(["TUTORIAL_SLIDE1_TITLE",
@@ -35,18 +35,8 @@ export class TutorialPage {
         console.log('Loaded values', values);
         this.slides = [
           {
-            title: values.TUTORIAL_SLIDE1_TITLE,
-            description: values.TUTORIAL_SLIDE1_DESCRIPTION,
-            image: 'assets/img/group.png',
-          },
-          {
-            title: values.TUTORIAL_SLIDE2_TITLE,
-            description: values.TUTORIAL_SLIDE2_DESCRIPTION,
-            image: 'assets/img/blockchain.png',
-          },
-          {
-            title: values.TUTORIAL_SLIDE3_TITLE,
-            description: values.TUTORIAL_SLIDE3_DESCRIPTION,
+            title: "Vamos con toda contra la delincuencia",
+            description: "Con ayuda de la inteligencia artificial y blockchain lo haremos posible",
             image: 'assets/img/chip.png',
           }
         ];
@@ -58,6 +48,7 @@ export class TutorialPage {
       animate: true,
       direction: 'forward'
     });
+    
   }
   loginApp(){
     this.navCtrl.setRoot('LoginPage', {}, {
@@ -78,6 +69,11 @@ export class TutorialPage {
   ionViewDidEnter() {
     // the root left menu should be disabled on the tutorial page
     this.menu.enable(false);
+    this.statusBar.overlaysWebView(true);
+
+    // set status bar to white
+
+    this.statusBar.backgroundColorByHexString('#0599ca');
   }
 
   ionViewWillLeave() {

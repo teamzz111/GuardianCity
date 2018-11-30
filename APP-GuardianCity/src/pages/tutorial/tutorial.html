@@ -1,10 +1,10 @@
 <ion-content no-bounce>
   <ion-slides pager="true" dir="{{dir}}" (ionSlideWillChange)="onSlideChangeStart($event)">
     <ion-slide>
-      <h2 class="slide-title">{{ 'TUTORIAL_SLIDE0_TITLE' | translate }}</h2>
+      <h2 class="slide-title">Te damos la bienvenida</h2>
       <img src="assets/img/LOGOS/logo.png" class="slide-image" />
-      <p class="titulo"> {{ 'APP_TITLE' | translate }}</p>
-      <p>{{ 'TUTORIAL_SLIDE0_DESCRIPTION' | translate }}</p>
+      <p class="titulo"> GuardianCity</p>
+      <p>#LibresDeManipulación</p>
     </ion-slide>
 
     <ion-slide *ngFor="let slide of slides">
@@ -13,12 +13,12 @@
       <p [innerHTML]="slide.description"></p>
     </ion-slide>
     <ion-slide>
-      <h2 class="slide-title">{{ 'APP_TITLE' | translate }}</h2>
-      <p style = "margin-top: -0.5rem; font-size: 1.8rem;">{{ 'TUTORIAL_SLIDE0_DESCRIPTION' | translate }}</p>
-      <p class = "registrado"> {{ 'APP_REGISTERED' | translate }}</p>
+      <h2 class="slide-title">GuardianCity</h2>
+      <p style = "margin-top: -0.5rem; font-size: 1.8rem;">#LibresDeCorrupción</p>
+      <p class = "registrado">¿Estás registrado?</p>
       <img src="assets/img/iconos/information.png" class="slide-image" />
-      <button class = "button" ion-button (click)="loginApp()">{{'LOGIN' | translate}}</button>
-      <button class = "button" ion-button (click)="sigupApp()">{{'SIGNUP' | translate}}</button>
+      <button class = "button" ion-button (click)="loginApp()">INICIA SESIÓN</button>
+      <button class = "button" ion-button (click)="sigupApp()">REGISTRATE</button>
     </ion-slide>
 
   </ion-slides>

@@ -1,4 +1,18 @@
 page-denuncia {
+    
+  color: white;
+  input-wrapper{
+    overflow: hidden;
+  }
+  ion-item {
+    border-color: transparent;
+  }
+
+  .fontawesome {
+    font-family: 'Fontawesome';
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
     color: white;
 
     .fontawesome {
@@ -79,4 +93,5 @@ page-denuncia {
             }
         }
     }
+  }
 }

@@ -36,7 +36,6 @@ export class MyApp {
     { title: 'Inicio', component: 'HomePage' },
     { title: 'Crear denuncia', component: 'DenunciaPage'},
     { title: '¿Necesitas ayuda?', component: 'ChatPage' },
-    { title: 'Acerca de nosotros', component: 'AboutusPage'},
     { title: 'Cierra sesión', component: 'LoginPage' }
   ]
 
@@ -45,14 +44,15 @@ export class MyApp {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
-      this.splashScreen.hide();
+      
     });
     this.initTranslate();
+
   }
 
   initTranslate() {
     // Set the default language for translation strings, and the current language.
-    this.translate.setDefaultLang('en');
+    this.translate.setDefaultLang('es');
     const browserLang = this.translate.getBrowserLang();
 
     if (browserLang) {
@@ -77,6 +77,11 @@ export class MyApp {
   }
 
   openPage(page) {
+    this.statusBar.overlaysWebView(true);
+
+    // set status bar to white
+
+    this.statusBar.backgroundColorByHexString('#0599ca');
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
