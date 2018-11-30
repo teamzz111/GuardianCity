@@ -12,3 +12,4 @@ GuardianCity/package.json
 GuardianCity/package-lock.json
 API_REST/tmp/storage/.keep
 API_REST/config/master.key
+API-GuardianCity/API_REST/config/database.yml
