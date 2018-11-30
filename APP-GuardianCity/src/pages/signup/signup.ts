@@ -37,11 +37,12 @@ export class SignupPage {
   }
 
   doSignup() {
+    this.navCtrl.setRoot('HomePage', {}, {
+      animate: true,
+      direction: 'forward'
+    });/*
     this.user.login(this.account).subscribe((resp) => {
-        this.navCtrl.setRoot('HomePage', {}, {
-          animate: true,
-          direction: 'forward'
-        });
+
     }, (err) => {
       this.navCtrl.setRoot('HomePage', {}, {
         animate: true,
@@ -54,7 +55,7 @@ export class SignupPage {
         position: 'top'
       });
       toast.present();
-    });
+    });*/
   }
 
   tutorialApp(){

@@ -23,7 +23,7 @@
     "@ionic-native/camera": "4.3.3",
     "@ionic-native/core": "~4.15.0",
     "@ionic-native/splash-screen": "~4.15.0",
-    "@ionic-native/status-bar": "~4.15.0",
+    "@ionic-native/status-bar": "^4.15.0",
     "@ionic/storage": "2.2.0",
     "@ngx-translate/core": "8.0.0",
     "@ngx-translate/http-loader": "^2.0.0",

@@ -33,21 +33,19 @@
     <table>
       <thead>
         <tr>
-          <td>ID</td>
-          <td>BARRIO</td>
-          <td>LOCALIDAD</td>
-          <td>TIPO</td>
+          <td>ZONA</td>
+          <td>DIRECCIÓN</td>
+          <td>DENUNCIA</td>
           <td>FECHA</td>
           <td>DESCRIPCIÓN</td>
         </tr>
       </thead>
       <tr *ngFor = "let i of denuncias">
-        <td>{{i.id}}</td>
-        <td>{{i.usuario_cedula}}</td>
-        <td>{{i.tipo_denuncia}}</td>
         <td>{{i.zona}}</td>
+        <td>{{i.direccion}}</td>
+        <td>{{i.tipodenuncia}}</td>
         <td>{{i.fecha}}</td>
-        <td>{{i.descripcion_asalto}}</td>
+        <td>{{i.decripcion}}</td>
         
       </tr>
     </table>
