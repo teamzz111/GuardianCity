@@ -1,4 +1,4 @@
-class AdddireccionToDenuncia < ActiveRecord::Migration[5.2]
+class AddDireccionToDenuncia < ActiveRecord::Migration[5.2]
   def change
     add_column :denuncia, :direccion, :string
   end
