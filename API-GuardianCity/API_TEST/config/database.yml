@@ -16,7 +16,7 @@ development:
   pool: 5
   host: localhost
   username: postgres
-  password: 'nicky246'
+  password: <%= ENV['API_TEST_DATABASE_PASSWORD'] %>
   database: postgres
 
 # Warning: The database defined as "test" will be erased and
