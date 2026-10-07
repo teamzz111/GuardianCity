@@ -29,7 +29,7 @@ development:
   pool: 5
   host: localhost
   username: postgres
-  password: '1234'
+  password: <%= ENV['API_REST_DATABASE_PASSWORD'] %>
   database: mydb1
 
   # The specified database role being used to connect to postgres.
