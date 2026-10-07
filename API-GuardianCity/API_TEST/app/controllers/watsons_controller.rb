@@ -8,14 +8,14 @@ class WatsonsController < ApplicationController
 
     assistant = IBMWatson::AssistantV1.new(
         version: "2018-09-20",
-        username: "ebbfae24-aaba-403c-8f06-b11b5ae7ce81",
-        password: "b7ij6FUSNHdt",
+        username: ENV['WATSON_USERNAME'],
+        password: ENV['WATSON_PASSWORD'],
         url:"https://gateway.watsonplatform.net/assistant/api",
-        iam_apikey: "XOIijyk6xzJeEmjeVlvnJHhGUomigWWu_xKo1WcMiIiz"
+        iam_apikey: ENV['WATSON_IAM_APIKEY']
     )
 
     response = assistant.message(
-        workspace_id: "98aec387-baa5-4161-a891-09cb44317cf3",
+        workspace_id: ENV['WATSON_WORKSPACE_ID'],
         input: {
             text: params[:message]
         }
